@@ -1,0 +1,216 @@
+[0.000000] (-) TimerEvent: {}
+[0.000313] (stereo_camera_pkg) JobQueued: {'identifier': 'stereo_camera_pkg', 'dependencies': OrderedDict()}
+[0.000360] (stereo_camera_pkg) JobStarted: {'identifier': 'stereo_camera_pkg'}
+[0.039264] (stereo_camera_pkg) JobProgress: {'identifier': 'stereo_camera_pkg', 'progress': 'cmake'}
+[0.041207] (stereo_camera_pkg) JobProgress: {'identifier': 'stereo_camera_pkg', 'progress': 'build'}
+[0.041552] (stereo_camera_pkg) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/yahboom/camera_ws/build/stereo_camera_pkg', '--', '-j4', '-l4'], 'cwd': '/home/yahboom/camera_ws/build/stereo_camera_pkg', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('PYTHON_BASIC_REPL', '1'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'yahboom'), ('LC_TIME', 'zh_CN.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/yahboom'), ('CHROME_DESKTOP', 'code.desktop'), ('TERM_PROGRAM_VERSION', '1.107.1'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('MANAGERPID', '1088'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('SYSTEMD_EXEC_PID', '1338'), ('BUNDLED_DEBUGPY_PATH', '/home/yahboom/.vscode/extensions/ms-python.debugpy-2025.18.0-linux-x64/bundled/libs/debugpy'), ('IM_CONFIG_CHECK_ENV', '1'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '5150'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'yahboom'), ('JOURNAL_STREAM', '8:21187'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'yahboom'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', '/usr/share/gazebo-11/models:/opt/ros/humble/share/turtlebot3_gazebo/models'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('FC_FONTATIONS', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/yahboom/.local/bin:/opt/ros/humble/bin:/home/yahboom/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/yahboom/.vscode/extensions/ms-python.debugpy-2025.18.0-linux-x64/bundled/scripts/noConfigScripts'), ('SESSION_MANAGER', 'local/yahboom-VM:@/tmp/.ICE-unix/1275,unix/yahboom-VM:/tmp/.ICE-unix/1275'), ('INVOCATION_ID', '869cfc6afc234c9fa72e4501c83f991e'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('USE_SIM_TIME', 'true'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'wayland'), ('DISPLAY', ':0'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/home/yahboom/.vscode/extensions/ms-python.debugpy-2025.18.0-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-4db3ad9cf3806412.txt'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('PYTHONSTARTUP', '/home/yahboom/.config/Code/User/workspaceStorage/7705f2699625cff51761f8697bb07f86/ms-python.python/pythonrc.py'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.KMRVI3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-32e2b5c224.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '30'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/yahboom/camera_ws/build/stereo_camera_pkg'), ('TURTLEBOT3_MODEL', 'burger'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.092598] (stereo_camera_pkg) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.6 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.098290] (-) TimerEvent: {}
+[0.198871] (-) TimerEvent: {}
+[0.283463] (stereo_camera_pkg) StdoutLine: {'line': b'-- Found rclcpp: 16.0.7 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.299155] (-) TimerEvent: {}
+[0.361651] (stereo_camera_pkg) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.368508] (stereo_camera_pkg) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.386543] (stereo_camera_pkg) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.399605] (-) TimerEvent: {}
+[0.410403] (stereo_camera_pkg) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.441235] (stereo_camera_pkg) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.499994] (-) TimerEvent: {}
+[0.529104] (stereo_camera_pkg) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.535441] (stereo_camera_pkg) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.5 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.600237] (-) TimerEvent: {}
+[0.649201] (stereo_camera_pkg) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.700620] (-) TimerEvent: {}
+[0.801354] (-) TimerEvent: {}
+[0.831300] (stereo_camera_pkg) StdoutLine: {'line': b'-- Found sensor_msgs: 4.9.0 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[0.901724] (-) TimerEvent: {}
+[0.949676] (stereo_camera_pkg) StdoutLine: {'line': b'-- Found cv_bridge: 3.2.1 (/opt/ros/humble/share/cv_bridge/cmake)\n'}
+[0.968765] (stereo_camera_pkg) StdoutLine: {'line': b'-- Found image_transport: 3.1.12 (/opt/ros/humble/share/image_transport/cmake)\n'}
+[1.002071] (-) TimerEvent: {}
+[1.013180] (stereo_camera_pkg) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.9 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[1.091298] (stereo_camera_pkg) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[1.091639] (stereo_camera_pkg) StdoutLine: {'line': b'-- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/yahboom/camera_ws/src/stereo_camera_pkg/include>\n'}
+[1.091731] (stereo_camera_pkg) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[1.092524] (stereo_camera_pkg) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[1.093514] (stereo_camera_pkg) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[1.094491] (stereo_camera_pkg) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[1.096101] (stereo_camera_pkg) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[1.096242] (stereo_camera_pkg) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[1.096821] (stereo_camera_pkg) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[1.098916] (stereo_camera_pkg) StdoutLine: {'line': b'-- Configuring done\n'}
+[1.102509] (-) TimerEvent: {}
+[1.144035] (stereo_camera_pkg) StdoutLine: {'line': b'-- Generating done\n'}
+[1.149104] (stereo_camera_pkg) StdoutLine: {'line': b'-- Build files have been written to: /home/yahboom/camera_ws/build/stereo_camera_pkg\n'}
+[1.183196] (stereo_camera_pkg) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target right_camera_node\x1b[0m\n'}
+[1.183361] (stereo_camera_pkg) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target stereo_camera_node\x1b[0m\n'}
+[1.183400] (stereo_camera_pkg) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target left_camera_node\x1b[0m\n'}
+[1.202970] (-) TimerEvent: {}
+[1.206610] (stereo_camera_pkg) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/stereo_camera_node.dir/src/stereo_camera_node.cpp.o\x1b[0m\n'}
+[1.206782] (stereo_camera_pkg) StdoutLine: {'line': b'[ 50%] Built target right_camera_node\n'}
+[1.206876] (stereo_camera_pkg) StdoutLine: {'line': b'[ 83%] Built target left_camera_node\n'}
+[1.304247] (-) TimerEvent: {}
+[1.404988] (-) TimerEvent: {}
+[1.506022] (-) TimerEvent: {}
+[1.606967] (-) TimerEvent: {}
+[1.707899] (-) TimerEvent: {}
+[1.808345] (-) TimerEvent: {}
+[1.908862] (-) TimerEvent: {}
+[2.010015] (-) TimerEvent: {}
+[2.110896] (-) TimerEvent: {}
+[2.211752] (-) TimerEvent: {}
+[2.312675] (-) TimerEvent: {}
+[2.413636] (-) TimerEvent: {}
+[2.514563] (-) TimerEvent: {}
+[2.615710] (-) TimerEvent: {}
+[2.717113] (-) TimerEvent: {}
+[2.817682] (-) TimerEvent: {}
+[2.918279] (-) TimerEvent: {}
+[3.018831] (-) TimerEvent: {}
+[3.119530] (-) TimerEvent: {}
+[3.220133] (-) TimerEvent: {}
+[3.321152] (-) TimerEvent: {}
+[3.421766] (-) TimerEvent: {}
+[3.522432] (-) TimerEvent: {}
+[3.623927] (-) TimerEvent: {}
+[3.724796] (-) TimerEvent: {}
+[3.826819] (-) TimerEvent: {}
+[3.927431] (-) TimerEvent: {}
+[4.028132] (-) TimerEvent: {}
+[4.128975] (-) TimerEvent: {}
+[4.194046] (stereo_camera_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/yahboom/camera_ws/src/stereo_camera_pkg/src/stereo_camera_node.cpp:292:59:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KSharedPtr\x1b[m\x1b[K\xe2\x80\x99 in \xe2\x80\x98\x1b[01m\x1b[Kclass message_filters::Subscriber<sensor_msgs::msg::Image_<std::allocator<void> > >\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[4.194280] (stereo_camera_pkg) StderrLine: {'line': b'  292 |     message_filters::Subscriber<sensor_msgs::msg::Image>::\x1b[01;31m\x1b[KSharedPtr\x1b[m\x1b[K sub_left_raw_;\n'}
+[4.194345] (stereo_camera_pkg) StderrLine: {'line': b'      |                                                           \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[4.194403] (stereo_camera_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/yahboom/camera_ws/src/stereo_camera_pkg/src/stereo_camera_node.cpp:293:59:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KSharedPtr\x1b[m\x1b[K\xe2\x80\x99 in \xe2\x80\x98\x1b[01m\x1b[Kclass message_filters::Subscriber<sensor_msgs::msg::Image_<std::allocator<void> > >\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[4.194516] (stereo_camera_pkg) StderrLine: {'line': b'  293 |     message_filters::Subscriber<sensor_msgs::msg::Image>::\x1b[01;31m\x1b[KSharedPtr\x1b[m\x1b[K sub_right_raw_;\n'}
+[4.194575] (stereo_camera_pkg) StderrLine: {'line': b'      |                                                           \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[4.229360] (-) TimerEvent: {}
+[4.230512] (stereo_camera_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/yahboom/camera_ws/src/stereo_camera_pkg/src/stereo_camera_node.cpp:294:64:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KSharedPtr\x1b[m\x1b[K\xe2\x80\x99 in \xe2\x80\x98\x1b[01m\x1b[Kclass message_filters::Subscriber<sensor_msgs::msg::CameraInfo_<std::allocator<void> > >\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[4.230721] (stereo_camera_pkg) StderrLine: {'line': b'  294 |     message_filters::Subscriber<sensor_msgs::msg::CameraInfo>::\x1b[01;31m\x1b[KSharedPtr\x1b[m\x1b[K sub_left_info_;\n'}
+[4.230806] (stereo_camera_pkg) StderrLine: {'line': b'      |                                                                \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[4.230881] (stereo_camera_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/yahboom/camera_ws/src/stereo_camera_pkg/src/stereo_camera_node.cpp:295:64:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KSharedPtr\x1b[m\x1b[K\xe2\x80\x99 in \xe2\x80\x98\x1b[01m\x1b[Kclass message_filters::Subscriber<sensor_msgs::msg::CameraInfo_<std::allocator<void> > >\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[4.230932] (stereo_camera_pkg) StderrLine: {'line': b'  295 |     message_filters::Subscriber<sensor_msgs::msg::CameraInfo>::\x1b[01;31m\x1b[KSharedPtr\x1b[m\x1b[K sub_right_info_;\n'}
+[4.230979] (stereo_camera_pkg) StderrLine: {'line': b'      |                                                                \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[4.292081] (stereo_camera_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/yahboom/camera_ws/src/stereo_camera_pkg/src/stereo_camera_node.cpp:296:48:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KSharedPtr\x1b[m\x1b[K\xe2\x80\x99 in \xe2\x80\x98\x1b[01m\x1b[Kclass message_filters::Synchronizer<message_filters::sync_policies::ApproximateTime<sensor_msgs::msg::Image_<std::allocator<void> >, sensor_msgs::msg::Image_<std::allocator<void> >, sensor_msgs::msg::CameraInfo_<std::allocator<void> >, sensor_msgs::msg::CameraInfo_<std::allocator<void> > > >\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[4.292328] (stereo_camera_pkg) StderrLine: {'line': b'  296 |     message_filters::Synchronizer<SyncPolicy>::\x1b[01;31m\x1b[KSharedPtr\x1b[m\x1b[K sync_;\n'}
+[4.292431] (stereo_camera_pkg) StderrLine: {'line': b'      |                                                \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[4.305156] (stereo_camera_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/yahboom/camera_ws/src/stereo_camera_pkg/src/stereo_camera_node.cpp:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[KStereoCameraNode::StereoCameraNode()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[4.305379] (stereo_camera_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/yahboom/camera_ws/src/stereo_camera_pkg/src/stereo_camera_node.cpp:79:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksub_left_raw_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Kpub_left_raw_\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[4.305427] (stereo_camera_pkg) StderrLine: {'line': b'   79 |         \x1b[01;31m\x1b[Ksub_left_raw_\x1b[m\x1b[K = std::make_shared<message_filters::Subscriber<sensor_msgs::msg::Image>>(this, "/left_camera/image_raw");\n'}
+[4.305477] (stereo_camera_pkg) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.305619] (stereo_camera_pkg) StderrLine: {'line': b'      |         \x1b[32m\x1b[Kpub_left_raw_\x1b[m\x1b[K\n'}
+[4.316383] (stereo_camera_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/yahboom/camera_ws/src/stereo_camera_pkg/src/stereo_camera_node.cpp:80:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksub_right_raw_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Kpub_right_raw_\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[4.316595] (stereo_camera_pkg) StderrLine: {'line': b'   80 |         \x1b[01;31m\x1b[Ksub_right_raw_\x1b[m\x1b[K = std::make_shared<message_filters::Subscriber<sensor_msgs::msg::Image>>(this, "/right_camera/image_raw");\n'}
+[4.316657] (stereo_camera_pkg) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.316706] (stereo_camera_pkg) StderrLine: {'line': b'      |         \x1b[32m\x1b[Kpub_right_raw_\x1b[m\x1b[K\n'}
+[4.324490] (stereo_camera_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/yahboom/camera_ws/src/stereo_camera_pkg/src/stereo_camera_node.cpp:81:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksub_left_info_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Kpub_left_info_\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[4.324754] (stereo_camera_pkg) StderrLine: {'line': b'   81 |         \x1b[01;31m\x1b[Ksub_left_info_\x1b[m\x1b[K = std::make_shared<message_filters::Subscriber<sensor_msgs::msg::CameraInfo>>(this, "/left_camera/camera_info");\n'}
+[4.324832] (stereo_camera_pkg) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.324882] (stereo_camera_pkg) StderrLine: {'line': b'      |         \x1b[32m\x1b[Kpub_left_info_\x1b[m\x1b[K\n'}
+[4.329937] (-) TimerEvent: {}
+[4.337717] (stereo_camera_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/yahboom/camera_ws/src/stereo_camera_pkg/src/stereo_camera_node.cpp:82:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksub_right_info_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Kpub_right_info_\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[4.337900] (stereo_camera_pkg) StderrLine: {'line': b'   82 |         \x1b[01;31m\x1b[Ksub_right_info_\x1b[m\x1b[K = std::make_shared<message_filters::Subscriber<sensor_msgs::msg::CameraInfo>>(this, "/right_camera/camera_info");\n'}
+[4.337941] (stereo_camera_pkg) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.337974] (stereo_camera_pkg) StderrLine: {'line': b'      |         \x1b[32m\x1b[Kpub_right_info_\x1b[m\x1b[K\n'}
+[4.344001] (stereo_camera_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/yahboom/camera_ws/src/stereo_camera_pkg/src/stereo_camera_node.cpp:85:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksync_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Ksync\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[4.344253] (stereo_camera_pkg) StderrLine: {'line': b'   85 |         \x1b[01;31m\x1b[Ksync_\x1b[m\x1b[K = std::make_shared<message_filters::Synchronizer<SyncPolicy>>(\n'}
+[4.344322] (stereo_camera_pkg) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[4.344374] (stereo_camera_pkg) StderrLine: {'line': b'      |         \x1b[32m\x1b[Ksync\x1b[m\x1b[K\n'}
+[4.373503] (stereo_camera_pkg) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24\x1b[m\x1b[K,\n'}
+[4.373836] (stereo_camera_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40\x1b[m\x1b[K,\n'}
+[4.373898] (stereo_camera_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[4.373946] (stereo_camera_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[4.373978] (stereo_camera_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[4.374055] (stereo_camera_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[4.374111] (stereo_camera_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[4.374150] (stereo_camera_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[4.374183] (stereo_camera_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[4.374225] (stereo_camera_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[4.374255] (stereo_camera_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[4.374282] (stereo_camera_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/yahboom/camera_ws/src/stereo_camera_pkg/src/stereo_camera_node.cpp:1\x1b[m\x1b[K:\n'}
+[4.374310] (stereo_camera_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/yahboom/camera_ws/src/stereo_camera_pkg/src/stereo_camera_node.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid StereoCameraNode::sync_callback(const ConstSharedPtr&, const ConstSharedPtr&, const ConstSharedPtr&, const ConstSharedPtr&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[4.374341] (stereo_camera_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/yahboom/camera_ws/src/stereo_camera_pkg/src/stereo_camera_node.cpp:261:13:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kformat \xe2\x80\x98\x1b[01m\x1b[K%ld\x1b[m\x1b[K\xe2\x80\x99 expects argument of type \xe2\x80\x98\x1b[01m\x1b[Klong int\x1b[m\x1b[K\xe2\x80\x99, but argument 5 has type \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=\x07-Wformat=\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[4.374379] (stereo_camera_pkg) StderrLine: {'line': b'  261 |             \x1b[01;35m\x1b[K"Sync success! Timestamp: %ld.%09ld"\x1b[m\x1b[K,\n'}
+[4.374480] (stereo_camera_pkg) StderrLine: {'line': b'      |             \x1b[01;35m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.374528] (stereo_camera_pkg) StderrLine: {'line': b'  262 |             \x1b[32m\x1b[Kleft_img->header.stamp.sec\x1b[m\x1b[K, left_img->header.stamp.nanosec);\n'}
+[4.374562] (stereo_camera_pkg) StderrLine: {'line': b'      |             \x1b[32m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.374593] (stereo_camera_pkg) StderrLine: {'line': b'      |                                    \x1b[32m\x1b[K|\x1b[m\x1b[K\n'}
+[4.374819] (stereo_camera_pkg) StderrLine: {'line': b'      |                                    \x1b[32m\x1b[Kint\x1b[m\x1b[K\n'}
+[4.374886] (stereo_camera_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/yahboom/camera_ws/src/stereo_camera_pkg/src/stereo_camera_node.cpp:261:41:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kformat string is defined here\n'}
+[4.374939] (stereo_camera_pkg) StderrLine: {'line': b'  261 |             "Sync success! Timestamp: \x1b[01;36m\x1b[K%ld\x1b[m\x1b[K.%09ld",\n'}
+[4.374985] (stereo_camera_pkg) StderrLine: {'line': b'      |                                       \x1b[01;36m\x1b[K~~^\x1b[m\x1b[K\n'}
+[4.375028] (stereo_camera_pkg) StderrLine: {'line': b'      |                                         \x1b[01;36m\x1b[K|\x1b[m\x1b[K\n'}
+[4.375069] (stereo_camera_pkg) StderrLine: {'line': b'      |                                         \x1b[01;36m\x1b[Klong int\x1b[m\x1b[K\n'}
+[4.375119] (stereo_camera_pkg) StderrLine: {'line': b'      |                                       \x1b[32m\x1b[K%d\x1b[m\x1b[K\n'}
+[4.375169] (stereo_camera_pkg) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24\x1b[m\x1b[K,\n'}
+[4.375214] (stereo_camera_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40\x1b[m\x1b[K,\n'}
+[4.375256] (stereo_camera_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[4.375299] (stereo_camera_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[4.375340] (stereo_camera_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[4.375386] (stereo_camera_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[4.375428] (stereo_camera_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[4.375467] (stereo_camera_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[4.375507] (stereo_camera_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[4.375546] (stereo_camera_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[4.375586] (stereo_camera_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[4.375630] (stereo_camera_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/yahboom/camera_ws/src/stereo_camera_pkg/src/stereo_camera_node.cpp:1\x1b[m\x1b[K:\n'}
+[4.375670] (stereo_camera_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/yahboom/camera_ws/src/stereo_camera_pkg/src/stereo_camera_node.cpp:261:13:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kformat \xe2\x80\x98\x1b[01m\x1b[K%ld\x1b[m\x1b[K\xe2\x80\x99 expects argument of type \xe2\x80\x98\x1b[01m\x1b[Klong int\x1b[m\x1b[K\xe2\x80\x99, but argument 6 has type \xe2\x80\x98\x1b[01m\x1b[Kunsigned int\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=\x07-Wformat=\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[4.375714] (stereo_camera_pkg) StderrLine: {'line': b'  261 |             \x1b[01;35m\x1b[K"Sync success! Timestamp: %ld.%09ld"\x1b[m\x1b[K,\n'}
+[4.375924] (stereo_camera_pkg) StderrLine: {'line': b'      |             \x1b[01;35m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.376007] (stereo_camera_pkg) StderrLine: {'line': b'  262 |             left_img->header.stamp.sec, \x1b[32m\x1b[Kleft_img->header.stamp.nanosec\x1b[m\x1b[K);\n'}
+[4.376063] (stereo_camera_pkg) StderrLine: {'line': b'      |                                         \x1b[32m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.376112] (stereo_camera_pkg) StderrLine: {'line': b'      |                                                                \x1b[32m\x1b[K|\x1b[m\x1b[K\n'}
+[4.376156] (stereo_camera_pkg) StderrLine: {'line': b'      |                                                                \x1b[32m\x1b[Kunsigned int\x1b[m\x1b[K\n'}
+[4.376198] (stereo_camera_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/yahboom/camera_ws/src/stereo_camera_pkg/src/stereo_camera_node.cpp:261:47:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kformat string is defined here\n'}
+[4.376251] (stereo_camera_pkg) StderrLine: {'line': b'  261 |             "Sync success! Timestamp: %ld.\x1b[01;36m\x1b[K%09ld\x1b[m\x1b[K",\n'}
+[4.376299] (stereo_camera_pkg) StderrLine: {'line': b'      |                                           \x1b[01;36m\x1b[K~~~~^\x1b[m\x1b[K\n'}
+[4.376343] (stereo_camera_pkg) StderrLine: {'line': b'      |                                               \x1b[01;36m\x1b[K|\x1b[m\x1b[K\n'}
+[4.376387] (stereo_camera_pkg) StderrLine: {'line': b'      |                                               \x1b[01;36m\x1b[Klong int\x1b[m\x1b[K\n'}
+[4.376428] (stereo_camera_pkg) StderrLine: {'line': b'      |                                           \x1b[32m\x1b[K%09d\x1b[m\x1b[K\n'}
+[4.430155] (-) TimerEvent: {}
+[4.530689] (-) TimerEvent: {}
+[4.631555] (-) TimerEvent: {}
+[4.732412] (-) TimerEvent: {}
+[4.833247] (-) TimerEvent: {}
+[4.934163] (-) TimerEvent: {}
+[5.034839] (-) TimerEvent: {}
+[5.135889] (-) TimerEvent: {}
+[5.236896] (-) TimerEvent: {}
+[5.337728] (-) TimerEvent: {}
+[5.438492] (-) TimerEvent: {}
+[5.539328] (-) TimerEvent: {}
+[5.639923] (-) TimerEvent: {}
+[5.740743] (-) TimerEvent: {}
+[5.841299] (-) TimerEvent: {}
+[5.941940] (-) TimerEvent: {}
+[6.042669] (-) TimerEvent: {}
+[6.143178] (-) TimerEvent: {}
+[6.244078] (-) TimerEvent: {}
+[6.345026] (-) TimerEvent: {}
+[6.445676] (-) TimerEvent: {}
+[6.546710] (-) TimerEvent: {}
+[6.647626] (-) TimerEvent: {}
+[6.748501] (-) TimerEvent: {}
+[6.849232] (-) TimerEvent: {}
+[6.949915] (-) TimerEvent: {}
+[7.050751] (-) TimerEvent: {}
+[7.151428] (-) TimerEvent: {}
+[7.252177] (-) TimerEvent: {}
+[7.353143] (-) TimerEvent: {}
+[7.453963] (-) TimerEvent: {}
+[7.554757] (-) TimerEvent: {}
+[7.655747] (-) TimerEvent: {}
+[7.756577] (-) TimerEvent: {}
+[7.857598] (-) TimerEvent: {}
+[7.958646] (-) TimerEvent: {}
+[8.059802] (-) TimerEvent: {}
+[8.160865] (-) TimerEvent: {}
+[8.261881] (-) TimerEvent: {}
+[8.362744] (-) TimerEvent: {}
+[8.463784] (-) TimerEvent: {}
+[8.481557] (stereo_camera_pkg) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/stereo_camera_node.dir/build.make:76: CMakeFiles/stereo_camera_node.dir/src/stereo_camera_node.cpp.o] Error 1\n'}
+[8.481975] (stereo_camera_pkg) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:141: CMakeFiles/stereo_camera_node.dir/all] Error 2\n'}
+[8.482403] (stereo_camera_pkg) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[8.484663] (stereo_camera_pkg) CommandEnded: {'returncode': 2}
+[8.564278] (-) TimerEvent: {}
+[8.583483] (stereo_camera_pkg) JobEnded: {'identifier': 'stereo_camera_pkg', 'rc': 2}
+[8.594485] (-) EventReactorShutdown: {}

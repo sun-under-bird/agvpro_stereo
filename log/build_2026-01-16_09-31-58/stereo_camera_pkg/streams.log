@@ -1,0 +1,12 @@
+[0.042s] Invoking command in '/home/yahboom/camera_ws/build/stereo_camera_pkg': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/yahboom/camera_ws/build/stereo_camera_pkg -- -j4 -l4
+[0.120s] [ 16%] [32mBuilding CXX object CMakeFiles/stereo_camera_node.dir/src/stereo_camera_node.cpp.o[0m
+[0.123s] [ 50%] Built target right_camera_node
+[0.133s] [ 83%] Built target left_camera_node
+[0.461s] [01m[K/home/yahboom/camera_ws/src/stereo_camera_pkg/src/stereo_camera_node.cpp:11:10:[m[K [01;31m[Kfatal error: [m[Kcamera_info  struct.hpp: No such file or directory
+[0.461s]    11 | #include [01;31m[K<camera_info  struct.hpp>[m[K
+[0.461s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.461s] compilation terminated.
+[0.465s] gmake[2]: *** [CMakeFiles/stereo_camera_node.dir/build.make:76: CMakeFiles/stereo_camera_node.dir/src/stereo_camera_node.cpp.o] Error 1
+[0.466s] gmake[1]: *** [CMakeFiles/Makefile2:141: CMakeFiles/stereo_camera_node.dir/all] Error 2
+[0.466s] gmake: *** [Makefile:146: all] Error 2
+[0.468s] Invoked command in '/home/yahboom/camera_ws/build/stereo_camera_pkg' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/yahboom/camera_ws/build/stereo_camera_pkg -- -j4 -l4

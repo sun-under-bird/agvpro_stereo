@@ -1,0 +1,144 @@
+[1.404s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--packages-select', 'stereo_camera_pkg']
+[1.405s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=4, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=['stereo_camera_pkg'], packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x74dd11dfa470>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x74dd12035420>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x74dd12035420>>)
+[1.517s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[1.517s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[1.517s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[1.517s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[1.517s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[1.517s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[1.517s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/yahboom/camera_ws'
+[1.517s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[1.517s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[1.517s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[1.517s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[1.517s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[1.517s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[1.517s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[1.517s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[1.517s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[1.551s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[1.551s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[1.551s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[1.551s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[1.551s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[1.551s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[1.551s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[1.551s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[1.552s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[1.552s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[1.552s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[1.552s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[1.552s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[1.552s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[1.552s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[1.552s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[1.552s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[1.552s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[1.552s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[1.552s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[1.552s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[1.552s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[1.552s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[1.552s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[1.552s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[1.552s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[1.552s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[1.552s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[1.552s] Level 1:colcon.colcon_core.package_identification:_identify(src/stereo_camera_pkg) by extensions ['ignore', 'ignore_ament_install']
+[1.552s] Level 1:colcon.colcon_core.package_identification:_identify(src/stereo_camera_pkg) by extension 'ignore'
+[1.553s] Level 1:colcon.colcon_core.package_identification:_identify(src/stereo_camera_pkg) by extension 'ignore_ament_install'
+[1.553s] Level 1:colcon.colcon_core.package_identification:_identify(src/stereo_camera_pkg) by extensions ['colcon_pkg']
+[1.553s] Level 1:colcon.colcon_core.package_identification:_identify(src/stereo_camera_pkg) by extension 'colcon_pkg'
+[1.553s] Level 1:colcon.colcon_core.package_identification:_identify(src/stereo_camera_pkg) by extensions ['colcon_meta']
+[1.553s] Level 1:colcon.colcon_core.package_identification:_identify(src/stereo_camera_pkg) by extension 'colcon_meta'
+[1.553s] Level 1:colcon.colcon_core.package_identification:_identify(src/stereo_camera_pkg) by extensions ['ros']
+[1.553s] Level 1:colcon.colcon_core.package_identification:_identify(src/stereo_camera_pkg) by extension 'ros'
+[1.563s] DEBUG:colcon.colcon_core.package_identification:Package 'src/stereo_camera_pkg' with type 'ros.ament_cmake' and name 'stereo_camera_pkg'
+[1.563s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[1.563s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[1.563s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[1.563s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[1.563s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[1.683s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[1.683s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[1.729s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 8 installed packages in /home/yahboom/yahboomcar_ros2_ws/yahboomcar_ws/install
+[1.756s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 4 installed packages in /home/yahboom/imu_ws/install
+[1.769s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 2 installed packages in /home/yahboom/gmapping_ws/install
+[1.781s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 12 installed packages in /home/yahboom/yahboomcar_ws/install
+[1.795s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 350 installed packages in /opt/ros/humble
+[1.797s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[1.998s] Level 5:colcon.colcon_core.verb:set package 'stereo_camera_pkg' build argument 'cmake_args' from command line to 'None'
+[1.998s] Level 5:colcon.colcon_core.verb:set package 'stereo_camera_pkg' build argument 'cmake_target' from command line to 'None'
+[1.998s] Level 5:colcon.colcon_core.verb:set package 'stereo_camera_pkg' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.999s] Level 5:colcon.colcon_core.verb:set package 'stereo_camera_pkg' build argument 'cmake_clean_cache' from command line to 'False'
+[1.999s] Level 5:colcon.colcon_core.verb:set package 'stereo_camera_pkg' build argument 'cmake_clean_first' from command line to 'False'
+[1.999s] Level 5:colcon.colcon_core.verb:set package 'stereo_camera_pkg' build argument 'cmake_force_configure' from command line to 'False'
+[1.999s] Level 5:colcon.colcon_core.verb:set package 'stereo_camera_pkg' build argument 'ament_cmake_args' from command line to 'None'
+[1.999s] Level 5:colcon.colcon_core.verb:set package 'stereo_camera_pkg' build argument 'catkin_cmake_args' from command line to 'None'
+[1.999s] Level 5:colcon.colcon_core.verb:set package 'stereo_camera_pkg' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.999s] DEBUG:colcon.colcon_core.verb:Building package 'stereo_camera_pkg' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/yahboom/camera_ws/build/stereo_camera_pkg', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/yahboom/camera_ws/install/stereo_camera_pkg', 'merge_install': False, 'path': '/home/yahboom/camera_ws/src/stereo_camera_pkg', 'symlink_install': False, 'test_result_base': None}
+[2.011s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[2.025s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[2.025s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/yahboom/camera_ws/src/stereo_camera_pkg' with build type 'ament_cmake'
+[2.025s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/yahboom/camera_ws/src/stereo_camera_pkg'
+[2.058s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[2.059s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.059s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.163s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/yahboom/camera_ws/build/stereo_camera_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/yahboom/yahboomcar_ws/install/yahboomcar_nav:/home/yahboom/yahboomcar_ws/install/yahboomcar_multi:/home/yahboom/yahboomcar_ws/install/yahboomcar_laser:/home/yahboom/yahboomcar_ws/install/yahboomcar_description:/home/yahboom/yahboomcar_ws/install/yahboomcar_ctrl:/home/yahboom/yahboomcar_ws/install/yahboomcar_bringup:/home/yahboom/yahboomcar_ws/install/yahboom_app_save_map:/home/yahboom/yahboomcar_ws/install/laserscan_to_point_publisher:/home/yahboom/yahboomcar_ros2_ws/yahboomcar_ws/install/pkg_topic:/home/yahboom/yahboomcar_ros2_ws/yahboomcar_ws/install/pkg_tf:/home/yahboom/yahboomcar_ros2_ws/yahboomcar_ws/install/pkg_service:/home/yahboom/yahboomcar_ros2_ws/yahboomcar_ws/install/pkg_param:/home/yahboom/yahboomcar_ros2_ws/yahboomcar_ws/install/pkg_action:/home/yahboom/yahboomcar_ros2_ws/yahboomcar_ws/install/pkg_helloworld_py:/opt/ros/humble /usr/bin/cmake --build /home/yahboom/camera_ws/build/stereo_camera_pkg -- -j4 -l4
+[2.610s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/yahboom/camera_ws/build/stereo_camera_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/yahboom/yahboomcar_ws/install/yahboomcar_nav:/home/yahboom/yahboomcar_ws/install/yahboomcar_multi:/home/yahboom/yahboomcar_ws/install/yahboomcar_laser:/home/yahboom/yahboomcar_ws/install/yahboomcar_description:/home/yahboom/yahboomcar_ws/install/yahboomcar_ctrl:/home/yahboom/yahboomcar_ws/install/yahboomcar_bringup:/home/yahboom/yahboomcar_ws/install/yahboom_app_save_map:/home/yahboom/yahboomcar_ws/install/laserscan_to_point_publisher:/home/yahboom/yahboomcar_ros2_ws/yahboomcar_ws/install/pkg_topic:/home/yahboom/yahboomcar_ros2_ws/yahboomcar_ws/install/pkg_tf:/home/yahboom/yahboomcar_ros2_ws/yahboomcar_ws/install/pkg_service:/home/yahboom/yahboomcar_ros2_ws/yahboomcar_ws/install/pkg_param:/home/yahboom/yahboomcar_ros2_ws/yahboomcar_ws/install/pkg_action:/home/yahboom/yahboomcar_ros2_ws/yahboomcar_ws/install/pkg_helloworld_py:/opt/ros/humble /usr/bin/cmake --build /home/yahboom/camera_ws/build/stereo_camera_pkg -- -j4 -l4
+[2.689s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/yahboom/camera_ws/build/stereo_camera_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/yahboom/yahboomcar_ws/install/yahboomcar_nav:/home/yahboom/yahboomcar_ws/install/yahboomcar_multi:/home/yahboom/yahboomcar_ws/install/yahboomcar_laser:/home/yahboom/yahboomcar_ws/install/yahboomcar_description:/home/yahboom/yahboomcar_ws/install/yahboomcar_ctrl:/home/yahboom/yahboomcar_ws/install/yahboomcar_bringup:/home/yahboom/yahboomcar_ws/install/yahboom_app_save_map:/home/yahboom/yahboomcar_ws/install/laserscan_to_point_publisher:/home/yahboom/yahboomcar_ros2_ws/yahboomcar_ws/install/pkg_topic:/home/yahboom/yahboomcar_ros2_ws/yahboomcar_ws/install/pkg_tf:/home/yahboom/yahboomcar_ros2_ws/yahboomcar_ws/install/pkg_service:/home/yahboom/yahboomcar_ros2_ws/yahboomcar_ws/install/pkg_param:/home/yahboom/yahboomcar_ros2_ws/yahboomcar_ws/install/pkg_action:/home/yahboom/yahboomcar_ros2_ws/yahboomcar_ws/install/pkg_helloworld_py:/opt/ros/humble /usr/bin/cmake --install /home/yahboom/camera_ws/build/stereo_camera_pkg
+[2.721s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(stereo_camera_pkg)
+[2.722s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/yahboom/camera_ws/build/stereo_camera_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/yahboom/yahboomcar_ws/install/yahboomcar_nav:/home/yahboom/yahboomcar_ws/install/yahboomcar_multi:/home/yahboom/yahboomcar_ws/install/yahboomcar_laser:/home/yahboom/yahboomcar_ws/install/yahboomcar_description:/home/yahboom/yahboomcar_ws/install/yahboomcar_ctrl:/home/yahboom/yahboomcar_ws/install/yahboomcar_bringup:/home/yahboom/yahboomcar_ws/install/yahboom_app_save_map:/home/yahboom/yahboomcar_ws/install/laserscan_to_point_publisher:/home/yahboom/yahboomcar_ros2_ws/yahboomcar_ws/install/pkg_topic:/home/yahboom/yahboomcar_ros2_ws/yahboomcar_ws/install/pkg_tf:/home/yahboom/yahboomcar_ros2_ws/yahboomcar_ws/install/pkg_service:/home/yahboom/yahboomcar_ros2_ws/yahboomcar_ws/install/pkg_param:/home/yahboom/yahboomcar_ros2_ws/yahboomcar_ws/install/pkg_action:/home/yahboom/yahboomcar_ros2_ws/yahboomcar_ws/install/pkg_helloworld_py:/opt/ros/humble /usr/bin/cmake --install /home/yahboom/camera_ws/build/stereo_camera_pkg
+[2.751s] Level 1:colcon.colcon_core.environment:checking '/home/yahboom/camera_ws/install/stereo_camera_pkg' for CMake module files
+[2.752s] Level 1:colcon.colcon_core.environment:checking '/home/yahboom/camera_ws/install/stereo_camera_pkg' for CMake config files
+[2.752s] Level 1:colcon.colcon_core.shell:create_environment_hook('stereo_camera_pkg', 'cmake_prefix_path')
+[2.762s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yahboom/camera_ws/install/stereo_camera_pkg/share/stereo_camera_pkg/hook/cmake_prefix_path.ps1'
+[2.764s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/yahboom/camera_ws/install/stereo_camera_pkg/share/stereo_camera_pkg/hook/cmake_prefix_path.dsv'
+[2.766s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yahboom/camera_ws/install/stereo_camera_pkg/share/stereo_camera_pkg/hook/cmake_prefix_path.sh'
+[2.770s] Level 1:colcon.colcon_core.environment:checking '/home/yahboom/camera_ws/install/stereo_camera_pkg/lib'
+[2.771s] Level 1:colcon.colcon_core.environment:checking '/home/yahboom/camera_ws/install/stereo_camera_pkg/bin'
+[2.771s] Level 1:colcon.colcon_core.environment:checking '/home/yahboom/camera_ws/install/stereo_camera_pkg/lib/pkgconfig/stereo_camera_pkg.pc'
+[2.771s] Level 1:colcon.colcon_core.environment:checking '/home/yahboom/camera_ws/install/stereo_camera_pkg/lib/python3.10/site-packages'
+[2.771s] Level 1:colcon.colcon_core.environment:checking '/home/yahboom/camera_ws/install/stereo_camera_pkg/bin'
+[2.782s] INFO:colcon.colcon_core.shell:Creating package script '/home/yahboom/camera_ws/install/stereo_camera_pkg/share/stereo_camera_pkg/package.ps1'
+[2.785s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/yahboom/camera_ws/install/stereo_camera_pkg/share/stereo_camera_pkg/package.dsv'
+[2.787s] INFO:colcon.colcon_core.shell:Creating package script '/home/yahboom/camera_ws/install/stereo_camera_pkg/share/stereo_camera_pkg/package.sh'
+[2.789s] INFO:colcon.colcon_core.shell:Creating package script '/home/yahboom/camera_ws/install/stereo_camera_pkg/share/stereo_camera_pkg/package.bash'
+[2.791s] INFO:colcon.colcon_core.shell:Creating package script '/home/yahboom/camera_ws/install/stereo_camera_pkg/share/stereo_camera_pkg/package.zsh'
+[2.793s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/yahboom/camera_ws/install/stereo_camera_pkg/share/colcon-core/packages/stereo_camera_pkg)
+[2.872s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(stereo_camera_pkg)
+[2.883s] Level 1:colcon.colcon_core.environment:checking '/home/yahboom/camera_ws/install/stereo_camera_pkg' for CMake module files
+[2.883s] Level 1:colcon.colcon_core.environment:checking '/home/yahboom/camera_ws/install/stereo_camera_pkg' for CMake config files
+[2.883s] Level 1:colcon.colcon_core.shell:create_environment_hook('stereo_camera_pkg', 'cmake_prefix_path')
+[2.894s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yahboom/camera_ws/install/stereo_camera_pkg/share/stereo_camera_pkg/hook/cmake_prefix_path.ps1'
+[2.894s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/yahboom/camera_ws/install/stereo_camera_pkg/share/stereo_camera_pkg/hook/cmake_prefix_path.dsv'
+[2.895s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/yahboom/camera_ws/install/stereo_camera_pkg/share/stereo_camera_pkg/hook/cmake_prefix_path.sh'
+[2.896s] Level 1:colcon.colcon_core.environment:checking '/home/yahboom/camera_ws/install/stereo_camera_pkg/lib'
+[2.896s] Level 1:colcon.colcon_core.environment:checking '/home/yahboom/camera_ws/install/stereo_camera_pkg/bin'
+[2.896s] Level 1:colcon.colcon_core.environment:checking '/home/yahboom/camera_ws/install/stereo_camera_pkg/lib/pkgconfig/stereo_camera_pkg.pc'
+[2.896s] Level 1:colcon.colcon_core.environment:checking '/home/yahboom/camera_ws/install/stereo_camera_pkg/lib/python3.10/site-packages'
+[2.896s] Level 1:colcon.colcon_core.environment:checking '/home/yahboom/camera_ws/install/stereo_camera_pkg/bin'
+[2.906s] INFO:colcon.colcon_core.shell:Creating package script '/home/yahboom/camera_ws/install/stereo_camera_pkg/share/stereo_camera_pkg/package.ps1'
+[2.906s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/yahboom/camera_ws/install/stereo_camera_pkg/share/stereo_camera_pkg/package.dsv'
+[2.907s] INFO:colcon.colcon_core.shell:Creating package script '/home/yahboom/camera_ws/install/stereo_camera_pkg/share/stereo_camera_pkg/package.sh'
+[2.907s] INFO:colcon.colcon_core.shell:Creating package script '/home/yahboom/camera_ws/install/stereo_camera_pkg/share/stereo_camera_pkg/package.bash'
+[2.908s] INFO:colcon.colcon_core.shell:Creating package script '/home/yahboom/camera_ws/install/stereo_camera_pkg/share/stereo_camera_pkg/package.zsh'
+[2.908s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/yahboom/camera_ws/install/stereo_camera_pkg/share/colcon-core/packages/stereo_camera_pkg)
+[2.909s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[2.910s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[2.910s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[2.911s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[2.940s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[2.940s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[2.940s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[3.025s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[3.036s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/yahboom/camera_ws/install/local_setup.ps1'
+[3.037s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/yahboom/camera_ws/install/_local_setup_util_ps1.py'
+[3.040s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/yahboom/camera_ws/install/setup.ps1'
+[3.054s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/yahboom/camera_ws/install/local_setup.sh'
+[3.055s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/yahboom/camera_ws/install/_local_setup_util_sh.py'
+[3.056s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/yahboom/camera_ws/install/setup.sh'
+[3.071s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/yahboom/camera_ws/install/local_setup.bash'
+[3.073s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/yahboom/camera_ws/install/setup.bash'
+[3.087s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/yahboom/camera_ws/install/local_setup.zsh'
+[3.089s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/yahboom/camera_ws/install/setup.zsh'

@@ -1,0 +1,7 @@
+[01m[K/home/yahboom/camera_ws/src/stereo_camera_pkg/src/stereo_camera_node.cpp:11:10:[m[K [01;31m[Kfatal error: [m[Kcamera_info  struct.hpp: No such file or directory
+   11 | #include [01;31m[K<camera_info  struct.hpp>[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/stereo_camera_node.dir/build.make:76: CMakeFiles/stereo_camera_node.dir/src/stereo_camera_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:141: CMakeFiles/stereo_camera_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

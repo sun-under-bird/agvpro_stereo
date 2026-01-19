@@ -1,0 +1,14 @@
+[35m[1mConsolidate compiler generated dependencies of target stereo_camera_node[0m
+[ 33%] Built target right_camera_node
+[ 66%] Built target left_camera_node
+[ 83%] [32mBuilding CXX object CMakeFiles/stereo_camera_node.dir/src/stereo_camera_node.cpp.o[0m
+[01m[K/home/yahboom/camera_ws/src/stereo_camera_pkg/src/stereo_camera_node.cpp:[m[K In member function ‘[01m[Kvoid StereoCameraNode::stereo_callback()[m[K’:
+[01m[K/home/yahboom/camera_ws/src/stereo_camera_pkg/src/stereo_camera_node.cpp:181:26:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing _header_type = struct std_msgs::msg::Header_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct std_msgs::msg::Header_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kseq[m[K’
+  181 |         msg_left->header.[01;31m[Kseq[m[K = frame_seq_;
+      |                          [01;31m[K^~~[m[K
+[01m[K/home/yahboom/camera_ws/src/stereo_camera_pkg/src/stereo_camera_node.cpp:185:27:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing _header_type = struct std_msgs::msg::Header_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct std_msgs::msg::Header_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kseq[m[K’
+  185 |         msg_right->header.[01;31m[Kseq[m[K = frame_seq_;
+      |                           [01;31m[K^~~[m[K
+gmake[2]: *** [CMakeFiles/stereo_camera_node.dir/build.make:76: CMakeFiles/stereo_camera_node.dir/src/stereo_camera_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:141: CMakeFiles/stereo_camera_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

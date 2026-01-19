@@ -1,0 +1,124 @@
+[0.042s] Invoking command in '/home/yahboom/camera_ws/build/stereo_camera_pkg': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/yahboom/camera_ws/build/stereo_camera_pkg -- -j4 -l4
+[0.091s] -- Found ament_cmake: 1.3.6 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.282s] -- Found rclcpp: 16.0.7 (/opt/ros/humble/share/rclcpp/cmake)
+[0.360s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.367s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.385s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.409s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.440s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.528s] -- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.534s] -- Found rmw_fastrtps_cpp: 6.2.5 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.648s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.830s] -- Found sensor_msgs: 4.9.0 (/opt/ros/humble/share/sensor_msgs/cmake)
+[0.948s] -- Found cv_bridge: 3.2.1 (/opt/ros/humble/share/cv_bridge/cmake)
+[0.967s] -- Found image_transport: 3.1.12 (/opt/ros/humble/share/image_transport/cmake)
+[1.012s] -- Found ament_lint_auto: 0.12.9 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.090s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.090s] -- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/yahboom/camera_ws/src/stereo_camera_pkg/include>
+[1.090s] -- Configured cppcheck exclude dirs and/or files: 
+[1.091s] -- Added test 'flake8' to check Python code syntax and style conventions
+[1.092s] -- Added test 'lint_cmake' to check CMake code style
+[1.093s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[1.095s] -- Added test 'uncrustify' to check C / C++ code style
+[1.095s] -- Configured uncrustify additional arguments: 
+[1.095s] -- Added test 'xmllint' to check XML markup files
+[1.098s] -- Configuring done
+[1.143s] -- Generating done
+[1.148s] -- Build files have been written to: /home/yahboom/camera_ws/build/stereo_camera_pkg
+[1.182s] [35m[1mConsolidate compiler generated dependencies of target right_camera_node[0m
+[1.182s] [35m[1mConsolidate compiler generated dependencies of target stereo_camera_node[0m
+[1.182s] [35m[1mConsolidate compiler generated dependencies of target left_camera_node[0m
+[1.205s] [ 33%] [32mBuilding CXX object CMakeFiles/stereo_camera_node.dir/src/stereo_camera_node.cpp.o[0m
+[1.205s] [ 50%] Built target right_camera_node
+[1.205s] [ 83%] Built target left_camera_node
+[4.193s] [01m[K/home/yahboom/camera_ws/src/stereo_camera_pkg/src/stereo_camera_node.cpp:292:59:[m[K [01;31m[Kerror: [m[K‘[01m[KSharedPtr[m[K’ in ‘[01m[Kclass message_filters::Subscriber<sensor_msgs::msg::Image_<std::allocator<void> > >[m[K’ does not name a type
+[4.193s]   292 |     message_filters::Subscriber<sensor_msgs::msg::Image>::[01;31m[KSharedPtr[m[K sub_left_raw_;
+[4.193s]       |                                                           [01;31m[K^~~~~~~~~[m[K
+[4.193s] [01m[K/home/yahboom/camera_ws/src/stereo_camera_pkg/src/stereo_camera_node.cpp:293:59:[m[K [01;31m[Kerror: [m[K‘[01m[KSharedPtr[m[K’ in ‘[01m[Kclass message_filters::Subscriber<sensor_msgs::msg::Image_<std::allocator<void> > >[m[K’ does not name a type
+[4.193s]   293 |     message_filters::Subscriber<sensor_msgs::msg::Image>::[01;31m[KSharedPtr[m[K sub_right_raw_;
+[4.193s]       |                                                           [01;31m[K^~~~~~~~~[m[K
+[4.229s] [01m[K/home/yahboom/camera_ws/src/stereo_camera_pkg/src/stereo_camera_node.cpp:294:64:[m[K [01;31m[Kerror: [m[K‘[01m[KSharedPtr[m[K’ in ‘[01m[Kclass message_filters::Subscriber<sensor_msgs::msg::CameraInfo_<std::allocator<void> > >[m[K’ does not name a type
+[4.229s]   294 |     message_filters::Subscriber<sensor_msgs::msg::CameraInfo>::[01;31m[KSharedPtr[m[K sub_left_info_;
+[4.229s]       |                                                                [01;31m[K^~~~~~~~~[m[K
+[4.229s] [01m[K/home/yahboom/camera_ws/src/stereo_camera_pkg/src/stereo_camera_node.cpp:295:64:[m[K [01;31m[Kerror: [m[K‘[01m[KSharedPtr[m[K’ in ‘[01m[Kclass message_filters::Subscriber<sensor_msgs::msg::CameraInfo_<std::allocator<void> > >[m[K’ does not name a type
+[4.229s]   295 |     message_filters::Subscriber<sensor_msgs::msg::CameraInfo>::[01;31m[KSharedPtr[m[K sub_right_info_;
+[4.229s]       |                                                                [01;31m[K^~~~~~~~~[m[K
+[4.291s] [01m[K/home/yahboom/camera_ws/src/stereo_camera_pkg/src/stereo_camera_node.cpp:296:48:[m[K [01;31m[Kerror: [m[K‘[01m[KSharedPtr[m[K’ in ‘[01m[Kclass message_filters::Synchronizer<message_filters::sync_policies::ApproximateTime<sensor_msgs::msg::Image_<std::allocator<void> >, sensor_msgs::msg::Image_<std::allocator<void> >, sensor_msgs::msg::CameraInfo_<std::allocator<void> >, sensor_msgs::msg::CameraInfo_<std::allocator<void> > > >[m[K’ does not name a type
+[4.291s]   296 |     message_filters::Synchronizer<SyncPolicy>::[01;31m[KSharedPtr[m[K sync_;
+[4.291s]       |                                                [01;31m[K^~~~~~~~~[m[K
+[4.304s] [01m[K/home/yahboom/camera_ws/src/stereo_camera_pkg/src/stereo_camera_node.cpp:[m[K In constructor ‘[01m[KStereoCameraNode::StereoCameraNode()[m[K’:
+[4.304s] [01m[K/home/yahboom/camera_ws/src/stereo_camera_pkg/src/stereo_camera_node.cpp:79:9:[m[K [01;31m[Kerror: [m[K‘[01m[Ksub_left_raw_[m[K’ was not declared in this scope; did you mean ‘[01m[Kpub_left_raw_[m[K’?
+[4.304s]    79 |         [01;31m[Ksub_left_raw_[m[K = std::make_shared<message_filters::Subscriber<sensor_msgs::msg::Image>>(this, "/left_camera/image_raw");
+[4.304s]       |         [01;31m[K^~~~~~~~~~~~~[m[K
+[4.304s]       |         [32m[Kpub_left_raw_[m[K
+[4.315s] [01m[K/home/yahboom/camera_ws/src/stereo_camera_pkg/src/stereo_camera_node.cpp:80:9:[m[K [01;31m[Kerror: [m[K‘[01m[Ksub_right_raw_[m[K’ was not declared in this scope; did you mean ‘[01m[Kpub_right_raw_[m[K’?
+[4.315s]    80 |         [01;31m[Ksub_right_raw_[m[K = std::make_shared<message_filters::Subscriber<sensor_msgs::msg::Image>>(this, "/right_camera/image_raw");
+[4.315s]       |         [01;31m[K^~~~~~~~~~~~~~[m[K
+[4.315s]       |         [32m[Kpub_right_raw_[m[K
+[4.323s] [01m[K/home/yahboom/camera_ws/src/stereo_camera_pkg/src/stereo_camera_node.cpp:81:9:[m[K [01;31m[Kerror: [m[K‘[01m[Ksub_left_info_[m[K’ was not declared in this scope; did you mean ‘[01m[Kpub_left_info_[m[K’?
+[4.323s]    81 |         [01;31m[Ksub_left_info_[m[K = std::make_shared<message_filters::Subscriber<sensor_msgs::msg::CameraInfo>>(this, "/left_camera/camera_info");
+[4.323s]       |         [01;31m[K^~~~~~~~~~~~~~[m[K
+[4.323s]       |         [32m[Kpub_left_info_[m[K
+[4.336s] [01m[K/home/yahboom/camera_ws/src/stereo_camera_pkg/src/stereo_camera_node.cpp:82:9:[m[K [01;31m[Kerror: [m[K‘[01m[Ksub_right_info_[m[K’ was not declared in this scope; did you mean ‘[01m[Kpub_right_info_[m[K’?
+[4.336s]    82 |         [01;31m[Ksub_right_info_[m[K = std::make_shared<message_filters::Subscriber<sensor_msgs::msg::CameraInfo>>(this, "/right_camera/camera_info");
+[4.336s]       |         [01;31m[K^~~~~~~~~~~~~~~[m[K
+[4.336s]       |         [32m[Kpub_right_info_[m[K
+[4.343s] [01m[K/home/yahboom/camera_ws/src/stereo_camera_pkg/src/stereo_camera_node.cpp:85:9:[m[K [01;31m[Kerror: [m[K‘[01m[Ksync_[m[K’ was not declared in this scope; did you mean ‘[01m[Ksync[m[K’?
+[4.343s]    85 |         [01;31m[Ksync_[m[K = std::make_shared<message_filters::Synchronizer<SyncPolicy>>(
+[4.343s]       |         [01;31m[K^~~~~[m[K
+[4.343s]       |         [32m[Ksync[m[K
+[4.372s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[4.372s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[4.372s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[4.372s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[4.372s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[4.373s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[4.373s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[4.373s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[4.373s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[4.373s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[4.373s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[4.373s]                  from [01m[K/home/yahboom/camera_ws/src/stereo_camera_pkg/src/stereo_camera_node.cpp:1[m[K:
+[4.373s] [01m[K/home/yahboom/camera_ws/src/stereo_camera_pkg/src/stereo_camera_node.cpp:[m[K In member function ‘[01m[Kvoid StereoCameraNode::sync_callback(const ConstSharedPtr&, const ConstSharedPtr&, const ConstSharedPtr&, const ConstSharedPtr&)[m[K’:
+[4.373s] [01m[K/home/yahboom/camera_ws/src/stereo_camera_pkg/src/stereo_camera_node.cpp:261:13:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%ld[m[K’ expects argument of type ‘[01m[Klong int[m[K’, but argument 5 has type ‘[01m[Kint[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+[4.373s]   261 |             [01;35m[K"Sync success! Timestamp: %ld.%09ld"[m[K,
+[4.373s]       |             [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[4.373s]   262 |             [32m[Kleft_img->header.stamp.sec[m[K, left_img->header.stamp.nanosec);
+[4.373s]       |             [32m[K~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[4.373s]       |                                    [32m[K|[m[K
+[4.373s]       |                                    [32m[Kint[m[K
+[4.373s] [01m[K/home/yahboom/camera_ws/src/stereo_camera_pkg/src/stereo_camera_node.cpp:261:41:[m[K [01;36m[Knote: [m[Kformat string is defined here
+[4.373s]   261 |             "Sync success! Timestamp: [01;36m[K%ld[m[K.%09ld",
+[4.373s]       |                                       [01;36m[K~~^[m[K
+[4.373s]       |                                         [01;36m[K|[m[K
+[4.374s]       |                                         [01;36m[Klong int[m[K
+[4.374s]       |                                       [32m[K%d[m[K
+[4.374s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[4.374s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[4.374s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[4.374s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[4.374s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[4.374s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[4.374s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[4.374s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[4.374s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[4.374s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[4.374s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[4.374s]                  from [01m[K/home/yahboom/camera_ws/src/stereo_camera_pkg/src/stereo_camera_node.cpp:1[m[K:
+[4.374s] [01m[K/home/yahboom/camera_ws/src/stereo_camera_pkg/src/stereo_camera_node.cpp:261:13:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%ld[m[K’ expects argument of type ‘[01m[Klong int[m[K’, but argument 6 has type ‘[01m[Kunsigned int[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+[4.374s]   261 |             [01;35m[K"Sync success! Timestamp: %ld.%09ld"[m[K,
+[4.374s]       |             [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[4.374s]   262 |             left_img->header.stamp.sec, [32m[Kleft_img->header.stamp.nanosec[m[K);
+[4.375s]       |                                         [32m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[4.375s]       |                                                                [32m[K|[m[K
+[4.375s]       |                                                                [32m[Kunsigned int[m[K
+[4.375s] [01m[K/home/yahboom/camera_ws/src/stereo_camera_pkg/src/stereo_camera_node.cpp:261:47:[m[K [01;36m[Knote: [m[Kformat string is defined here
+[4.375s]   261 |             "Sync success! Timestamp: %ld.[01;36m[K%09ld[m[K",
+[4.375s]       |                                           [01;36m[K~~~~^[m[K
+[4.375s]       |                                               [01;36m[K|[m[K
+[4.375s]       |                                               [01;36m[Klong int[m[K
+[4.375s]       |                                           [32m[K%09d[m[K
+[8.480s] gmake[2]: *** [CMakeFiles/stereo_camera_node.dir/build.make:76: CMakeFiles/stereo_camera_node.dir/src/stereo_camera_node.cpp.o] Error 1
+[8.480s] gmake[1]: *** [CMakeFiles/Makefile2:141: CMakeFiles/stereo_camera_node.dir/all] Error 2
+[8.481s] gmake: *** [Makefile:146: all] Error 2
+[8.483s] Invoked command in '/home/yahboom/camera_ws/build/stereo_camera_pkg' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/yahboom/camera_ws/build/stereo_camera_pkg -- -j4 -l4

@@ -1,0 +1,65 @@
+[0.105s] Invoking command in '/home/yahboom/camera_ws/build/stereo_camera_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/yahboom/yahboomcar_ws/install/yahboomcar_nav:/home/yahboom/yahboomcar_ws/install/yahboomcar_multi:/home/yahboom/yahboomcar_ws/install/yahboomcar_laser:/home/yahboom/yahboomcar_ws/install/yahboomcar_description:/home/yahboom/yahboomcar_ws/install/yahboomcar_ctrl:/home/yahboom/yahboomcar_ws/install/yahboomcar_bringup:/home/yahboom/yahboomcar_ws/install/yahboom_app_save_map:/home/yahboom/yahboomcar_ws/install/laserscan_to_point_publisher:/home/yahboom/yahboomcar_ros2_ws/yahboomcar_ws/install/pkg_topic:/home/yahboom/yahboomcar_ros2_ws/yahboomcar_ws/install/pkg_tf:/home/yahboom/yahboomcar_ros2_ws/yahboomcar_ws/install/pkg_service:/home/yahboom/yahboomcar_ros2_ws/yahboomcar_ws/install/pkg_param:/home/yahboom/yahboomcar_ros2_ws/yahboomcar_ws/install/pkg_action:/home/yahboom/yahboomcar_ros2_ws/yahboomcar_ws/install/pkg_helloworld_py:/opt/ros/humble /usr/bin/cmake --build /home/yahboom/camera_ws/build/stereo_camera_pkg -- -j4 -l4
+[0.136s] -- Found ament_cmake: 1.3.6 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.285s] -- Found rclcpp: 16.0.7 (/opt/ros/humble/share/rclcpp/cmake)
+[0.310s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.312s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.316s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.325s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.337s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.377s] -- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.379s] -- Found rmw_fastrtps_cpp: 6.2.5 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.448s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.559s] -- Found sensor_msgs: 4.9.0 (/opt/ros/humble/share/sensor_msgs/cmake)
+[0.648s] -- Found cv_bridge: 3.2.1 (/opt/ros/humble/share/cv_bridge/cmake)
+[0.657s] -- Found image_transport: 3.1.12 (/opt/ros/humble/share/image_transport/cmake)
+[0.684s] -- Found ament_lint_auto: 0.12.9 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.751s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.751s] -- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/yahboom/camera_ws/src/stereo_camera_pkg/include>
+[0.751s] -- Configured cppcheck exclude dirs and/or files: 
+[0.751s] -- Added test 'flake8' to check Python code syntax and style conventions
+[0.751s] -- Added test 'lint_cmake' to check CMake code style
+[0.751s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[0.753s] -- Added test 'uncrustify' to check C / C++ code style
+[0.753s] -- Configured uncrustify additional arguments: 
+[0.753s] -- Added test 'xmllint' to check XML markup files
+[0.754s] -- Configuring done
+[0.786s] -- Generating done
+[0.789s] -- Build files have been written to: /home/yahboom/camera_ws/build/stereo_camera_pkg
+[0.827s] [35m[1mConsolidate compiler generated dependencies of target stereo_camera_node[0m
+[0.827s] [35m[1mConsolidate compiler generated dependencies of target right_camera_node[0m
+[0.829s] [35m[1mConsolidate compiler generated dependencies of target left_camera_node[0m
+[0.856s] [ 66%] Built target left_camera_node
+[0.857s] [ 66%] Built target right_camera_node
+[0.859s] [ 83%] [32m[1mLinking CXX executable stereo_camera_node[0m
+[1.435s] [100%] Built target stereo_camera_node
+[1.452s] Invoked command in '/home/yahboom/camera_ws/build/stereo_camera_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/yahboom/yahboomcar_ws/install/yahboomcar_nav:/home/yahboom/yahboomcar_ws/install/yahboomcar_multi:/home/yahboom/yahboomcar_ws/install/yahboomcar_laser:/home/yahboom/yahboomcar_ws/install/yahboomcar_description:/home/yahboom/yahboomcar_ws/install/yahboomcar_ctrl:/home/yahboom/yahboomcar_ws/install/yahboomcar_bringup:/home/yahboom/yahboomcar_ws/install/yahboom_app_save_map:/home/yahboom/yahboomcar_ws/install/laserscan_to_point_publisher:/home/yahboom/yahboomcar_ros2_ws/yahboomcar_ws/install/pkg_topic:/home/yahboom/yahboomcar_ros2_ws/yahboomcar_ws/install/pkg_tf:/home/yahboom/yahboomcar_ros2_ws/yahboomcar_ws/install/pkg_service:/home/yahboom/yahboomcar_ros2_ws/yahboomcar_ws/install/pkg_param:/home/yahboom/yahboomcar_ros2_ws/yahboomcar_ws/install/pkg_action:/home/yahboom/yahboomcar_ros2_ws/yahboomcar_ws/install/pkg_helloworld_py:/opt/ros/humble /usr/bin/cmake --build /home/yahboom/camera_ws/build/stereo_camera_pkg -- -j4 -l4
+[1.522s] Invoking command in '/home/yahboom/camera_ws/build/stereo_camera_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/yahboom/yahboomcar_ws/install/yahboomcar_nav:/home/yahboom/yahboomcar_ws/install/yahboomcar_multi:/home/yahboom/yahboomcar_ws/install/yahboomcar_laser:/home/yahboom/yahboomcar_ws/install/yahboomcar_description:/home/yahboom/yahboomcar_ws/install/yahboomcar_ctrl:/home/yahboom/yahboomcar_ws/install/yahboomcar_bringup:/home/yahboom/yahboomcar_ws/install/yahboom_app_save_map:/home/yahboom/yahboomcar_ws/install/laserscan_to_point_publisher:/home/yahboom/yahboomcar_ros2_ws/yahboomcar_ws/install/pkg_topic:/home/yahboom/yahboomcar_ros2_ws/yahboomcar_ws/install/pkg_tf:/home/yahboom/yahboomcar_ros2_ws/yahboomcar_ws/install/pkg_service:/home/yahboom/yahboomcar_ros2_ws/yahboomcar_ws/install/pkg_param:/home/yahboom/yahboomcar_ros2_ws/yahboomcar_ws/install/pkg_action:/home/yahboom/yahboomcar_ros2_ws/yahboomcar_ws/install/pkg_helloworld_py:/opt/ros/humble /usr/bin/cmake --install /home/yahboom/camera_ws/build/stereo_camera_pkg
+[1.532s] -- Install configuration: ""
+[1.533s] -- Installing: /home/yahboom/camera_ws/install/stereo_camera_pkg/lib/stereo_camera_pkg/stereo_camera_node
+[1.535s] -- Set runtime path of "/home/yahboom/camera_ws/install/stereo_camera_pkg/lib/stereo_camera_pkg/stereo_camera_node" to ""
+[1.535s] -- Up-to-date: /home/yahboom/camera_ws/install/stereo_camera_pkg/lib/stereo_camera_pkg/left_camera_node
+[1.535s] -- Up-to-date: /home/yahboom/camera_ws/install/stereo_camera_pkg/lib/stereo_camera_pkg/right_camera_node
+[1.535s] -- Up-to-date: /home/yahboom/camera_ws/install/stereo_camera_pkg/share/stereo_camera_pkg
+[1.536s] -- Up-to-date: /home/yahboom/camera_ws/install/stereo_camera_pkg/share/stereo_camera_pkg/stereo_calibration.launch.py
+[1.536s] -- Up-to-date: /home/yahboom/camera_ws/install/stereo_camera_pkg/share/stereo_camera_pkg/stereo_camera.launch.py
+[1.536s] -- Up-to-date: /home/yahboom/camera_ws/install/stereo_camera_pkg/share/stereo_camera_pkg/stereo_rtabmap.launch.py
+[1.536s] -- Up-to-date: /home/yahboom/camera_ws/install/stereo_camera_pkg/share/stereo_camera_pkg/left_calibration.launch.py
+[1.536s] -- Up-to-date: /home/yahboom/camera_ws/install/stereo_camera_pkg/share/stereo_camera_pkg
+[1.536s] -- Installing: /home/yahboom/camera_ws/install/stereo_camera_pkg/share/stereo_camera_pkg/right_camera_info.yaml
+[1.536s] -- Installing: /home/yahboom/camera_ws/install/stereo_camera_pkg/share/stereo_camera_pkg/left_camera_info.yaml
+[1.536s] -- Up-to-date: /home/yahboom/camera_ws/install/stereo_camera_pkg/share/ament_index/resource_index/package_run_dependencies/stereo_camera_pkg
+[1.536s] -- Up-to-date: /home/yahboom/camera_ws/install/stereo_camera_pkg/share/ament_index/resource_index/parent_prefix_path/stereo_camera_pkg
+[1.536s] -- Up-to-date: /home/yahboom/camera_ws/install/stereo_camera_pkg/share/stereo_camera_pkg/environment/ament_prefix_path.sh
+[1.536s] -- Installing: /home/yahboom/camera_ws/install/stereo_camera_pkg/share/stereo_camera_pkg/environment/ament_prefix_path.dsv
+[1.536s] -- Up-to-date: /home/yahboom/camera_ws/install/stereo_camera_pkg/share/stereo_camera_pkg/environment/path.sh
+[1.537s] -- Installing: /home/yahboom/camera_ws/install/stereo_camera_pkg/share/stereo_camera_pkg/environment/path.dsv
+[1.537s] -- Up-to-date: /home/yahboom/camera_ws/install/stereo_camera_pkg/share/stereo_camera_pkg/local_setup.bash
+[1.537s] -- Up-to-date: /home/yahboom/camera_ws/install/stereo_camera_pkg/share/stereo_camera_pkg/local_setup.sh
+[1.537s] -- Up-to-date: /home/yahboom/camera_ws/install/stereo_camera_pkg/share/stereo_camera_pkg/local_setup.zsh
+[1.537s] -- Installing: /home/yahboom/camera_ws/install/stereo_camera_pkg/share/stereo_camera_pkg/local_setup.dsv
+[1.537s] -- Installing: /home/yahboom/camera_ws/install/stereo_camera_pkg/share/stereo_camera_pkg/package.dsv
+[1.537s] -- Up-to-date: /home/yahboom/camera_ws/install/stereo_camera_pkg/share/ament_index/resource_index/packages/stereo_camera_pkg
+[1.537s] -- Up-to-date: /home/yahboom/camera_ws/install/stereo_camera_pkg/share/stereo_camera_pkg/cmake/stereo_camera_pkgConfig.cmake
+[1.537s] -- Up-to-date: /home/yahboom/camera_ws/install/stereo_camera_pkg/share/stereo_camera_pkg/cmake/stereo_camera_pkgConfig-version.cmake
+[1.538s] -- Up-to-date: /home/yahboom/camera_ws/install/stereo_camera_pkg/share/stereo_camera_pkg/package.xml
+[1.540s] Invoked command in '/home/yahboom/camera_ws/build/stereo_camera_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/yahboom/yahboomcar_ws/install/yahboomcar_nav:/home/yahboom/yahboomcar_ws/install/yahboomcar_multi:/home/yahboom/yahboomcar_ws/install/yahboomcar_laser:/home/yahboom/yahboomcar_ws/install/yahboomcar_description:/home/yahboom/yahboomcar_ws/install/yahboomcar_ctrl:/home/yahboom/yahboomcar_ws/install/yahboomcar_bringup:/home/yahboom/yahboomcar_ws/install/yahboom_app_save_map:/home/yahboom/yahboomcar_ws/install/laserscan_to_point_publisher:/home/yahboom/yahboomcar_ros2_ws/yahboomcar_ws/install/pkg_topic:/home/yahboom/yahboomcar_ros2_ws/yahboomcar_ws/install/pkg_tf:/home/yahboom/yahboomcar_ros2_ws/yahboomcar_ws/install/pkg_service:/home/yahboom/yahboomcar_ros2_ws/yahboomcar_ws/install/pkg_param:/home/yahboom/yahboomcar_ros2_ws/yahboomcar_ws/install/pkg_action:/home/yahboom/yahboomcar_ros2_ws/yahboomcar_ws/install/pkg_helloworld_py:/opt/ros/humble /usr/bin/cmake --install /home/yahboom/camera_ws/build/stereo_camera_pkg
