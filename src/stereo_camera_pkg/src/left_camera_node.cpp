@@ -10,8 +10,8 @@ class StereoCameraNode:public rclcpp::Node{
     {
         //parameter
         this->declare_parameter<int>("left_cam_idx",0);
-        this->declare_parameter<int>("width",640);
-        this->declare_parameter<int>("height",480);
+        this->declare_parameter<int>("width",320);
+        this->declare_parameter<int>("height",240);
 
 
         //get parameter

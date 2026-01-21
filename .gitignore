@@ -1,0 +1,78 @@
+# ========================== 通用系统/编辑器临时文件 ==========================
+# Mac系统隐藏文件
+.DS_Store
+# Windows临时文件
+Thumbs.db
+*.tmp
+*.temp
+# Vim编辑器临时文件
+*.swp
+*.swo
+.*.sw?
+.un~
+# VSCode配置/缓存（如需共享配置可删除这部分）
+.vscode/
+.idea/
+*.code-workspace
+# 日志文件
+*.log
+*.log.*
+# 压缩包
+*.zip
+*.tar.gz
+*.7z
+
+# ========================== C++编译产物 ==========================
+# 目标文件
+*.o
+*.obj
+# 可执行文件（排除自定义编译的可执行文件，如你的stereo_camera_node）
+# 注意：如果你的可执行文件是固定名称，可注释这行，避免误过滤
+*[!_node]
+# 静态库/动态库
+*.a
+*.so
+*.so.*
+*.dll
+*.lib
+# CMake编译产物
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
+install_manifest.txt
+compile_commands.json
+build/
+devel/
+install/
+log/  # ROS 2的日志目录
+
+# ========================== ROS 2专属 ==========================
+# ROS 2包编译缓存
+ament_cmake*
+# ROS 2数据包文件（避免提交大体积bag文件）
+*.bag
+*.bag.active
+# RTAB-Map数据库文件（体积大，无需提交）
+*.db3
+
+# ========================== 视觉项目专属 ==========================
+# OpenCV临时文件
+*.png~
+*.jpg~
+*.jpeg~
+# 视差图/深度图临时文件
+*.pcd  # 点云文件（体积大）
+*.ply
+# 视频文件
+*.mp4
+*.avi
+*.mov
+
+# ========================== Python（如需用到） ==========================
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyc
+*.pyd
+*.pyo

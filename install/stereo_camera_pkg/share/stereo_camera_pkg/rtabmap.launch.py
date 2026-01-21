@@ -1,76 +1,113 @@
 import os
-
-from ament_index_python.packages import get_package_share_directory
-
 from launch import LaunchDescription
 from launch_ros.actions import Node
-from launch.actions import DeclareLaunchArgument
-from launch.substitutions import LaunchConfiguration
 
 def generate_launch_description():
-    parameters=[{
-        'frame_id':'left_camera',          
-        'subscribe_stereo':True,           
-        'subscribe_odom_info':False,     
-        'wait_imu_to_init':False,         
-        'approx_sync':True,               
-        'approx_sync_max_interval':0.2,    
-        'subscribe_depth': False,
-        'subscribe_rgb': False,   
-        'use_sim_time': False,
-        'publish_tf':True,
-        # 'odom_frame_id':'odom',
-        'min_inliers':1,               
-        'max_disparity':256,
-        'stereo':True,                     # 显式强制开启双目模式（优先级最高）
-        'rgbd':False,            
-    }]
-
-
-    remappings=[
-          ('left/image_rect', '/left_camera/image_rect'),  
-          ('left/camera_info', '/left_camera/camera_info'), 
-          ('right/image_rect', '/right_camera/image_rect'),  
-          ('right/camera_info', '/right_camera/camera_info') 
-    ]
+    left_camera_name = "left_camera"
+    right_camera_name = "right_camera"
 
     return LaunchDescription([
-
         Node(
-            package='rtabmap_odom', executable='stereo_odometry', output='screen',
-            parameters=parameters,
-            remappings=remappings),
-        
+            package='rtabmap_odom',
+            executable='stereo_odometry',
+            name='stereo_odometry',
+            output='screen',
+            parameters=[{
+                'frame_id': 'camera_link',
+                # 'odom_frame_id': 'odom',
+                'publish_tf': True,
+
+                'approx_sync': True,
+                'approx_sync_max_interval': 0.04,
+                'sync_queue_size': 30,
+
+                'wait_imu_to_init': False,
+
+                'Odom/MinInliers': '12',
+                'Vis/MinInliers': '12',
+                'Stereo/MaxDisparity': '256',
+            }],
+            remappings=[
+                ('left/image_rect', '/left_camera/image_rect'),
+                ('left/camera_info', '/left_camera/camera_info'),
+                ('right/image_rect', '/right_camera/image_rect'),
+                ('right/camera_info', '/right_camera/camera_info')
+            ]
+        ),
 
         Node(
             package='tf2_ros',
             executable='static_transform_publisher',
-            name='base_link_to_right_camera_tf',
-            arguments=[
-                '-0.0828', '0', '0', 
-                '0', '0', '0',   
-                'left_camera',     
-                'right_camera'    
-            ]
+            name='tf_cam_link_left',
+            arguments=['0', '0', '0', '0', '0', '0', '1', 'camera_link', 'left_camera']
         ),
 
-        #  Node(
-        #     package='tf2_ros',
-        #     executable='static_transform_publisher',
-        #     name='odom_to_base_link_tf',
-        #     arguments=['0', '0', '0', '0', '0', '0', 'odom', 'left_camera']
-        # ),
+        Node(
+            package='tf2_ros',
+            executable='static_transform_publisher',
+            name='tf_cam_link_right',
+            arguments=['0.08192', '0', '0', '0', '0', '0', '1', 'camera_link', 'right_camera']
+        ),
 
         Node(
-            package='rtabmap_slam', executable='rtabmap', output='screen',
-            parameters=parameters,
-            remappings=remappings,
-            arguments=['-d']),
+            package='tf2_ros',
+            executable='static_transform_publisher',
+            name='tf_left_frame_optical',
+            arguments=['0', '0', '0', '-1.5707963', '0', '-1.5707963', 'left_camera', 'left_camera_optical']
+        ),
 
         Node(
-            package='rtabmap_viz', executable='rtabmap_viz', output='screen',
-            parameters=parameters,
-            remappings=remappings),
-                
+            package='tf2_ros',
+            executable='static_transform_publisher',
+            name='tf_right_frame_optical',
+            arguments=['0', '0', '0', '-1.5707963', '0', '-1.5707963', 'right_camera', 'right_camera_optical']
+        ),
 
+        Node(
+            package='rtabmap_slam',
+            executable='rtabmap',
+            name='rtabmap',
+            output='screen',
+            parameters=[{
+                'frame_id': 'camera_link',
+                'subscribe_stereo': True,
+                'approx_sync': True,
+                'approx_sync_max_interval': 0.04,
+                'sync_queue_size': 30,
+                'publish_tf': True,
+
+                'Vis/MinInliers': '12',
+            }],
+            remappings=[
+                ('left/image_rect', '/left_camera/image_rect'),
+                ('left/camera_info', '/left_camera/camera_info'),
+                ('right/image_rect', '/right_camera/image_rect'),
+                ('right/camera_info', '/right_camera/camera_info'),
+                # ('odom', '/stereo_odometry/odom'),
+            ],
+            arguments=['--delete_db_on_start']
+        ),
+
+        Node(
+            package='rtabmap_viz',
+            executable='rtabmap_viz',
+            name='rtabmap_viz',
+            output='screen',
+            parameters=[{
+                'frame_id': 'camera_link',
+                'subscribe_stereo': True,
+                'approx_sync': True,
+                'approx_sync_max_interval': 0.04,
+                'sync_queue_size': 30,
+
+                'publish_tf': False,
+            }],
+            remappings=[
+                ('left/image_rect', '/left_camera/image_rect'),
+                ('left/camera_info', '/left_camera/camera_info'),
+                ('right/image_rect', '/right_camera/image_rect'),
+                ('right/camera_info', '/right_camera/camera_info'),
+                # ('odom', '/stereo_odometry/odom'),
+            ]
+        ),
     ])

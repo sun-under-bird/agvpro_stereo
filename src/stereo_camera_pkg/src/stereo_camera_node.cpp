@@ -16,8 +16,8 @@ class StereoCameraNode:public rclcpp::Node{
         this->declare_parameter<int>("right_cam_idx",2);
         this->declare_parameter<int>("width",320);
         this->declare_parameter<int>("height",240);
-        this->declare_parameter<std::string>("left_calib_path", "/home/yahboom/camera_ws/src/stereo_camera_pkg/config/left.yaml");  // 左内参路径
-        this->declare_parameter<std::string>("right_calib_path", "/home/yahboom/camera_ws/src/stereo_camera_pkg/config/right.yaml"); 
+        this->declare_parameter<std::string>("left_calib_path", "/home/yahboom/camera_ws/src/stereo_camera_pkg/config/left2.yaml");  // 左内参路径
+        this->declare_parameter<std::string>("right_calib_path", "/home/yahboom/camera_ws/src/stereo_camera_pkg/config/right2.yaml"); 
 
         //get parameter
         int left_idx=this->get_parameter("left_cam_idx").as_int();
@@ -206,10 +206,10 @@ class StereoCameraNode:public rclcpp::Node{
         msg_left_rect->header.stamp = current_time;
         msg_right_rect->header.stamp = current_time;
 
-        msg_left_raw->header.frame_id = "left_camera";
-        msg_right_raw->header.frame_id = "right_camera";
-        msg_left_rect->header.frame_id = "left_camera";
-        msg_right_rect->header.frame_id = "right_camera";
+        msg_left_raw->header.frame_id = "left_camera_optical";
+        msg_right_raw->header.frame_id = "right_camera_optical";
+        msg_left_rect->header.frame_id = "left_camera_optical";
+        msg_right_rect->header.frame_id = "right_camera_optical";
 
         // 发布相机信息（同步时间戳）
         sensor_msgs::msg::CameraInfo left_info = left_camera_info_;

@@ -13,7 +13,11 @@
 /home/yahboom/camera_ws/install/stereo_camera_pkg/share/stereo_camera_pkg/left_calibration.launch.py
 /home/yahboom/camera_ws/install/stereo_camera_pkg/share/stereo_camera_pkg/rtabmap.launch.py
 /home/yahboom/camera_ws/install/stereo_camera_pkg/share/stereo_camera_pkg/config/left.yaml
+/home/yahboom/camera_ws/install/stereo_camera_pkg/share/stereo_camera_pkg/config/left2.yaml
+/home/yahboom/camera_ws/install/stereo_camera_pkg/share/stereo_camera_pkg/config/right1.yaml
+/home/yahboom/camera_ws/install/stereo_camera_pkg/share/stereo_camera_pkg/config/right2.yaml
 /home/yahboom/camera_ws/install/stereo_camera_pkg/share/stereo_camera_pkg/config/right_camera_info.yaml
+/home/yahboom/camera_ws/install/stereo_camera_pkg/share/stereo_camera_pkg/config/left1.yaml
 /home/yahboom/camera_ws/install/stereo_camera_pkg/share/stereo_camera_pkg/config/right.yaml
 /home/yahboom/camera_ws/install/stereo_camera_pkg/share/stereo_camera_pkg/config/left_camera_info.yaml
 /home/yahboom/camera_ws/install/stereo_camera_pkg/share/ament_index/resource_index/package_run_dependencies/stereo_camera_pkg
