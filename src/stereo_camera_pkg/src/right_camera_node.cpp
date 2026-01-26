@@ -13,7 +13,7 @@ public:
         this->declare_parameter<int>("right_cam_idx", 2);
         this->declare_parameter<int>("width", 320);
         this->declare_parameter<int>("height", 240);
-        this->declare_parameter<int>("fps", 30);
+        this->declare_parameter<int>("fps", 15);
 
         int right_idx = this->get_parameter("right_cam_idx").as_int();
         int width = this->get_parameter("width").as_int();
