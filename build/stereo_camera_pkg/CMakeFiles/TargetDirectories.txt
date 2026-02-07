@@ -3,7 +3,6 @@
 /home/yahboom/camera_ws/build/stereo_camera_pkg/CMakeFiles/stereo_camera_node.dir
 /home/yahboom/camera_ws/build/stereo_camera_pkg/CMakeFiles/left_camera_node.dir
 /home/yahboom/camera_ws/build/stereo_camera_pkg/CMakeFiles/right_camera_node.dir
-/home/yahboom/camera_ws/build/stereo_camera_pkg/CMakeFiles/stereo_node.dir
 /home/yahboom/camera_ws/build/stereo_camera_pkg/CMakeFiles/camera_info.dir
 /home/yahboom/camera_ws/build/stereo_camera_pkg/CMakeFiles/test.dir
 /home/yahboom/camera_ws/build/stereo_camera_pkg/CMakeFiles/edit_cache.dir

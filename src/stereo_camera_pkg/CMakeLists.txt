@@ -18,7 +18,6 @@ find_package(message_filters REQUIRED)
 add_executable(stereo_camera_node src/stereo_camera_node.cpp)
 add_executable(left_camera_node src/left_camera_node.cpp)
 add_executable(right_camera_node src/right_camera_node.cpp)
-add_executable(stereo_node src/stereo_node.cpp)
 add_executable(camera_info src/camera_info.cpp)
 target_include_directories(stereo_camera_node PUBLIC
   $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
@@ -46,14 +45,7 @@ ament_target_dependencies(
   "cv_bridge"
   "image_transport"
 )
-ament_target_dependencies(
-  stereo_node
-  "rclcpp"
-  "sensor_msgs"
-  "cv_bridge"
-  "image_transport"
-  "message_filters"
-)
+
 ament_target_dependencies(
   camera_info
   "rclcpp"
@@ -67,11 +59,7 @@ target_link_libraries(
   ${OpenCV_LIBRARIES}
   ${YAML_CPP_LIBRARIES}
 )
-target_link_libraries(
-  stereo_node
-  ${OpenCV_LIBRARIES}
-  ${YAML_CPP_LIBRARIES}
-)
+
 target_link_libraries(
   left_camera_node
   ${OpenCV_LIBRARIES}
@@ -89,7 +77,6 @@ install(TARGETS
   stereo_camera_node
   left_camera_node
   right_camera_node
-  stereo_node
   camera_info
   DESTINATION lib/${PROJECT_NAME})
 

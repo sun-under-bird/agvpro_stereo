@@ -1,118 +1,90 @@
-from launch import LaunchDescription
-from launch.actions import DeclareLaunchArgument, IncludeLaunchDescription, GroupAction
-from launch.launch_description_sources import PythonLaunchDescriptionSource
-from launch.substitutions import LaunchConfiguration, PathJoinSubstitution
-from launch.conditions import IfCondition, UnlessCondition
-from launch_ros.actions import Node, SetParameter, SetRemap
 import os
-from ament_index_python.packages import get_package_share_directory
+from launch import LaunchDescription
+from launch.actions import ExecuteProcess, RegisterEventHandler, TimerAction
+from launch.event_handlers import OnProcessStart
+from launch_ros.actions import Node
 
 def generate_launch_description():
-    pkg_stereo_image_proc = get_package_share_directory(
-    'stereo_image_proc')
-
-    # Paths
-    stereo_image_proc_launch = PathJoinSubstitution(
-        [pkg_stereo_image_proc, 'launch', 'stereo_image_proc.launch.py'])
-    parameters={
-          'frame_id':'camera_link',
-          'subscribe_rgbd':True,
-          'approx_sync':False, # odom is generated from images, so we can exactly sync all inputs
-          'map_negative_poses_ignored':True,
-          'subscribe_odom_info': True,
-          # RTAB-Map's internal parameters should be strings
-          'OdomF2M/MaxSize': '1000',
-          'GFTT/MinDistance': '10',
-          'GFTT/QualityLevel': '0.00001',
-          'use_sim_time':False
-          #'Kp/DetectorStrategy': '6', # Uncommment to match ros1 noetic results, but opencv should be built with xfeatures2d
-          #'Vis/FeatureType': '6'      # Uncommment to match ros1 noetic results, but opencv should be built with xfeatures2d
-    }
-
-    remappings=[
-         ('rgbd_image', '/stereo_camera/rgbd_image'),
-         ('odom',       '/vo')]
     
+    # === 配置路径 ===
+    python_script_path = '/home/yahboom/stereo_info_publisher.py'
+    left_yaml_path = '/home/yahboom/camera_config/left.yaml'
+    right_yaml_path = '/home/yahboom/camera_config/right.yaml'
+
+    # 1. 硬件配置 (v4l2-ctl)
+    cmd_config_camera = [
+        'v4l2-ctl', '-d', '/dev/video0', 
+        '-c', 'auto_exposure=1',
+        '-c', 'exposure_time_absolute=150', 
+        '-c', 'white_balance_automatic=0',
+        '-c', 'white_balance_temperature=4600',
+        '-c', 'brightness=50'
+    ]
+    config_cam_action = ExecuteProcess(cmd=cmd_config_camera, output='screen')
+
+    # 2. 摄像头节点
+    usb_cam_node = Node(
+        package='usb_cam',
+        executable='usb_cam_node_exe',
+        name='usb_cam_node',
+        parameters=[{
+            'video_device': '/dev/video0',
+            'pixel_format': 'mjpeg2rgb',
+            'image_width': 640,
+            'image_height': 240,
+            'framerate': 30.0,
+            'camera_name': 'default_cam',
+        }]
+    )
+
+    # 3. 裁剪节点
+    left_cropper = Node(
+        package='image_proc',
+        executable='crop_decimate_node',
+        name='left_cropper',
+        parameters=[{'width': 320, 'height': 240, 'offset_x': 0, 'offset_y': 0}],
+        remappings=[
+            ('in/image_raw', '/image_raw'),
+            ('out/image_raw', '/image_left'),
+            # 我们不需要crop节点输出camera_info了，因为我们有专门的节点发
+            ('out/camera_info', '/camera_info_left_unused') 
+        ]
+    )
+
+    right_cropper = Node(
+        package='image_proc',
+        executable='crop_decimate_node',
+        name='right_cropper',
+        parameters=[{'width': 320, 'height': 240, 'offset_x': 320, 'offset_y': 0}],
+        remappings=[
+            ('in/image_raw', '/image_raw'),
+            ('out/image_raw', '/image_right'),
+            ('out/camera_info', '/camera_info_right_unused')
+        ]
+    )
+
+    # 4. 标定信息发布节点 (直接运行 Python 脚本)
+    # 这是一个小技巧，可以直接在launch里跑python脚本作为节点
+    stereo_info_node = Node(
+        package='lib', executable=python_script_path, # 这里需要稍微改一下，通常不能直接exec .py
+        # 如果是临时测试，建议直接用 ExecuteProcess 运行 python3 script.py
+        # 或者把上面的python脚本放到一个ros包里。
+        # 这里为了演示方便，我们用 ExecuteProcess 替代 Node
+    )
+    
+    # 更简单的运行 Python 脚本的方法:
+    run_calibration_publisher = ExecuteProcess(
+        cmd=['python3', python_script_path, 
+             '--ros-args', 
+             '-p', f'left_yaml_path:={left_yaml_path}',
+             '-p', f'right_yaml_path:={right_yaml_path}'],
+        output='screen'
+    )
 
     return LaunchDescription([
-
-        Node(
-            package='tf2_ros',
-            executable='static_transform_publisher',
-            name='tf_cam_link_left',
-            arguments=['0', '0', '0', '0', '0', '0', '1', 'camera_link', 'left_camera']
-        ),
-        Node(
-            package='tf2_ros',
-            executable='static_transform_publisher',
-            name='tf_cam_link_right',
-            arguments=['0', '-0.08192', '0', '0', '0', '0', '1', 'camera_link', 'right_camera']
-        ),
-        Node(
-            package='tf2_ros',
-            executable='static_transform_publisher',
-            name='tf_left_optical',
-            arguments=['0', '0', '0', '-1.570796', '0', '-1.570796', 'left_camera', 'left_camera_optical']
-        ),
-        Node(
-            package='tf2_ros',
-            executable='static_transform_publisher',
-            name='tf_right_optical',
-            arguments=['0', '0', '0', '-1.570796', '0', '-1.570796', 'right_camera', 'right_camera_optical']
-        ),
-        GroupAction(
-            actions=[
-
-                SetRemap(src='camera_info',dst='camera_info'),
-
-                IncludeLaunchDescription(
-                    PythonLaunchDescriptionSource([stereo_image_proc_launch]),
-                    launch_arguments=[
-                        ('left_namespace', '/left_camera'),
-                        ('right_namespace', '/right_camera'),
-                        ('disparity_range', '128'),
-                    ]
-                ),
-            ]
-        ),
-
-        Node(
-            package='rtabmap_sync', executable='stereo_sync', output='screen',
-            namespace='stereo_camera',
-            remappings=[
-                ('left/image_rect',   '/left_camera/image_rect'),
-                ('right/image_rect',  '/right_camera/image_rect'),
-                ('left/camera_info',  '/left_camera/camera_info'),
-                ('right/camera_info', '/right_camera/camera_info')]
-        ),  
-        # 2. 立体里程计 (Stereo Odometry)
-        Node(
-            package='rtabmap_odom',
-            executable='stereo_odometry',
-            name='stereo_odometry',
-            output='screen',
-            parameters=[parameters],
-            remappings=remappings
-        ),
-
-        # 3. RTAB-Map 建图主节点
-        Node(
-            package='rtabmap_slam',
-            executable='rtabmap',
-            name='rtabmap',
-            output='screen',
-            parameters=[parameters],
-            remappings=remappings,
-            arguments=['-d']
-        ),
-
-        # 4. 可视化界面 (rtabmap_viz)
-        Node(
-            package='rtabmap_viz',
-            executable='rtabmap_viz',
-            name='rtabmap_viz',
-            output='screen',
-            parameters=[parameters,{'odometry_node_name':'stereo_odometry'}],
-            remappings=remappings
-        ),
+        config_cam_action,
+        TimerAction(period=1.0, actions=[usb_cam_node]),
+        left_cropper,
+        right_cropper,
+        run_calibration_publisher
     ])

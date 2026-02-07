@@ -66,7 +66,6 @@ CMAKE_BINARY_DIR = /home/yahboom/camera_ws/build/stereo_camera_pkg
 all: CMakeFiles/stereo_camera_node.dir/all
 all: CMakeFiles/left_camera_node.dir/all
 all: CMakeFiles/right_camera_node.dir/all
-all: CMakeFiles/stereo_node.dir/all
 all: CMakeFiles/camera_info.dir/all
 .PHONY : all
 
@@ -80,7 +79,6 @@ clean: CMakeFiles/stereo_camera_pkg_uninstall.dir/clean
 clean: CMakeFiles/stereo_camera_node.dir/clean
 clean: CMakeFiles/left_camera_node.dir/clean
 clean: CMakeFiles/right_camera_node.dir/clean
-clean: CMakeFiles/stereo_node.dir/clean
 clean: CMakeFiles/camera_info.dir/clean
 .PHONY : clean
 
@@ -213,32 +211,6 @@ right_camera_node: CMakeFiles/right_camera_node.dir/rule
 CMakeFiles/right_camera_node.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/right_camera_node.dir/build.make CMakeFiles/right_camera_node.dir/clean
 .PHONY : CMakeFiles/right_camera_node.dir/clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/stereo_node.dir
-
-# All Build rule for target.
-CMakeFiles/stereo_node.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stereo_node.dir/build.make CMakeFiles/stereo_node.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stereo_node.dir/build.make CMakeFiles/stereo_node.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/yahboom/camera_ws/build/stereo_camera_pkg/CMakeFiles --progress-num=9,10 "Built target stereo_node"
-.PHONY : CMakeFiles/stereo_node.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/stereo_node.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/yahboom/camera_ws/build/stereo_camera_pkg/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/stereo_node.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/yahboom/camera_ws/build/stereo_camera_pkg/CMakeFiles 0
-.PHONY : CMakeFiles/stereo_node.dir/rule
-
-# Convenience name for target.
-stereo_node: CMakeFiles/stereo_node.dir/rule
-.PHONY : stereo_node
-
-# clean rule for target.
-CMakeFiles/stereo_node.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stereo_node.dir/build.make CMakeFiles/stereo_node.dir/clean
-.PHONY : CMakeFiles/stereo_node.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/camera_info.dir

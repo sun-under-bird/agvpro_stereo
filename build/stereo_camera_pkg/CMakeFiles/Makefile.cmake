@@ -768,6 +768,5 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/stereo_camera_node.dir/DependInfo.cmake"
   "CMakeFiles/left_camera_node.dir/DependInfo.cmake"
   "CMakeFiles/right_camera_node.dir/DependInfo.cmake"
-  "CMakeFiles/stereo_node.dir/DependInfo.cmake"
   "CMakeFiles/camera_info.dir/DependInfo.cmake"
   )

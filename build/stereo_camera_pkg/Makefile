@@ -237,19 +237,6 @@ right_camera_node/fast:
 .PHONY : right_camera_node/fast
 
 #=============================================================================
-# Target rules for targets named stereo_node
-
-# Build rule for target.
-stereo_node: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 stereo_node
-.PHONY : stereo_node
-
-# fast build rule for target.
-stereo_node/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stereo_node.dir/build.make CMakeFiles/stereo_node.dir/build
-.PHONY : stereo_node/fast
-
-#=============================================================================
 # Target rules for targets named camera_info
 
 # Build rule for target.
@@ -358,30 +345,6 @@ src/stereo_camera_node.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/stereo_camera_node.dir/build.make CMakeFiles/stereo_camera_node.dir/src/stereo_camera_node.cpp.s
 .PHONY : src/stereo_camera_node.cpp.s
 
-src/stereo_node.o: src/stereo_node.cpp.o
-.PHONY : src/stereo_node.o
-
-# target to build an object file
-src/stereo_node.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stereo_node.dir/build.make CMakeFiles/stereo_node.dir/src/stereo_node.cpp.o
-.PHONY : src/stereo_node.cpp.o
-
-src/stereo_node.i: src/stereo_node.cpp.i
-.PHONY : src/stereo_node.i
-
-# target to preprocess a source file
-src/stereo_node.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stereo_node.dir/build.make CMakeFiles/stereo_node.dir/src/stereo_node.cpp.i
-.PHONY : src/stereo_node.cpp.i
-
-src/stereo_node.s: src/stereo_node.cpp.s
-.PHONY : src/stereo_node.s
-
-# target to generate assembly for a file
-src/stereo_node.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stereo_node.dir/build.make CMakeFiles/stereo_node.dir/src/stereo_node.cpp.s
-.PHONY : src/stereo_node.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -401,7 +364,6 @@ help:
 	@echo "... left_camera_node"
 	@echo "... right_camera_node"
 	@echo "... stereo_camera_node"
-	@echo "... stereo_node"
 	@echo "... src/camera_info.o"
 	@echo "... src/camera_info.i"
 	@echo "... src/camera_info.s"
@@ -414,9 +376,6 @@ help:
 	@echo "... src/stereo_camera_node.o"
 	@echo "... src/stereo_camera_node.i"
 	@echo "... src/stereo_camera_node.s"
-	@echo "... src/stereo_node.o"
-	@echo "... src/stereo_node.i"
-	@echo "... src/stereo_node.s"
 .PHONY : help
 
 
