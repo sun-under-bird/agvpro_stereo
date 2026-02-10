@@ -1,0 +1,74 @@
+[0.099s] Invoking command in '/home/yahboom/camera_ws/build/stereo_camera_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/yahboom/camera_ws/build/stereo_camera_pkg -- -j6 -l6
+[0.126s] -- Found ament_cmake: 1.3.6 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.238s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.243s] -- Found rclcpp: 16.0.7 (/opt/ros/humble/share/rclcpp/cmake)
+[0.264s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.267s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.270s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.278s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.289s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.330s] -- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.332s] -- Found rmw_fastrtps_cpp: 6.2.5 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.400s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.504s] -- Found sensor_msgs: 4.9.0 (/opt/ros/humble/share/sensor_msgs/cmake)
+[0.588s] -- Found cv_bridge: 3.2.1 (/opt/ros/humble/share/cv_bridge/cmake)
+[0.598s] -- Found image_transport: 3.1.12 (/opt/ros/humble/share/image_transport/cmake)
+[0.623s] -- Found ament_lint_auto: 0.12.9 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.679s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.679s] -- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/yahboom/camera_ws/src/stereo_camera_pkg/include>
+[0.679s] -- Configured cppcheck exclude dirs and/or files: 
+[0.679s] -- Added test 'flake8' to check Python code syntax and style conventions
+[0.680s] -- Added test 'lint_cmake' to check CMake code style
+[0.680s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[0.681s] -- Added test 'uncrustify' to check C / C++ code style
+[0.681s] -- Configured uncrustify additional arguments: 
+[0.682s] -- Added test 'xmllint' to check XML markup files
+[0.683s] -- Configuring done
+[0.714s] -- Generating done
+[0.718s] -- Build files have been written to: /home/yahboom/camera_ws/build/stereo_camera_pkg
+[0.751s] [35m[1mConsolidate compiler generated dependencies of target camera_info[0m
+[0.751s] [35m[1mConsolidate compiler generated dependencies of target left_camera_node[0m
+[0.751s] [35m[1mConsolidate compiler generated dependencies of target right_camera_node[0m
+[0.753s] [35m[1mConsolidate compiler generated dependencies of target stereo_camera_node[0m
+[0.772s] [ 75%] Built target left_camera_node
+[0.772s] [ 75%] Built target stereo_camera_node
+[0.772s] [ 75%] Built target right_camera_node
+[0.772s] [100%] Built target camera_info
+[0.785s] Invoked command in '/home/yahboom/camera_ws/build/stereo_camera_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/yahboom/camera_ws/build/stereo_camera_pkg -- -j6 -l6
+[0.855s] Invoking command in '/home/yahboom/camera_ws/build/stereo_camera_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/yahboom/camera_ws/build/stereo_camera_pkg
+[0.862s] -- Install configuration: ""
+[0.864s] -- Execute custom install script
+[0.864s] -- Up-to-date symlink: /home/yahboom/camera_ws/install/stereo_camera_pkg/lib/stereo_camera_pkg/stereo_camera_node
+[0.864s] -- Up-to-date symlink: /home/yahboom/camera_ws/install/stereo_camera_pkg/lib/stereo_camera_pkg/left_camera_node
+[0.864s] -- Up-to-date symlink: /home/yahboom/camera_ws/install/stereo_camera_pkg/lib/stereo_camera_pkg/right_camera_node
+[0.864s] -- Up-to-date symlink: /home/yahboom/camera_ws/install/stereo_camera_pkg/lib/stereo_camera_pkg/camera_info
+[0.865s] -- Up-to-date symlink: /home/yahboom/camera_ws/install/stereo_camera_pkg/share/stereo_camera_pkg/apt_rtabmap.launch.py
+[0.866s] -- Up-to-date symlink: /home/yahboom/camera_ws/install/stereo_camera_pkg/share/stereo_camera_pkg/calib.launch.py
+[0.866s] -- Up-to-date symlink: /home/yahboom/camera_ws/install/stereo_camera_pkg/share/stereo_camera_pkg/left_calibration.launch.py
+[0.866s] -- Up-to-date symlink: /home/yahboom/camera_ws/install/stereo_camera_pkg/share/stereo_camera_pkg/prtabmap.launch.py
+[0.866s] -- Up-to-date symlink: /home/yahboom/camera_ws/install/stereo_camera_pkg/share/stereo_camera_pkg/rtabmap.launch.py
+[0.867s] -- Up-to-date symlink: /home/yahboom/camera_ws/install/stereo_camera_pkg/share/stereo_camera_pkg/stereo_calibration.launch.py
+[0.867s] -- Up-to-date symlink: /home/yahboom/camera_ws/install/stereo_camera_pkg/share/stereo_camera_pkg/stereo_camera.launch.py
+[0.868s] -- Up-to-date symlink: /home/yahboom/camera_ws/install/stereo_camera_pkg/share/stereo_camera_pkg/stereo_rgbd.launch.py
+[0.869s] -- Up-to-date symlink: /home/yahboom/camera_ws/install/stereo_camera_pkg/share/stereo_camera_pkg/stereo_rtabmap.launch.py
+[0.869s] -- Up-to-date symlink: /home/yahboom/camera_ws/install/stereo_camera_pkg/share/stereo_camera_pkg/usb.launch.py
+[0.869s] -- Up-to-date symlink: /home/yahboom/camera_ws/install/stereo_camera_pkg/share/stereo_camera_pkg/config/left2.yaml
+[0.869s] -- Up-to-date symlink: /home/yahboom/camera_ws/install/stereo_camera_pkg/share/stereo_camera_pkg/config/left_raw.yaml
+[0.869s] -- Up-to-date symlink: /home/yahboom/camera_ws/install/stereo_camera_pkg/share/stereo_camera_pkg/config/right2.yaml
+[0.869s] -- Up-to-date symlink: /home/yahboom/camera_ws/install/stereo_camera_pkg/share/stereo_camera_pkg/config/right_raw.yaml
+[0.869s] -- Up-to-date symlink: /home/yahboom/camera_ws/install/stereo_camera_pkg/share/ament_index/resource_index/package_run_dependencies/stereo_camera_pkg
+[0.869s] -- Up-to-date symlink: /home/yahboom/camera_ws/install/stereo_camera_pkg/share/ament_index/resource_index/parent_prefix_path/stereo_camera_pkg
+[0.869s] -- Up-to-date symlink: /home/yahboom/camera_ws/install/stereo_camera_pkg/share/stereo_camera_pkg/environment/ament_prefix_path.sh
+[0.870s] -- Up-to-date symlink: /home/yahboom/camera_ws/install/stereo_camera_pkg/share/stereo_camera_pkg/environment/ament_prefix_path.dsv
+[0.870s] -- Up-to-date symlink: /home/yahboom/camera_ws/install/stereo_camera_pkg/share/stereo_camera_pkg/environment/path.sh
+[0.870s] -- Up-to-date symlink: /home/yahboom/camera_ws/install/stereo_camera_pkg/share/stereo_camera_pkg/environment/path.dsv
+[0.870s] -- Up-to-date symlink: /home/yahboom/camera_ws/install/stereo_camera_pkg/share/stereo_camera_pkg/local_setup.bash
+[0.870s] -- Up-to-date symlink: /home/yahboom/camera_ws/install/stereo_camera_pkg/share/stereo_camera_pkg/local_setup.sh
+[0.870s] -- Up-to-date symlink: /home/yahboom/camera_ws/install/stereo_camera_pkg/share/stereo_camera_pkg/local_setup.zsh
+[0.871s] -- Up-to-date symlink: /home/yahboom/camera_ws/install/stereo_camera_pkg/share/stereo_camera_pkg/local_setup.dsv
+[0.871s] -- Symlinking: /home/yahboom/camera_ws/install/stereo_camera_pkg/share/stereo_camera_pkg/package.dsv
+[0.877s] -- Up-to-date symlink: /home/yahboom/camera_ws/install/stereo_camera_pkg/share/ament_index/resource_index/packages/stereo_camera_pkg
+[0.877s] -- Up-to-date symlink: /home/yahboom/camera_ws/install/stereo_camera_pkg/share/stereo_camera_pkg/cmake/stereo_camera_pkgConfig.cmake
+[0.878s] -- Up-to-date symlink: /home/yahboom/camera_ws/install/stereo_camera_pkg/share/stereo_camera_pkg/cmake/stereo_camera_pkgConfig-version.cmake
+[0.878s] -- Up-to-date symlink: /home/yahboom/camera_ws/install/stereo_camera_pkg/share/stereo_camera_pkg/package.xml
+[0.903s] Invoked command in '/home/yahboom/camera_ws/build/stereo_camera_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/yahboom/camera_ws/build/stereo_camera_pkg

@@ -1,0 +1,16 @@
+running develop
+running egg_info
+writing stereo_camera_pkg_py.egg-info/PKG-INFO
+writing dependency_links to stereo_camera_pkg_py.egg-info/dependency_links.txt
+writing entry points to stereo_camera_pkg_py.egg-info/entry_points.txt
+writing requirements to stereo_camera_pkg_py.egg-info/requires.txt
+writing top-level names to stereo_camera_pkg_py.egg-info/top_level.txt
+reading manifest file 'stereo_camera_pkg_py.egg-info/SOURCES.txt'
+writing manifest file 'stereo_camera_pkg_py.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/yahboom/camera_ws/install/stereo_camera_pkg_py/lib/python3.10/site-packages/stereo-camera-pkg-py.egg-link (link to .)
+Installing v4l2 script to /home/yahboom/camera_ws/install/stereo_camera_pkg_py/lib/stereo_camera_pkg_py
+
+Installed /home/yahboom/camera_ws/build/stereo_camera_pkg_py
+running install_data
+copying launch/rtabmap.launch.py -> /home/yahboom/camera_ws/install/stereo_camera_pkg_py/share/stereo_camera_pkg_py/launch

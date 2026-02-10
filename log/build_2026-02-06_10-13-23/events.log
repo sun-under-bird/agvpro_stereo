@@ -1,0 +1,247 @@
+[0.000000] (-) TimerEvent: {}
+[0.000210] (stereo_camera_pkg) JobQueued: {'identifier': 'stereo_camera_pkg', 'dependencies': OrderedDict()}
+[0.000271] (stereo_camera_pkg) JobStarted: {'identifier': 'stereo_camera_pkg'}
+[0.054301] (stereo_camera_pkg) JobProgress: {'identifier': 'stereo_camera_pkg', 'progress': 'cmake'}
+[0.056370] (stereo_camera_pkg) Command: {'cmd': ['/usr/bin/cmake', '/home/yahboom/camera_ws/src/stereo_camera_pkg', '-DCMAKE_INSTALL_PREFIX=/home/yahboom/camera_ws/install/stereo_camera_pkg'], 'cwd': '/home/yahboom/camera_ws/build/stereo_camera_pkg', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_GB:en'), ('USER', 'yahboom'), ('LC_TIME', 'zh_CN.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/yahboom'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '1299'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=30f9a5cf0de93ce59366e870698544b8'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/yahboom/camera_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'yahboom'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'yahboom'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', '/usr/share/gazebo-11/models:/opt/ros/humble/share/turtlebot3_gazebo/models'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/yahboom/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/yahboom-VM:@/tmp/.ICE-unix/1299,unix/yahboom-VM:/tmp/.ICE-unix/1299'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('USE_SIM_TIME', 'true'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/adbfa899_17f8_42db_9943_c98425ce0c52'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_GB.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.EPZBK3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.164'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '30'), ('AMENT_PREFIX_PATH', '/home/yahboom/camera_ws/install/stereo_camera_pkg:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/yahboom/camera_ws/build/stereo_camera_pkg'), ('TURTLEBOT3_MODEL', 'burger'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=30f9a5cf0de93ce59366e870698544b8'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/yahboom/camera_ws/install/stereo_camera_pkg:/opt/ros/humble')]), 'shell': False}
+[0.099164] (-) TimerEvent: {}
+[0.123609] (stereo_camera_pkg) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.6 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.199499] (-) TimerEvent: {}
+[0.269900] (stereo_camera_pkg) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[0.299774] (-) TimerEvent: {}
+[0.317743] (stereo_camera_pkg) StdoutLine: {'line': b'-- Found rclcpp: 16.0.7 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.400049] (-) TimerEvent: {}
+[0.406294] (stereo_camera_pkg) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.412146] (stereo_camera_pkg) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.427029] (stereo_camera_pkg) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.450823] (stereo_camera_pkg) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.475716] (stereo_camera_pkg) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.500711] (-) TimerEvent: {}
+[0.562281] (stereo_camera_pkg) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.567637] (stereo_camera_pkg) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.5 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.601083] (-) TimerEvent: {}
+[0.676283] (stereo_camera_pkg) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.701606] (-) TimerEvent: {}
+[0.802368] (-) TimerEvent: {}
+[0.851480] (stereo_camera_pkg) StdoutLine: {'line': b'-- Found sensor_msgs: 4.9.0 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[0.902946] (-) TimerEvent: {}
+[0.965058] (stereo_camera_pkg) StdoutLine: {'line': b'-- Found cv_bridge: 3.2.1 (/opt/ros/humble/share/cv_bridge/cmake)\n'}
+[0.981078] (stereo_camera_pkg) StdoutLine: {'line': b'-- Found image_transport: 3.1.12 (/opt/ros/humble/share/image_transport/cmake)\n'}
+[1.003225] (-) TimerEvent: {}
+[1.027324] (stereo_camera_pkg) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.9 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[1.103786] (-) TimerEvent: {}
+[1.108662] (stereo_camera_pkg) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[1.108922] (stereo_camera_pkg) StdoutLine: {'line': b'-- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/yahboom/camera_ws/src/stereo_camera_pkg/include>\n'}
+[1.109018] (stereo_camera_pkg) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[1.109917] (stereo_camera_pkg) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[1.111038] (stereo_camera_pkg) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[1.111933] (stereo_camera_pkg) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[1.113683] (stereo_camera_pkg) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[1.113782] (stereo_camera_pkg) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[1.114673] (stereo_camera_pkg) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[1.117994] (stereo_camera_pkg) StdoutLine: {'line': b'-- Configuring done\n'}
+[1.175233] (stereo_camera_pkg) StdoutLine: {'line': b'-- Generating done\n'}
+[1.179596] (stereo_camera_pkg) StdoutLine: {'line': b'-- Build files have been written to: /home/yahboom/camera_ws/build/stereo_camera_pkg\n'}
+[1.190505] (stereo_camera_pkg) CommandEnded: {'returncode': 0}
+[1.191303] (stereo_camera_pkg) JobProgress: {'identifier': 'stereo_camera_pkg', 'progress': 'build'}
+[1.191365] (stereo_camera_pkg) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/yahboom/camera_ws/build/stereo_camera_pkg', '--', '-j6', '-l6'], 'cwd': '/home/yahboom/camera_ws/build/stereo_camera_pkg', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_GB:en'), ('USER', 'yahboom'), ('LC_TIME', 'zh_CN.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/yahboom'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '1299'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=30f9a5cf0de93ce59366e870698544b8'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/yahboom/camera_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'yahboom'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'yahboom'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', '/usr/share/gazebo-11/models:/opt/ros/humble/share/turtlebot3_gazebo/models'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/yahboom/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/yahboom-VM:@/tmp/.ICE-unix/1299,unix/yahboom-VM:/tmp/.ICE-unix/1299'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('USE_SIM_TIME', 'true'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/adbfa899_17f8_42db_9943_c98425ce0c52'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_GB.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.EPZBK3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.164'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '30'), ('AMENT_PREFIX_PATH', '/home/yahboom/camera_ws/install/stereo_camera_pkg:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/yahboom/camera_ws/build/stereo_camera_pkg'), ('TURTLEBOT3_MODEL', 'burger'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=30f9a5cf0de93ce59366e870698544b8'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/yahboom/camera_ws/install/stereo_camera_pkg:/opt/ros/humble')]), 'shell': False}
+[1.204521] (-) TimerEvent: {}
+[1.243411] (stereo_camera_pkg) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target right_camera_node\x1b[0m\n'}
+[1.243583] (stereo_camera_pkg) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target left_camera_node\x1b[0m\n'}
+[1.243623] (stereo_camera_pkg) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target stereo_node\x1b[0m\n'}
+[1.243654] (stereo_camera_pkg) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target stereo_camera_node\x1b[0m\n'}
+[1.243680] (stereo_camera_pkg) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target camera_info\x1b[0m\n'}
+[1.305383] (-) TimerEvent: {}
+[1.364324] (stereo_camera_pkg) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding CXX object CMakeFiles/left_camera_node.dir/src/left_camera_node.cpp.o\x1b[0m\n'}
+[1.364601] (stereo_camera_pkg) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding CXX object CMakeFiles/stereo_node.dir/src/stereo_node.cpp.o\x1b[0m\n'}
+[1.364705] (stereo_camera_pkg) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding CXX object CMakeFiles/right_camera_node.dir/src/right_camera_node.cpp.o\x1b[0m\n'}
+[1.364861] (stereo_camera_pkg) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/stereo_camera_node.dir/src/stereo_camera_node.cpp.o\x1b[0m\n'}
+[1.364922] (stereo_camera_pkg) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding CXX object CMakeFiles/camera_info.dir/src/camera_info.cpp.o\x1b[0m\n'}
+[1.407175] (-) TimerEvent: {}
+[1.507591] (-) TimerEvent: {}
+[1.608020] (-) TimerEvent: {}
+[1.708368] (-) TimerEvent: {}
+[1.808794] (-) TimerEvent: {}
+[1.909352] (-) TimerEvent: {}
+[2.010182] (-) TimerEvent: {}
+[2.111490] (-) TimerEvent: {}
+[2.212276] (-) TimerEvent: {}
+[2.316936] (-) TimerEvent: {}
+[2.417417] (-) TimerEvent: {}
+[2.518075] (-) TimerEvent: {}
+[2.619009] (-) TimerEvent: {}
+[2.719978] (-) TimerEvent: {}
+[2.820732] (-) TimerEvent: {}
+[2.921148] (-) TimerEvent: {}
+[3.022884] (-) TimerEvent: {}
+[3.124275] (-) TimerEvent: {}
+[3.225180] (-) TimerEvent: {}
+[3.326189] (-) TimerEvent: {}
+[3.426863] (-) TimerEvent: {}
+[3.527740] (-) TimerEvent: {}
+[3.628345] (-) TimerEvent: {}
+[3.728944] (-) TimerEvent: {}
+[3.829760] (-) TimerEvent: {}
+[3.931302] (-) TimerEvent: {}
+[4.031726] (-) TimerEvent: {}
+[4.132316] (-) TimerEvent: {}
+[4.233039] (-) TimerEvent: {}
+[4.333760] (-) TimerEvent: {}
+[4.435464] (-) TimerEvent: {}
+[4.536274] (-) TimerEvent: {}
+[4.636580] (-) TimerEvent: {}
+[4.737224] (-) TimerEvent: {}
+[4.837803] (-) TimerEvent: {}
+[4.938840] (-) TimerEvent: {}
+[5.039605] (-) TimerEvent: {}
+[5.140614] (-) TimerEvent: {}
+[5.241179] (-) TimerEvent: {}
+[5.341722] (-) TimerEvent: {}
+[5.442675] (-) TimerEvent: {}
+[5.543468] (-) TimerEvent: {}
+[5.644979] (-) TimerEvent: {}
+[5.745519] (-) TimerEvent: {}
+[5.846345] (-) TimerEvent: {}
+[5.947360] (-) TimerEvent: {}
+[6.048138] (-) TimerEvent: {}
+[6.148887] (-) TimerEvent: {}
+[6.249603] (-) TimerEvent: {}
+[6.350412] (-) TimerEvent: {}
+[6.451479] (-) TimerEvent: {}
+[6.552308] (-) TimerEvent: {}
+[6.653349] (-) TimerEvent: {}
+[6.753840] (-) TimerEvent: {}
+[6.854322] (-) TimerEvent: {}
+[6.955136] (-) TimerEvent: {}
+[7.055643] (-) TimerEvent: {}
+[7.156513] (-) TimerEvent: {}
+[7.257460] (-) TimerEvent: {}
+[7.358315] (-) TimerEvent: {}
+[7.459458] (-) TimerEvent: {}
+[7.560387] (-) TimerEvent: {}
+[7.661224] (-) TimerEvent: {}
+[7.762300] (-) TimerEvent: {}
+[7.862885] (-) TimerEvent: {}
+[7.963614] (-) TimerEvent: {}
+[8.064074] (-) TimerEvent: {}
+[8.164608] (-) TimerEvent: {}
+[8.265320] (-) TimerEvent: {}
+[8.365881] (-) TimerEvent: {}
+[8.466609] (-) TimerEvent: {}
+[8.567427] (-) TimerEvent: {}
+[8.668616] (-) TimerEvent: {}
+[8.769233] (-) TimerEvent: {}
+[8.870201] (-) TimerEvent: {}
+[8.971011] (-) TimerEvent: {}
+[9.072734] (-) TimerEvent: {}
+[9.173384] (-) TimerEvent: {}
+[9.274085] (-) TimerEvent: {}
+[9.374593] (-) TimerEvent: {}
+[9.475367] (-) TimerEvent: {}
+[9.576686] (-) TimerEvent: {}
+[9.677208] (-) TimerEvent: {}
+[9.777913] (-) TimerEvent: {}
+[9.878684] (-) TimerEvent: {}
+[9.980608] (-) TimerEvent: {}
+[10.081465] (-) TimerEvent: {}
+[10.182331] (-) TimerEvent: {}
+[10.283530] (-) TimerEvent: {}
+[10.386852] (-) TimerEvent: {}
+[10.487425] (-) TimerEvent: {}
+[10.588278] (-) TimerEvent: {}
+[10.688913] (-) TimerEvent: {}
+[10.789390] (-) TimerEvent: {}
+[10.890540] (-) TimerEvent: {}
+[10.991802] (-) TimerEvent: {}
+[11.092264] (-) TimerEvent: {}
+[11.192626] (-) TimerEvent: {}
+[11.293414] (-) TimerEvent: {}
+[11.394847] (-) TimerEvent: {}
+[11.495819] (-) TimerEvent: {}
+[11.596815] (-) TimerEvent: {}
+[11.697446] (-) TimerEvent: {}
+[11.798318] (-) TimerEvent: {}
+[11.899318] (-) TimerEvent: {}
+[11.999888] (-) TimerEvent: {}
+[12.100490] (-) TimerEvent: {}
+[12.201140] (-) TimerEvent: {}
+[12.301695] (-) TimerEvent: {}
+[12.402304] (-) TimerEvent: {}
+[12.504009] (-) TimerEvent: {}
+[12.604543] (-) TimerEvent: {}
+[12.705093] (-) TimerEvent: {}
+[12.806152] (-) TimerEvent: {}
+[12.906767] (-) TimerEvent: {}
+[13.007341] (-) TimerEvent: {}
+[13.108221] (-) TimerEvent: {}
+[13.209909] (-) TimerEvent: {}
+[13.273884] (stereo_camera_pkg) StdoutLine: {'line': b'[ 60%] \x1b[32m\x1b[1mLinking CXX executable stereo_node\x1b[0m\n'}
+[13.305358] (stereo_camera_pkg) StdoutLine: {'line': b'[ 70%] \x1b[32m\x1b[1mLinking CXX executable left_camera_node\x1b[0m\n'}
+[13.310428] (-) TimerEvent: {}
+[13.392096] (stereo_camera_pkg) StdoutLine: {'line': b'[ 80%] \x1b[32m\x1b[1mLinking CXX executable right_camera_node\x1b[0m\n'}
+[13.411220] (-) TimerEvent: {}
+[13.512120] (-) TimerEvent: {}
+[13.612650] (-) TimerEvent: {}
+[13.713388] (-) TimerEvent: {}
+[13.813822] (-) TimerEvent: {}
+[13.914274] (-) TimerEvent: {}
+[13.919538] (stereo_camera_pkg) StdoutLine: {'line': b'[ 80%] Built target stereo_node\n'}
+[13.921221] (stereo_camera_pkg) StdoutLine: {'line': b'[ 80%] Built target right_camera_node\n'}
+[13.922861] (stereo_camera_pkg) StdoutLine: {'line': b'[ 80%] Built target left_camera_node\n'}
+[14.014486] (-) TimerEvent: {}
+[14.115107] (-) TimerEvent: {}
+[14.181334] (stereo_camera_pkg) StdoutLine: {'line': b'[ 90%] \x1b[32m\x1b[1mLinking CXX executable camera_info\x1b[0m\n'}
+[14.202254] (stereo_camera_pkg) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable stereo_camera_node\x1b[0m\n'}
+[14.215265] (-) TimerEvent: {}
+[14.315737] (-) TimerEvent: {}
+[14.416320] (-) TimerEvent: {}
+[14.517267] (-) TimerEvent: {}
+[14.617914] (-) TimerEvent: {}
+[14.685907] (stereo_camera_pkg) StdoutLine: {'line': b'[100%] Built target camera_info\n'}
+[14.697641] (stereo_camera_pkg) StdoutLine: {'line': b'[100%] Built target stereo_camera_node\n'}
+[14.710734] (stereo_camera_pkg) CommandEnded: {'returncode': 0}
+[14.718649] (-) TimerEvent: {}
+[14.772983] (stereo_camera_pkg) JobProgress: {'identifier': 'stereo_camera_pkg', 'progress': 'install'}
+[14.782728] (stereo_camera_pkg) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/yahboom/camera_ws/build/stereo_camera_pkg'], 'cwd': '/home/yahboom/camera_ws/build/stereo_camera_pkg', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_GB:en'), ('USER', 'yahboom'), ('LC_TIME', 'zh_CN.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/yahboom'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '1299'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=30f9a5cf0de93ce59366e870698544b8'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/yahboom/camera_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'yahboom'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'yahboom'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', '/usr/share/gazebo-11/models:/opt/ros/humble/share/turtlebot3_gazebo/models'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/yahboom/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/yahboom-VM:@/tmp/.ICE-unix/1299,unix/yahboom-VM:/tmp/.ICE-unix/1299'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('USE_SIM_TIME', 'true'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/adbfa899_17f8_42db_9943_c98425ce0c52'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_GB.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.EPZBK3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.164'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '30'), ('AMENT_PREFIX_PATH', '/home/yahboom/camera_ws/install/stereo_camera_pkg:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/yahboom/camera_ws/build/stereo_camera_pkg'), ('TURTLEBOT3_MODEL', 'burger'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=30f9a5cf0de93ce59366e870698544b8'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/yahboom/camera_ws/install/stereo_camera_pkg:/opt/ros/humble')]), 'shell': False}
+[14.790830] (stereo_camera_pkg) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[14.791187] (stereo_camera_pkg) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[14.792308] (stereo_camera_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/yahboom/camera_ws/install/stereo_camera_pkg/lib/stereo_camera_pkg/stereo_camera_node\n'}
+[14.792857] (stereo_camera_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/yahboom/camera_ws/install/stereo_camera_pkg/lib/stereo_camera_pkg/left_camera_node\n'}
+[14.793460] (stereo_camera_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/yahboom/camera_ws/install/stereo_camera_pkg/lib/stereo_camera_pkg/right_camera_node\n'}
+[14.793714] (stereo_camera_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/yahboom/camera_ws/install/stereo_camera_pkg/lib/stereo_camera_pkg/stereo_node\n'}
+[14.793802] (stereo_camera_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/yahboom/camera_ws/install/stereo_camera_pkg/lib/stereo_camera_pkg/camera_info\n'}
+[14.794981] (stereo_camera_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/yahboom/camera_ws/install/stereo_camera_pkg/share/stereo_camera_pkg/apt_rtabmap.launch.py\n'}
+[14.795515] (stereo_camera_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/yahboom/camera_ws/install/stereo_camera_pkg/share/stereo_camera_pkg/calib.launch.py\n'}
+[14.795955] (stereo_camera_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/yahboom/camera_ws/install/stereo_camera_pkg/share/stereo_camera_pkg/left_calibration.launch.py\n'}
+[14.796352] (stereo_camera_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/yahboom/camera_ws/install/stereo_camera_pkg/share/stereo_camera_pkg/prtabmap.launch.py\n'}
+[14.796828] (stereo_camera_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/yahboom/camera_ws/install/stereo_camera_pkg/share/stereo_camera_pkg/rtabmap.launch.py\n'}
+[14.797236] (stereo_camera_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/yahboom/camera_ws/install/stereo_camera_pkg/share/stereo_camera_pkg/stereo_calibration.launch.py\n'}
+[14.797807] (stereo_camera_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/yahboom/camera_ws/install/stereo_camera_pkg/share/stereo_camera_pkg/stereo_camera.launch.py\n'}
+[14.798241] (stereo_camera_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/yahboom/camera_ws/install/stereo_camera_pkg/share/stereo_camera_pkg/stereo_rgbd.launch.py\n'}
+[14.798850] (stereo_camera_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/yahboom/camera_ws/install/stereo_camera_pkg/share/stereo_camera_pkg/stereo_rtabmap.launch.py\n'}
+[14.799257] (stereo_camera_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/yahboom/camera_ws/install/stereo_camera_pkg/share/stereo_camera_pkg/usb.launch.py\n'}
+[14.800469] (stereo_camera_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/yahboom/camera_ws/install/stereo_camera_pkg/share/stereo_camera_pkg/config/left.yaml\n'}
+[14.800974] (stereo_camera_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/yahboom/camera_ws/install/stereo_camera_pkg/share/stereo_camera_pkg/config/left2.yaml\n'}
+[14.801662] (stereo_camera_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/yahboom/camera_ws/install/stereo_camera_pkg/share/stereo_camera_pkg/config/left_raw.yaml\n'}
+[14.802340] (stereo_camera_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/yahboom/camera_ws/install/stereo_camera_pkg/share/stereo_camera_pkg/config/right.yaml\n'}
+[14.803474] (stereo_camera_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/yahboom/camera_ws/install/stereo_camera_pkg/share/stereo_camera_pkg/config/right2.yaml\n'}
+[14.803887] (stereo_camera_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/yahboom/camera_ws/install/stereo_camera_pkg/share/stereo_camera_pkg/config/right_raw.yaml\n'}
+[14.804064] (stereo_camera_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/yahboom/camera_ws/install/stereo_camera_pkg/share/ament_index/resource_index/package_run_dependencies/stereo_camera_pkg\n'}
+[14.805082] (stereo_camera_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/yahboom/camera_ws/install/stereo_camera_pkg/share/ament_index/resource_index/parent_prefix_path/stereo_camera_pkg\n'}
+[14.805869] (stereo_camera_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/yahboom/camera_ws/install/stereo_camera_pkg/share/stereo_camera_pkg/environment/ament_prefix_path.sh\n'}
+[14.806042] (stereo_camera_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/yahboom/camera_ws/install/stereo_camera_pkg/share/stereo_camera_pkg/environment/ament_prefix_path.dsv\n'}
+[14.806528] (stereo_camera_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/yahboom/camera_ws/install/stereo_camera_pkg/share/stereo_camera_pkg/environment/path.sh\n'}
+[14.806676] (stereo_camera_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/yahboom/camera_ws/install/stereo_camera_pkg/share/stereo_camera_pkg/environment/path.dsv\n'}
+[14.807237] (stereo_camera_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/yahboom/camera_ws/install/stereo_camera_pkg/share/stereo_camera_pkg/local_setup.bash\n'}
+[14.807936] (stereo_camera_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/yahboom/camera_ws/install/stereo_camera_pkg/share/stereo_camera_pkg/local_setup.sh\n'}
+[14.808458] (stereo_camera_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/yahboom/camera_ws/install/stereo_camera_pkg/share/stereo_camera_pkg/local_setup.zsh\n'}
+[14.808700] (stereo_camera_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/yahboom/camera_ws/install/stereo_camera_pkg/share/stereo_camera_pkg/local_setup.dsv\n'}
+[14.808765] (stereo_camera_pkg) StdoutLine: {'line': b'-- Symlinking: /home/yahboom/camera_ws/install/stereo_camera_pkg/share/stereo_camera_pkg/package.dsv\n'}
+[14.819062] (stereo_camera_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/yahboom/camera_ws/install/stereo_camera_pkg/share/ament_index/resource_index/packages/stereo_camera_pkg\n'}
+[14.819204] (-) TimerEvent: {}
+[14.819992] (stereo_camera_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/yahboom/camera_ws/install/stereo_camera_pkg/share/stereo_camera_pkg/cmake/stereo_camera_pkgConfig.cmake\n'}
+[14.820459] (stereo_camera_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/yahboom/camera_ws/install/stereo_camera_pkg/share/stereo_camera_pkg/cmake/stereo_camera_pkgConfig-version.cmake\n'}
+[14.820643] (stereo_camera_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/yahboom/camera_ws/install/stereo_camera_pkg/share/stereo_camera_pkg/package.xml\n'}
+[14.822866] (stereo_camera_pkg) CommandEnded: {'returncode': 0}
+[14.919327] (-) TimerEvent: {}
+[14.991347] (stereo_camera_pkg) JobEnded: {'identifier': 'stereo_camera_pkg', 'rc': 0}
+[14.992437] (-) EventReactorShutdown: {}

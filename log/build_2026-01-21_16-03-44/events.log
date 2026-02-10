@@ -1,0 +1,135 @@
+[0.000000] (-) TimerEvent: {}
+[0.000197] (stereo_camera_pkg) JobQueued: {'identifier': 'stereo_camera_pkg', 'dependencies': OrderedDict()}
+[0.000233] (stereo_camera_pkg) JobStarted: {'identifier': 'stereo_camera_pkg'}
+[0.062521] (stereo_camera_pkg) JobProgress: {'identifier': 'stereo_camera_pkg', 'progress': 'cmake'}
+[0.063296] (stereo_camera_pkg) JobProgress: {'identifier': 'stereo_camera_pkg', 'progress': 'build'}
+[0.063633] (stereo_camera_pkg) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/yahboom/camera_ws/build/stereo_camera_pkg', '--', '-j6', '-l6'], 'cwd': '/home/yahboom/camera_ws/build/stereo_camera_pkg', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('PYTHON_BASIC_REPL', '1'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:en'), ('USER', 'yahboom'), ('LC_TIME', 'zh_CN.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/yahboom'), ('CHROME_DESKTOP', 'code.desktop'), ('TERM_PROGRAM_VERSION', '1.107.1'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('MANAGERPID', '1147'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('SYSTEMD_EXEC_PID', '1340'), ('BUNDLED_DEBUGPY_PATH', '/home/yahboom/.vscode/extensions/ms-python.debugpy-2025.18.0-linux-x64/bundled/libs/debugpy'), ('IM_CONFIG_CHECK_ENV', '1'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '4251'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/yahboom/ydlidar_ros2_ws/install:/home/yahboom/camera_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'yahboom'), ('JOURNAL_STREAM', '8:17279'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'yahboom'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', '/usr/share/gazebo-11/models:/opt/ros/humble/share/turtlebot3_gazebo/models'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('FC_FONTATIONS', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/yahboom/.local/bin:/opt/ros/humble/bin:/home/yahboom/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/yahboom/.vscode/extensions/ms-python.debugpy-2025.18.0-linux-x64/bundled/scripts/noConfigScripts'), ('SESSION_MANAGER', 'local/yahboom-VM:@/tmp/.ICE-unix/1306,unix/yahboom-VM:/tmp/.ICE-unix/1306'), ('INVOCATION_ID', '31302c2fe79444509cb25fb747f07999'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('USE_SIM_TIME', 'true'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'wayland'), ('DISPLAY', ':0'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/home/yahboom/.vscode/extensions/ms-python.debugpy-2025.18.0-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-4db3ad9cf3806412.txt'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('PYTHONSTARTUP', '/home/yahboom/.config/Code/User/workspaceStorage/7705f2699625cff51761f8697bb07f86/ms-python.python/pythonrc.py'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.OW9NJ3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-32e2b5c224.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '30'), ('AMENT_PREFIX_PATH', '/home/yahboom/camera_ws/install/stereo_camera_pkg:/home/yahboom/ydlidar_ros2_ws/install/ydlidar_ros2_driver:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/yahboom/camera_ws/build/stereo_camera_pkg'), ('TURTLEBOT3_MODEL', 'burger'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/yahboom/camera_ws/install/stereo_camera_pkg:/home/yahboom/ydlidar_ros2_ws/install/ydlidar_ros2_driver:/opt/ros/humble')]), 'shell': False}
+[0.098891] (-) TimerEvent: {}
+[0.116794] (stereo_camera_pkg) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target camera_info\x1b[0m\n'}
+[0.140853] (stereo_camera_pkg) StdoutLine: {'line': b'[ 40%] Built target stereo_camera_node\n'}
+[0.141203] (stereo_camera_pkg) StdoutLine: {'line': b'[ 40%] Built target left_camera_node\n'}
+[0.146149] (stereo_camera_pkg) StdoutLine: {'line': b'[ 60%] Built target stereo_node\n'}
+[0.148262] (stereo_camera_pkg) StdoutLine: {'line': b'[ 70%] \x1b[32mBuilding CXX object CMakeFiles/camera_info.dir/src/camera_info.cpp.o\x1b[0m\n'}
+[0.151203] (stereo_camera_pkg) StdoutLine: {'line': b'[ 90%] Built target right_camera_node\n'}
+[0.199391] (-) TimerEvent: {}
+[0.300014] (-) TimerEvent: {}
+[0.400569] (-) TimerEvent: {}
+[0.501162] (-) TimerEvent: {}
+[0.601744] (-) TimerEvent: {}
+[0.702516] (-) TimerEvent: {}
+[0.803006] (-) TimerEvent: {}
+[0.903764] (-) TimerEvent: {}
+[1.004522] (-) TimerEvent: {}
+[1.105179] (-) TimerEvent: {}
+[1.205630] (-) TimerEvent: {}
+[1.306285] (-) TimerEvent: {}
+[1.407144] (-) TimerEvent: {}
+[1.507577] (-) TimerEvent: {}
+[1.608187] (-) TimerEvent: {}
+[1.708681] (-) TimerEvent: {}
+[1.809241] (-) TimerEvent: {}
+[1.910188] (-) TimerEvent: {}
+[2.010893] (-) TimerEvent: {}
+[2.111783] (-) TimerEvent: {}
+[2.212713] (-) TimerEvent: {}
+[2.313606] (-) TimerEvent: {}
+[2.414166] (-) TimerEvent: {}
+[2.515023] (-) TimerEvent: {}
+[2.615593] (-) TimerEvent: {}
+[2.716109] (-) TimerEvent: {}
+[2.816970] (-) TimerEvent: {}
+[2.917683] (-) TimerEvent: {}
+[3.018253] (-) TimerEvent: {}
+[3.118887] (-) TimerEvent: {}
+[3.219906] (-) TimerEvent: {}
+[3.320737] (-) TimerEvent: {}
+[3.421279] (-) TimerEvent: {}
+[3.522287] (-) TimerEvent: {}
+[3.623269] (-) TimerEvent: {}
+[3.723877] (-) TimerEvent: {}
+[3.824842] (-) TimerEvent: {}
+[3.925849] (-) TimerEvent: {}
+[4.026857] (-) TimerEvent: {}
+[4.127496] (-) TimerEvent: {}
+[4.228131] (-) TimerEvent: {}
+[4.328623] (-) TimerEvent: {}
+[4.429291] (-) TimerEvent: {}
+[4.530048] (-) TimerEvent: {}
+[4.630820] (-) TimerEvent: {}
+[4.731501] (-) TimerEvent: {}
+[4.832183] (-) TimerEvent: {}
+[4.933156] (-) TimerEvent: {}
+[5.033866] (-) TimerEvent: {}
+[5.134827] (-) TimerEvent: {}
+[5.235261] (-) TimerEvent: {}
+[5.335769] (-) TimerEvent: {}
+[5.436238] (-) TimerEvent: {}
+[5.537481] (-) TimerEvent: {}
+[5.638389] (-) TimerEvent: {}
+[5.738914] (-) TimerEvent: {}
+[5.839460] (-) TimerEvent: {}
+[5.939972] (-) TimerEvent: {}
+[6.040626] (-) TimerEvent: {}
+[6.141431] (-) TimerEvent: {}
+[6.242104] (-) TimerEvent: {}
+[6.342878] (-) TimerEvent: {}
+[6.443569] (-) TimerEvent: {}
+[6.544549] (-) TimerEvent: {}
+[6.645474] (-) TimerEvent: {}
+[6.682417] (stereo_camera_pkg) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable camera_info\x1b[0m\n'}
+[6.745487] (-) TimerEvent: {}
+[6.846399] (-) TimerEvent: {}
+[6.946996] (-) TimerEvent: {}
+[7.047854] (-) TimerEvent: {}
+[7.148386] (-) TimerEvent: {}
+[7.189168] (stereo_camera_pkg) StdoutLine: {'line': b'[100%] Built target camera_info\n'}
+[7.202756] (stereo_camera_pkg) CommandEnded: {'returncode': 0}
+[7.248707] (-) TimerEvent: {}
+[7.272430] (stereo_camera_pkg) JobProgress: {'identifier': 'stereo_camera_pkg', 'progress': 'install'}
+[7.288610] (stereo_camera_pkg) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/yahboom/camera_ws/build/stereo_camera_pkg'], 'cwd': '/home/yahboom/camera_ws/build/stereo_camera_pkg', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('PYTHON_BASIC_REPL', '1'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:en'), ('USER', 'yahboom'), ('LC_TIME', 'zh_CN.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/yahboom'), ('CHROME_DESKTOP', 'code.desktop'), ('TERM_PROGRAM_VERSION', '1.107.1'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('MANAGERPID', '1147'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('SYSTEMD_EXEC_PID', '1340'), ('BUNDLED_DEBUGPY_PATH', '/home/yahboom/.vscode/extensions/ms-python.debugpy-2025.18.0-linux-x64/bundled/libs/debugpy'), ('IM_CONFIG_CHECK_ENV', '1'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '4251'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/yahboom/ydlidar_ros2_ws/install:/home/yahboom/camera_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'yahboom'), ('JOURNAL_STREAM', '8:17279'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'yahboom'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', '/usr/share/gazebo-11/models:/opt/ros/humble/share/turtlebot3_gazebo/models'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('FC_FONTATIONS', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/yahboom/.local/bin:/opt/ros/humble/bin:/home/yahboom/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/yahboom/.vscode/extensions/ms-python.debugpy-2025.18.0-linux-x64/bundled/scripts/noConfigScripts'), ('SESSION_MANAGER', 'local/yahboom-VM:@/tmp/.ICE-unix/1306,unix/yahboom-VM:/tmp/.ICE-unix/1306'), ('INVOCATION_ID', '31302c2fe79444509cb25fb747f07999'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('USE_SIM_TIME', 'true'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'wayland'), ('DISPLAY', ':0'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/home/yahboom/.vscode/extensions/ms-python.debugpy-2025.18.0-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-4db3ad9cf3806412.txt'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('PYTHONSTARTUP', '/home/yahboom/.config/Code/User/workspaceStorage/7705f2699625cff51761f8697bb07f86/ms-python.python/pythonrc.py'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.OW9NJ3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-32e2b5c224.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '30'), ('AMENT_PREFIX_PATH', '/home/yahboom/camera_ws/install/stereo_camera_pkg:/home/yahboom/ydlidar_ros2_ws/install/ydlidar_ros2_driver:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/yahboom/camera_ws/build/stereo_camera_pkg'), ('TURTLEBOT3_MODEL', 'burger'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/yahboom/camera_ws/install/stereo_camera_pkg:/home/yahboom/ydlidar_ros2_ws/install/ydlidar_ros2_driver:/opt/ros/humble')]), 'shell': False}
+[7.298359] (stereo_camera_pkg) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[7.298588] (stereo_camera_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/yahboom/camera_ws/install/stereo_camera_pkg/lib/stereo_camera_pkg/stereo_camera_node\n'}
+[7.298870] (stereo_camera_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/yahboom/camera_ws/install/stereo_camera_pkg/lib/stereo_camera_pkg/left_camera_node\n'}
+[7.298948] (stereo_camera_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/yahboom/camera_ws/install/stereo_camera_pkg/lib/stereo_camera_pkg/right_camera_node\n'}
+[7.299216] (stereo_camera_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/yahboom/camera_ws/install/stereo_camera_pkg/lib/stereo_camera_pkg/stereo_node\n'}
+[7.299616] (stereo_camera_pkg) StdoutLine: {'line': b'-- Installing: /home/yahboom/camera_ws/install/stereo_camera_pkg/lib/stereo_camera_pkg/camera_info\n'}
+[7.303584] (stereo_camera_pkg) StdoutLine: {'line': b'-- Set runtime path of "/home/yahboom/camera_ws/install/stereo_camera_pkg/lib/stereo_camera_pkg/camera_info" to ""\n'}
+[7.303744] (stereo_camera_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/yahboom/camera_ws/install/stereo_camera_pkg/share/stereo_camera_pkg\n'}
+[7.303822] (stereo_camera_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/yahboom/camera_ws/install/stereo_camera_pkg/share/stereo_camera_pkg/stereo_calibration.launch.py\n'}
+[7.303907] (stereo_camera_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/yahboom/camera_ws/install/stereo_camera_pkg/share/stereo_camera_pkg/usb.launch.py\n'}
+[7.303997] (stereo_camera_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/yahboom/camera_ws/install/stereo_camera_pkg/share/stereo_camera_pkg/calib.launch.py\n'}
+[7.304041] (stereo_camera_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/yahboom/camera_ws/install/stereo_camera_pkg/share/stereo_camera_pkg/prtabmap.launch.py\n'}
+[7.304075] (stereo_camera_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/yahboom/camera_ws/install/stereo_camera_pkg/share/stereo_camera_pkg/stereo_camera.launch.py\n'}
+[7.304107] (stereo_camera_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/yahboom/camera_ws/install/stereo_camera_pkg/share/stereo_camera_pkg/stereo_rtabmap.launch.py\n'}
+[7.304137] (stereo_camera_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/yahboom/camera_ws/install/stereo_camera_pkg/share/stereo_camera_pkg/apt_rtabmap.launch.py\n'}
+[7.304167] (stereo_camera_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/yahboom/camera_ws/install/stereo_camera_pkg/share/stereo_camera_pkg/left_calibration.launch.py\n'}
+[7.304270] (stereo_camera_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/yahboom/camera_ws/install/stereo_camera_pkg/share/stereo_camera_pkg/rtabmap.launch.py\n'}
+[7.304319] (stereo_camera_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/yahboom/camera_ws/install/stereo_camera_pkg/share/stereo_camera_pkg/config\n'}
+[7.304355] (stereo_camera_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/yahboom/camera_ws/install/stereo_camera_pkg/share/stereo_camera_pkg/config/left.yaml\n'}
+[7.304388] (stereo_camera_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/yahboom/camera_ws/install/stereo_camera_pkg/share/stereo_camera_pkg/config/left2.yaml\n'}
+[7.304418] (stereo_camera_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/yahboom/camera_ws/install/stereo_camera_pkg/share/stereo_camera_pkg/config/right1.yaml\n'}
+[7.304448] (stereo_camera_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/yahboom/camera_ws/install/stereo_camera_pkg/share/stereo_camera_pkg/config/right2.yaml\n'}
+[7.304479] (stereo_camera_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/yahboom/camera_ws/install/stereo_camera_pkg/share/stereo_camera_pkg/config/right_camera_info.yaml\n'}
+[7.304603] (stereo_camera_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/yahboom/camera_ws/install/stereo_camera_pkg/share/stereo_camera_pkg/config/left1.yaml\n'}
+[7.304646] (stereo_camera_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/yahboom/camera_ws/install/stereo_camera_pkg/share/stereo_camera_pkg/config/right.yaml\n'}
+[7.304681] (stereo_camera_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/yahboom/camera_ws/install/stereo_camera_pkg/share/stereo_camera_pkg/config/left_camera_info.yaml\n'}
+[7.304715] (stereo_camera_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/yahboom/camera_ws/install/stereo_camera_pkg/share/ament_index/resource_index/package_run_dependencies/stereo_camera_pkg\n'}
+[7.304758] (stereo_camera_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/yahboom/camera_ws/install/stereo_camera_pkg/share/ament_index/resource_index/parent_prefix_path/stereo_camera_pkg\n'}
+[7.304792] (stereo_camera_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/yahboom/camera_ws/install/stereo_camera_pkg/share/stereo_camera_pkg/environment/ament_prefix_path.sh\n'}
+[7.305044] (stereo_camera_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/yahboom/camera_ws/install/stereo_camera_pkg/share/stereo_camera_pkg/environment/ament_prefix_path.dsv\n'}
+[7.305282] (stereo_camera_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/yahboom/camera_ws/install/stereo_camera_pkg/share/stereo_camera_pkg/environment/path.sh\n'}
+[7.305354] (stereo_camera_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/yahboom/camera_ws/install/stereo_camera_pkg/share/stereo_camera_pkg/environment/path.dsv\n'}
+[7.305415] (stereo_camera_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/yahboom/camera_ws/install/stereo_camera_pkg/share/stereo_camera_pkg/local_setup.bash\n'}
+[7.305472] (stereo_camera_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/yahboom/camera_ws/install/stereo_camera_pkg/share/stereo_camera_pkg/local_setup.sh\n'}
+[7.305524] (stereo_camera_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/yahboom/camera_ws/install/stereo_camera_pkg/share/stereo_camera_pkg/local_setup.zsh\n'}
+[7.305592] (stereo_camera_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/yahboom/camera_ws/install/stereo_camera_pkg/share/stereo_camera_pkg/local_setup.dsv\n'}
+[7.305641] (stereo_camera_pkg) StdoutLine: {'line': b'-- Installing: /home/yahboom/camera_ws/install/stereo_camera_pkg/share/stereo_camera_pkg/package.dsv\n'}
+[7.305687] (stereo_camera_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/yahboom/camera_ws/install/stereo_camera_pkg/share/ament_index/resource_index/packages/stereo_camera_pkg\n'}
+[7.305737] (stereo_camera_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/yahboom/camera_ws/install/stereo_camera_pkg/share/stereo_camera_pkg/cmake/stereo_camera_pkgConfig.cmake\n'}
+[7.305787] (stereo_camera_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/yahboom/camera_ws/install/stereo_camera_pkg/share/stereo_camera_pkg/cmake/stereo_camera_pkgConfig-version.cmake\n'}
+[7.305837] (stereo_camera_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/yahboom/camera_ws/install/stereo_camera_pkg/share/stereo_camera_pkg/package.xml\n'}
+[7.308047] (stereo_camera_pkg) CommandEnded: {'returncode': 0}
+[7.349198] (-) TimerEvent: {}
+[7.464319] (-) TimerEvent: {}
+[7.487498] (stereo_camera_pkg) JobEnded: {'identifier': 'stereo_camera_pkg', 'rc': 0}
+[7.488659] (-) EventReactorShutdown: {}

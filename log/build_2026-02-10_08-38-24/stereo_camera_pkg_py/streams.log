@@ -1,0 +1,35 @@
+[0.728s] Invoking command in '/home/yahboom/camera_ws/build/stereo_camera_pkg_py': PYTHONPATH=/home/yahboom/camera_ws/build/stereo_camera_pkg_py/prefix_override:/home/yahboom/camera_ws/install/stereo_camera_pkg_py/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --uninstall --editable --build-directory /home/yahboom/camera_ws/build/stereo_camera_pkg_py/build
+[0.941s] running develop
+[1.049s] Removing /home/yahboom/camera_ws/install/stereo_camera_pkg_py/lib/python3.10/site-packages/stereo-camera-pkg-py.egg-link (link to .)
+[1.087s] Invoked command in '/home/yahboom/camera_ws/build/stereo_camera_pkg_py' returned '0': PYTHONPATH=/home/yahboom/camera_ws/build/stereo_camera_pkg_py/prefix_override:/home/yahboom/camera_ws/install/stereo_camera_pkg_py/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --uninstall --editable --build-directory /home/yahboom/camera_ws/build/stereo_camera_pkg_py/build
+[1.087s] Invoking command in '/home/yahboom/camera_ws/src/stereo_camera_pkg_py': PYTHONPATH=/home/yahboom/camera_ws/build/stereo_camera_pkg_py/prefix_override:/home/yahboom/camera_ws/install/stereo_camera_pkg_py/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/stereo_camera_pkg_py build --build-base /home/yahboom/camera_ws/build/stereo_camera_pkg_py/build install --record /home/yahboom/camera_ws/build/stereo_camera_pkg_py/install.log --single-version-externally-managed
+[1.285s] running egg_info
+[1.286s] writing ../../build/stereo_camera_pkg_py/stereo_camera_pkg_py.egg-info/PKG-INFO
+[1.286s] writing dependency_links to ../../build/stereo_camera_pkg_py/stereo_camera_pkg_py.egg-info/dependency_links.txt
+[1.286s] writing entry points to ../../build/stereo_camera_pkg_py/stereo_camera_pkg_py.egg-info/entry_points.txt
+[1.287s] writing requirements to ../../build/stereo_camera_pkg_py/stereo_camera_pkg_py.egg-info/requires.txt
+[1.287s] writing top-level names to ../../build/stereo_camera_pkg_py/stereo_camera_pkg_py.egg-info/top_level.txt
+[1.290s] reading manifest file '../../build/stereo_camera_pkg_py/stereo_camera_pkg_py.egg-info/SOURCES.txt'
+[1.291s] writing manifest file '../../build/stereo_camera_pkg_py/stereo_camera_pkg_py.egg-info/SOURCES.txt'
+[1.291s] running build
+[1.292s] running build_py
+[1.293s] copying stereo_camera_pkg_py/v4l2.py -> /home/yahboom/camera_ws/build/stereo_camera_pkg_py/build/lib/stereo_camera_pkg_py
+[1.294s] running install
+[1.295s] running install_lib
+[1.295s] creating /home/yahboom/camera_ws/install/stereo_camera_pkg_py/lib/python3.10/site-packages/stereo_camera_pkg_py
+[1.295s] copying /home/yahboom/camera_ws/build/stereo_camera_pkg_py/build/lib/stereo_camera_pkg_py/stereo_info.py -> /home/yahboom/camera_ws/install/stereo_camera_pkg_py/lib/python3.10/site-packages/stereo_camera_pkg_py
+[1.296s] copying /home/yahboom/camera_ws/build/stereo_camera_pkg_py/build/lib/stereo_camera_pkg_py/stereo_compresseed.py -> /home/yahboom/camera_ws/install/stereo_camera_pkg_py/lib/python3.10/site-packages/stereo_camera_pkg_py
+[1.297s] copying /home/yahboom/camera_ws/build/stereo_camera_pkg_py/build/lib/stereo_camera_pkg_py/__init__.py -> /home/yahboom/camera_ws/install/stereo_camera_pkg_py/lib/python3.10/site-packages/stereo_camera_pkg_py
+[1.297s] copying /home/yahboom/camera_ws/build/stereo_camera_pkg_py/build/lib/stereo_camera_pkg_py/v4l2.py -> /home/yahboom/camera_ws/install/stereo_camera_pkg_py/lib/python3.10/site-packages/stereo_camera_pkg_py
+[1.298s] byte-compiling /home/yahboom/camera_ws/install/stereo_camera_pkg_py/lib/python3.10/site-packages/stereo_camera_pkg_py/stereo_info.py to stereo_info.cpython-310.pyc
+[1.299s] byte-compiling /home/yahboom/camera_ws/install/stereo_camera_pkg_py/lib/python3.10/site-packages/stereo_camera_pkg_py/stereo_compresseed.py to stereo_compresseed.cpython-310.pyc
+[1.300s] byte-compiling /home/yahboom/camera_ws/install/stereo_camera_pkg_py/lib/python3.10/site-packages/stereo_camera_pkg_py/__init__.py to __init__.cpython-310.pyc
+[1.300s] byte-compiling /home/yahboom/camera_ws/install/stereo_camera_pkg_py/lib/python3.10/site-packages/stereo_camera_pkg_py/v4l2.py to v4l2.cpython-310.pyc
+[1.301s] running install_data
+[1.302s] copying launch/rtabmap.launch.py -> /home/yahboom/camera_ws/install/stereo_camera_pkg_py/share/stereo_camera_pkg_py/launch
+[1.302s] running install_egg_info
+[1.303s] Copying ../../build/stereo_camera_pkg_py/stereo_camera_pkg_py.egg-info to /home/yahboom/camera_ws/install/stereo_camera_pkg_py/lib/python3.10/site-packages/stereo_camera_pkg_py-0.0.0-py3.10.egg-info
+[1.306s] running install_scripts
+[1.322s] Installing v4l2 script to /home/yahboom/camera_ws/install/stereo_camera_pkg_py/lib/stereo_camera_pkg_py
+[1.322s] writing list of installed files to '/home/yahboom/camera_ws/build/stereo_camera_pkg_py/install.log'
+[1.348s] Invoked command in '/home/yahboom/camera_ws/src/stereo_camera_pkg_py' returned '0': PYTHONPATH=/home/yahboom/camera_ws/build/stereo_camera_pkg_py/prefix_override:/home/yahboom/camera_ws/install/stereo_camera_pkg_py/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/stereo_camera_pkg_py build --build-base /home/yahboom/camera_ws/build/stereo_camera_pkg_py/build install --record /home/yahboom/camera_ws/build/stereo_camera_pkg_py/install.log --single-version-externally-managed

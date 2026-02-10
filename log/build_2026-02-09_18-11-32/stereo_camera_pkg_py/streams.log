@@ -1,0 +1,18 @@
+[0.559s] Invoking command in '/home/yahboom/camera_ws/build/stereo_camera_pkg_py': PYTHONPATH=/home/yahboom/camera_ws/build/stereo_camera_pkg_py/prefix_override:/home/yahboom/camera_ws/install/stereo_camera_pkg_py/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/yahboom/camera_ws/build/stereo_camera_pkg_py/build --no-deps install_data
+[0.748s] running develop
+[0.854s] running egg_info
+[0.855s] writing stereo_camera_pkg_py.egg-info/PKG-INFO
+[0.855s] writing dependency_links to stereo_camera_pkg_py.egg-info/dependency_links.txt
+[0.855s] writing entry points to stereo_camera_pkg_py.egg-info/entry_points.txt
+[0.855s] writing requirements to stereo_camera_pkg_py.egg-info/requires.txt
+[0.856s] writing top-level names to stereo_camera_pkg_py.egg-info/top_level.txt
+[0.857s] reading manifest file 'stereo_camera_pkg_py.egg-info/SOURCES.txt'
+[0.858s] writing manifest file 'stereo_camera_pkg_py.egg-info/SOURCES.txt'
+[0.859s] running build_ext
+[0.859s] Creating /home/yahboom/camera_ws/install/stereo_camera_pkg_py/lib/python3.10/site-packages/stereo-camera-pkg-py.egg-link (link to .)
+[0.859s] Installing v4l2 script to /home/yahboom/camera_ws/install/stereo_camera_pkg_py/lib/stereo_camera_pkg_py
+[0.860s] 
+[0.860s] Installed /home/yahboom/camera_ws/build/stereo_camera_pkg_py
+[0.860s] running install_data
+[0.860s] copying launch/stereo.launch.py -> /home/yahboom/camera_ws/install/stereo_camera_pkg_py/share/stereo_camera_pkg_py/launch
+[0.887s] Invoked command in '/home/yahboom/camera_ws/build/stereo_camera_pkg_py' returned '0': PYTHONPATH=/home/yahboom/camera_ws/build/stereo_camera_pkg_py/prefix_override:/home/yahboom/camera_ws/install/stereo_camera_pkg_py/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/yahboom/camera_ws/build/stereo_camera_pkg_py/build --no-deps install_data
