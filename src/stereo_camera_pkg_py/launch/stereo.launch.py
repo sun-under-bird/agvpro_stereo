@@ -6,10 +6,8 @@ from launch_ros.actions import Node
 def generate_launch_description():
     
     # === 1. 配置路径 ===
-    # 请确保路径指向你存放yaml的真实位置
-    left_yaml = '/home/yahboom/camera_ws/src/stereo_camera_pkg_py/config/left.yaml'
-    right_yaml = '/home/yahboom/camera_ws/src/stereo_camera_pkg_py/config/right.yaml'
-    # 指向我们刚才写的 Python 脚本
+    left_yaml = '/home/yahboom/camera_ws/src/stereo_camera_pkg_py/config/left2.yaml'
+    right_yaml = '/home/yahboom/camera_ws/src/stereo_camera_pkg_py/config/right2.yaml'
     python_script = '/home/yahboom/camera_ws/src/stereo_camera_pkg_py/stereo_camera_pkg_py/stereo_info.py'
 
     # === 2. 硬件配置 (锁曝光) ===
@@ -31,17 +29,14 @@ def generate_launch_description():
         parameters=[{
             'video_device': '/dev/video0',
             'pixel_format': 'mjpeg2rgb',
-            'image_width': 640,
-            'image_height': 240,
+            'image_width': 1280,
+            'image_height': 480,
             'framerate': 30.0,
-            # 我们不需要它加载 calibration file，因为我们在 Python 里加载
             'camera_name': 'default_cam',
         }]
     )
 
     # === 4. 启动 Python 处理节点 (裁剪+发布Info) ===
-    # 注意：这里使用 execute_process 直接运行 python 脚本 (调试方便)
-    # 如果你已经编译好了包，也可以用 Node(package='...', executable='...')
     stereo_driver = ExecuteProcess(
         cmd=['python3', python_script, 
              '--ros-args', 
