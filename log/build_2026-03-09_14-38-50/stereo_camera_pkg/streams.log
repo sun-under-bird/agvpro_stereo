@@ -1,0 +1,55 @@
+[0.060s] Invoking command in '/home/elephant/agvpro_stereo/build/stereo_camera_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/elephant/agv_pro_ros2/install/teleop_twist_keyboard:/home/elephant/agv_pro_ros2/install/rtabmap_python:/home/elephant/agv_pro_ros2/install/agv_pro_autocharge:/home/elephant/agv_pro_ros2/install/nav2_simple_commander:/opt/ros/humble /usr/bin/cmake --build /home/elephant/agvpro_stereo/build/stereo_camera_pkg -- -j6 -l6
+[0.380s] [ 50%] Built target left_camera_node
+[0.380s] [ 50%] Built target right_camera_node
+[0.380s] [ 50%] [32mBuilding CXX object CMakeFiles/stereo_split_node.dir/src/stereo_split_node.cpp.o[0m
+[0.380s] [ 70%] Built target camera_info
+[0.382s] [ 90%] Built target stereo_camera_node
+[20.830s] [100%] [32m[1mLinking CXX executable stereo_split_node[0m
+[21.436s] /usr/bin/ld: warning: libopencv_imgcodecs.so.4.5d, needed by /opt/ros/humble/lib/libcv_bridge.so, may conflict with libopencv_imgcodecs.so.410
+[21.451s] /usr/bin/ld: warning: libopencv_core.so.4.5d, needed by /opt/ros/humble/lib/libcv_bridge.so, may conflict with libopencv_core.so.410
+[22.428s] [100%] Built target stereo_split_node
+[22.465s] Invoked command in '/home/elephant/agvpro_stereo/build/stereo_camera_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/elephant/agv_pro_ros2/install/teleop_twist_keyboard:/home/elephant/agv_pro_ros2/install/rtabmap_python:/home/elephant/agv_pro_ros2/install/agv_pro_autocharge:/home/elephant/agv_pro_ros2/install/nav2_simple_commander:/opt/ros/humble /usr/bin/cmake --build /home/elephant/agvpro_stereo/build/stereo_camera_pkg -- -j6 -l6
+[22.489s] Invoking command in '/home/elephant/agvpro_stereo/build/stereo_camera_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/elephant/agv_pro_ros2/install/teleop_twist_keyboard:/home/elephant/agv_pro_ros2/install/rtabmap_python:/home/elephant/agv_pro_ros2/install/agv_pro_autocharge:/home/elephant/agv_pro_ros2/install/nav2_simple_commander:/opt/ros/humble /usr/bin/cmake --install /home/elephant/agvpro_stereo/build/stereo_camera_pkg
+[22.509s] -- Install configuration: ""
+[22.511s] -- Execute custom install script
+[22.512s] -- Up-to-date symlink: /home/elephant/agvpro_stereo/install/stereo_camera_pkg/lib/stereo_camera_pkg/stereo_camera_node
+[22.512s] -- Up-to-date symlink: /home/elephant/agvpro_stereo/install/stereo_camera_pkg/lib/stereo_camera_pkg/left_camera_node
+[22.513s] -- Up-to-date symlink: /home/elephant/agvpro_stereo/install/stereo_camera_pkg/lib/stereo_camera_pkg/right_camera_node
+[22.513s] -- Up-to-date symlink: /home/elephant/agvpro_stereo/install/stereo_camera_pkg/lib/stereo_camera_pkg/camera_info
+[22.513s] -- Up-to-date symlink: /home/elephant/agvpro_stereo/install/stereo_camera_pkg/lib/stereo_camera_pkg/stereo_split_node
+[22.519s] -- Up-to-date symlink: /home/elephant/agvpro_stereo/install/stereo_camera_pkg/share/stereo_camera_pkg/apt_rtabmap.launch.py
+[22.519s] -- Up-to-date symlink: /home/elephant/agvpro_stereo/install/stereo_camera_pkg/share/stereo_camera_pkg/calib.launch.py
+[22.520s] -- Up-to-date symlink: /home/elephant/agvpro_stereo/install/stereo_camera_pkg/share/stereo_camera_pkg/left_calibration.launch.py
+[22.520s] -- Up-to-date symlink: /home/elephant/agvpro_stereo/install/stereo_camera_pkg/share/stereo_camera_pkg/new_rtabmap.launch.py
+[22.520s] -- Up-to-date symlink: /home/elephant/agvpro_stereo/install/stereo_camera_pkg/share/stereo_camera_pkg/new_usb.launch.py
+[22.520s] -- Up-to-date symlink: /home/elephant/agvpro_stereo/install/stereo_camera_pkg/share/stereo_camera_pkg/prtabmap.launch.py
+[22.521s] -- Up-to-date symlink: /home/elephant/agvpro_stereo/install/stereo_camera_pkg/share/stereo_camera_pkg/rtabmap.launch.py
+[22.521s] -- Up-to-date symlink: /home/elephant/agvpro_stereo/install/stereo_camera_pkg/share/stereo_camera_pkg/stereo_calibration.launch.py
+[22.521s] -- Up-to-date symlink: /home/elephant/agvpro_stereo/install/stereo_camera_pkg/share/stereo_camera_pkg/stereo_camera.launch.py
+[22.521s] -- Up-to-date symlink: /home/elephant/agvpro_stereo/install/stereo_camera_pkg/share/stereo_camera_pkg/stereo_rgbd.launch.py
+[22.522s] -- Up-to-date symlink: /home/elephant/agvpro_stereo/install/stereo_camera_pkg/share/stereo_camera_pkg/stereo_rtabmap.launch.py
+[22.522s] -- Up-to-date symlink: /home/elephant/agvpro_stereo/install/stereo_camera_pkg/share/stereo_camera_pkg/usb.launch.py
+[22.523s] -- Up-to-date symlink: /home/elephant/agvpro_stereo/install/stereo_camera_pkg/share/stereo_camera_pkg/config/left2.yaml
+[22.523s] -- Up-to-date symlink: /home/elephant/agvpro_stereo/install/stereo_camera_pkg/share/stereo_camera_pkg/config/left320.yaml
+[22.523s] -- Up-to-date symlink: /home/elephant/agvpro_stereo/install/stereo_camera_pkg/share/stereo_camera_pkg/config/left5.yaml
+[22.524s] -- Up-to-date symlink: /home/elephant/agvpro_stereo/install/stereo_camera_pkg/share/stereo_camera_pkg/config/left_raw.yaml
+[22.524s] -- Up-to-date symlink: /home/elephant/agvpro_stereo/install/stereo_camera_pkg/share/stereo_camera_pkg/config/right2.yaml
+[22.524s] -- Up-to-date symlink: /home/elephant/agvpro_stereo/install/stereo_camera_pkg/share/stereo_camera_pkg/config/right320.yaml
+[22.525s] -- Up-to-date symlink: /home/elephant/agvpro_stereo/install/stereo_camera_pkg/share/stereo_camera_pkg/config/right5.yaml
+[22.525s] -- Up-to-date symlink: /home/elephant/agvpro_stereo/install/stereo_camera_pkg/share/stereo_camera_pkg/config/right_raw.yaml
+[22.525s] -- Up-to-date symlink: /home/elephant/agvpro_stereo/install/stereo_camera_pkg/share/ament_index/resource_index/package_run_dependencies/stereo_camera_pkg
+[22.526s] -- Up-to-date symlink: /home/elephant/agvpro_stereo/install/stereo_camera_pkg/share/ament_index/resource_index/parent_prefix_path/stereo_camera_pkg
+[22.527s] -- Up-to-date symlink: /home/elephant/agvpro_stereo/install/stereo_camera_pkg/share/stereo_camera_pkg/environment/ament_prefix_path.sh
+[22.527s] -- Up-to-date symlink: /home/elephant/agvpro_stereo/install/stereo_camera_pkg/share/stereo_camera_pkg/environment/ament_prefix_path.dsv
+[22.527s] -- Up-to-date symlink: /home/elephant/agvpro_stereo/install/stereo_camera_pkg/share/stereo_camera_pkg/environment/path.sh
+[22.528s] -- Up-to-date symlink: /home/elephant/agvpro_stereo/install/stereo_camera_pkg/share/stereo_camera_pkg/environment/path.dsv
+[22.528s] -- Up-to-date symlink: /home/elephant/agvpro_stereo/install/stereo_camera_pkg/share/stereo_camera_pkg/local_setup.bash
+[22.528s] -- Up-to-date symlink: /home/elephant/agvpro_stereo/install/stereo_camera_pkg/share/stereo_camera_pkg/local_setup.sh
+[22.529s] -- Up-to-date symlink: /home/elephant/agvpro_stereo/install/stereo_camera_pkg/share/stereo_camera_pkg/local_setup.zsh
+[22.529s] -- Up-to-date symlink: /home/elephant/agvpro_stereo/install/stereo_camera_pkg/share/stereo_camera_pkg/local_setup.dsv
+[22.529s] -- Symlinking: /home/elephant/agvpro_stereo/install/stereo_camera_pkg/share/stereo_camera_pkg/package.dsv
+[22.552s] -- Up-to-date symlink: /home/elephant/agvpro_stereo/install/stereo_camera_pkg/share/ament_index/resource_index/packages/stereo_camera_pkg
+[22.552s] -- Up-to-date symlink: /home/elephant/agvpro_stereo/install/stereo_camera_pkg/share/stereo_camera_pkg/cmake/stereo_camera_pkgConfig.cmake
+[22.552s] -- Up-to-date symlink: /home/elephant/agvpro_stereo/install/stereo_camera_pkg/share/stereo_camera_pkg/cmake/stereo_camera_pkgConfig-version.cmake
+[22.553s] -- Up-to-date symlink: /home/elephant/agvpro_stereo/install/stereo_camera_pkg/share/stereo_camera_pkg/package.xml
+[22.558s] Invoked command in '/home/elephant/agvpro_stereo/build/stereo_camera_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/elephant/agv_pro_ros2/install/teleop_twist_keyboard:/home/elephant/agv_pro_ros2/install/rtabmap_python:/home/elephant/agv_pro_ros2/install/agv_pro_autocharge:/home/elephant/agv_pro_ros2/install/nav2_simple_commander:/opt/ros/humble /usr/bin/cmake --install /home/elephant/agvpro_stereo/build/stereo_camera_pkg

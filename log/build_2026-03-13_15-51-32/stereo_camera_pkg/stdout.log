@@ -1,0 +1,7 @@
+[35m[1mConsolidate compiler generated dependencies of target stereo_split_node_rgb[0m
+[ 25%] Built target right_camera_node
+[ 75%] Built target camera_info
+[ 83%] Built target stereo_camera_node
+[ 75%] Built target left_camera_node
+[ 83%] Built target stereo_split_node
+[ 91%] [32mBuilding CXX object CMakeFiles/stereo_split_node_rgb.dir/src/stereo_split_node_rgb.cpp.o[0m

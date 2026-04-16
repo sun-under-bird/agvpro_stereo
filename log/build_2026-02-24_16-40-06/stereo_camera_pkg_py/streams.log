@@ -1,0 +1,39 @@
+[1.851s] Invoking command in '/home/elephant/agvpro_stereo/build/stereo_camera_pkg_py': PYTHONPATH=/home/elephant/agvpro_stereo/build/stereo_camera_pkg_py/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/elephant/agvpro_stereo/install/stereo_camera_pkg_py/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/elephant/agvpro_stereo/build/stereo_camera_pkg_py/build --no-deps symlink_data
+[2.488s] running develop
+[3.012s] running egg_info
+[3.012s] creating stereo_camera_pkg_py.egg-info
+[3.012s] writing stereo_camera_pkg_py.egg-info/PKG-INFO
+[3.013s] writing dependency_links to stereo_camera_pkg_py.egg-info/dependency_links.txt
+[3.013s] writing entry points to stereo_camera_pkg_py.egg-info/entry_points.txt
+[3.013s] writing requirements to stereo_camera_pkg_py.egg-info/requires.txt
+[3.013s] writing top-level names to stereo_camera_pkg_py.egg-info/top_level.txt
+[3.014s] writing manifest file 'stereo_camera_pkg_py.egg-info/SOURCES.txt'
+[3.017s] reading manifest file 'stereo_camera_pkg_py.egg-info/SOURCES.txt'
+[3.019s] writing manifest file 'stereo_camera_pkg_py.egg-info/SOURCES.txt'
+[3.022s] running build_ext
+[3.022s] Creating /home/elephant/agvpro_stereo/install/stereo_camera_pkg_py/lib/python3.10/site-packages/stereo-camera-pkg-py.egg-link (link to .)
+[3.024s] Installing v4l2 script to /home/elephant/agvpro_stereo/install/stereo_camera_pkg_py/lib/stereo_camera_pkg_py
+[3.024s] 
+[3.024s] Installed /home/elephant/agvpro_stereo/build/stereo_camera_pkg_py
+[3.024s] running symlink_data
+[3.024s] creating /home/elephant/agvpro_stereo/install/stereo_camera_pkg_py/share/ament_index
+[3.025s] creating /home/elephant/agvpro_stereo/install/stereo_camera_pkg_py/share/ament_index/resource_index
+[3.025s] creating /home/elephant/agvpro_stereo/install/stereo_camera_pkg_py/share/ament_index/resource_index/packages
+[3.025s] symbolically linking /home/elephant/agvpro_stereo/build/stereo_camera_pkg_py/resource/stereo_camera_pkg_py -> /home/elephant/agvpro_stereo/install/stereo_camera_pkg_py/share/ament_index/resource_index/packages
+[3.025s] symbolically linking /home/elephant/agvpro_stereo/build/stereo_camera_pkg_py/package.xml -> /home/elephant/agvpro_stereo/install/stereo_camera_pkg_py/share/stereo_camera_pkg_py
+[3.025s] creating /home/elephant/agvpro_stereo/install/stereo_camera_pkg_py/share/stereo_camera_pkg_py/launch
+[3.025s] symbolically linking /home/elephant/agvpro_stereo/build/stereo_camera_pkg_py/launch/bag_rtabmap.launch.py -> /home/elephant/agvpro_stereo/install/stereo_camera_pkg_py/share/stereo_camera_pkg_py/launch
+[3.025s] symbolically linking /home/elephant/agvpro_stereo/build/stereo_camera_pkg_py/launch/slam.launch.py -> /home/elephant/agvpro_stereo/install/stereo_camera_pkg_py/share/stereo_camera_pkg_py/launch
+[3.026s] symbolically linking /home/elephant/agvpro_stereo/build/stereo_camera_pkg_py/launch/stereo.launch.py -> /home/elephant/agvpro_stereo/install/stereo_camera_pkg_py/share/stereo_camera_pkg_py/launch
+[3.026s] symbolically linking /home/elephant/agvpro_stereo/build/stereo_camera_pkg_py/launch/rgbd_rtabmap.launch.py -> /home/elephant/agvpro_stereo/install/stereo_camera_pkg_py/share/stereo_camera_pkg_py/launch
+[3.026s] symbolically linking /home/elephant/agvpro_stereo/build/stereo_camera_pkg_py/launch/v4l2.launch.py -> /home/elephant/agvpro_stereo/install/stereo_camera_pkg_py/share/stereo_camera_pkg_py/launch
+[3.026s] symbolically linking /home/elephant/agvpro_stereo/build/stereo_camera_pkg_py/launch/rtabmap.launch.py -> /home/elephant/agvpro_stereo/install/stereo_camera_pkg_py/share/stereo_camera_pkg_py/launch
+[3.026s] symbolically linking /home/elephant/agvpro_stereo/build/stereo_camera_pkg_py/launch/stereo_calibration.launch.py -> /home/elephant/agvpro_stereo/install/stereo_camera_pkg_py/share/stereo_camera_pkg_py/launch
+[3.026s] creating /home/elephant/agvpro_stereo/install/stereo_camera_pkg_py/share/stereo_camera_pkg_py/config
+[3.027s] symbolically linking /home/elephant/agvpro_stereo/build/stereo_camera_pkg_py/config/right2.yaml -> /home/elephant/agvpro_stereo/install/stereo_camera_pkg_py/share/stereo_camera_pkg_py/config
+[3.027s] symbolically linking /home/elephant/agvpro_stereo/build/stereo_camera_pkg_py/config/right1.yaml -> /home/elephant/agvpro_stereo/install/stereo_camera_pkg_py/share/stereo_camera_pkg_py/config
+[3.027s] symbolically linking /home/elephant/agvpro_stereo/build/stereo_camera_pkg_py/config/left.yaml -> /home/elephant/agvpro_stereo/install/stereo_camera_pkg_py/share/stereo_camera_pkg_py/config
+[3.027s] symbolically linking /home/elephant/agvpro_stereo/build/stereo_camera_pkg_py/config/left2.yaml -> /home/elephant/agvpro_stereo/install/stereo_camera_pkg_py/share/stereo_camera_pkg_py/config
+[3.027s] symbolically linking /home/elephant/agvpro_stereo/build/stereo_camera_pkg_py/config/left1.yaml -> /home/elephant/agvpro_stereo/install/stereo_camera_pkg_py/share/stereo_camera_pkg_py/config
+[3.027s] symbolically linking /home/elephant/agvpro_stereo/build/stereo_camera_pkg_py/config/right.yaml -> /home/elephant/agvpro_stereo/install/stereo_camera_pkg_py/share/stereo_camera_pkg_py/config
+[3.105s] Invoked command in '/home/elephant/agvpro_stereo/build/stereo_camera_pkg_py' returned '0': PYTHONPATH=/home/elephant/agvpro_stereo/build/stereo_camera_pkg_py/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/elephant/agvpro_stereo/install/stereo_camera_pkg_py/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/elephant/agvpro_stereo/build/stereo_camera_pkg_py/build --no-deps symlink_data

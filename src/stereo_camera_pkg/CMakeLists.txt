@@ -14,11 +14,18 @@ find_package(image_transport REQUIRED)
 find_package(OpenCV REQUIRED)
 find_package(yaml-cpp REQUIRED)
 find_package(message_filters REQUIRED)
+find_package(ament_index_cpp REQUIRED)
+find_package(nav_msgs REQUIRED)
+
 
 add_executable(stereo_camera_node src/stereo_camera_node.cpp)
 add_executable(left_camera_node src/left_camera_node.cpp)
 add_executable(right_camera_node src/right_camera_node.cpp)
 add_executable(camera_info src/camera_info.cpp)
+add_executable(stereo_split_node src/stereo_split_node.cpp)
+add_executable(stereo_split_node_rgb src/stereo_split_node_rgb.cpp)
+add_executable(new_odom src/new_odom.cpp)
+
 target_include_directories(stereo_camera_node PUBLIC
   $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
   $<INSTALL_INTERFACE:include>)
@@ -54,6 +61,32 @@ ament_target_dependencies(
   "image_transport"
   "message_filters"
 )
+ament_target_dependencies(
+  stereo_split_node
+  "rclcpp"
+  "sensor_msgs"
+  "cv_bridge"
+  "image_transport"
+  "message_filters"
+  "nav_msgs"
+)
+ament_target_dependencies(
+  stereo_split_node_rgb
+  "rclcpp"
+  "sensor_msgs"
+  "cv_bridge"
+  "image_transport"
+  "message_filters"
+)
+ament_target_dependencies(
+  new_odom
+  "rclcpp"
+  "sensor_msgs"
+  "cv_bridge"
+  "ament_index_cpp"
+  "nav_msgs"
+)
+
 target_link_libraries(
   stereo_camera_node
   ${OpenCV_LIBRARIES}
@@ -73,11 +106,30 @@ target_link_libraries(
   ${OpenCV_LIBRARIES}
   ${YAML_CPP_LIBRARIES}
 )
+target_link_libraries(
+  stereo_split_node
+  ${OpenCV_LIBRARIES}
+  ${YAML_CPP_LIBRARIES}
+)
+target_link_libraries(
+  stereo_split_node_rgb
+  ${OpenCV_LIBRARIES}
+  ${YAML_CPP_LIBRARIES}
+)
+target_link_libraries(
+  new_odom
+  ${OpenCV_LIBRARIES}
+  ${YAML_CPP_LIBRARIES}
+)
+
 install(TARGETS 
   stereo_camera_node
   left_camera_node
   right_camera_node
   camera_info
+  stereo_split_node
+  stereo_split_node_rgb
+  new_odom
   DESTINATION lib/${PROJECT_NAME})
 
 if(BUILD_TESTING)

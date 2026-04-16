@@ -1,0 +1,290 @@
+[0.000000] (-) TimerEvent: {}
+[0.000540] (stereo_camera_pkg) JobQueued: {'identifier': 'stereo_camera_pkg', 'dependencies': OrderedDict()}
+[0.000959] (stereo_camera_pkg_py) JobQueued: {'identifier': 'stereo_camera_pkg_py', 'dependencies': OrderedDict()}
+[0.001182] (stereo_camera_pkg) JobStarted: {'identifier': 'stereo_camera_pkg'}
+[0.028123] (stereo_camera_pkg_py) JobStarted: {'identifier': 'stereo_camera_pkg_py'}
+[0.051153] (stereo_camera_pkg) JobProgress: {'identifier': 'stereo_camera_pkg', 'progress': 'cmake'}
+[0.052738] (stereo_camera_pkg) JobProgress: {'identifier': 'stereo_camera_pkg', 'progress': 'build'}
+[0.054106] (stereo_camera_pkg) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/elephant/agvpro_stereo/build/stereo_camera_pkg', '--', '-j6', '-l6'], 'cwd': '/home/elephant/agvpro_stereo/build/stereo_camera_pkg', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US'), ('USER', 'elephant'), ('LC_TIME', 'zh_SG.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/elephant/gscam_ws/install/gscam2/lib:/home/elephant/agv_pro_ros2/install/rtabmap_slam/lib:/home/elephant/agv_pro_ros2/install/rtabmap_odom/lib:/home/elephant/agv_pro_ros2/install/rtabmap_util/lib:/home/elephant/agv_pro_ros2/install/rtabmap_sync/lib:/home/elephant/agv_pro_ros2/install/rtabmap_rviz_plugins/lib:/home/elephant/agv_pro_ros2/install/rtabmap_conversions/lib:/home/elephant/agv_pro_ros2/install/rtabmap_msgs/lib:/home/elephant/agv_pro_ros2/install/rtabmap/lib:/home/elephant/agv_pro_ros2/install/orbbec_camera/lib:/home/elephant/agv_pro_ros2/install/orbbec_camera_msgs/lib:/home/elephant/agv_pro_ros2/install/openslam_gmapping/lib:/home/elephant/agv_pro_ros2/install/nav2_smoother/lib:/home/elephant/agv_pro_ros2/install/nav2_rotation_shim_controller/lib:/home/elephant/agv_pro_ros2/install/nav2_graceful_controller/lib:/home/elephant/agv_pro_ros2/install/nav2_controller/lib:/home/elephant/agv_pro_ros2/install/dwb_plugins/lib:/home/elephant/agv_pro_ros2/install/dwb_critics/lib:/home/elephant/agv_pro_ros2/install/dwb_core/lib:/home/elephant/agv_pro_ros2/install/nav_2d_utils/lib:/home/elephant/agv_pro_ros2/install/dwb_msgs/lib:/home/elephant/agv_pro_ros2/install/nav_2d_msgs/lib:/home/elephant/agv_pro_ros2/install/nav2_waypoint_follower/lib:/home/elephant/agv_pro_ros2/install/nav2_theta_star_planner/lib:/home/elephant/agv_pro_ros2/install/nav2_smac_planner/lib:/home/elephant/agv_pro_ros2/install/nav2_regulated_pure_pursuit_controller/lib:/home/elephant/agv_pro_ros2/install/nav2_planner/lib:/home/elephant/agv_pro_ros2/install/nav2_navfn_planner/lib:/home/elephant/agv_pro_ros2/install/nav2_mppi_controller/lib:/home/elephant/agv_pro_ros2/install/nav2_constrained_smoother/lib:/home/elephant/agv_pro_ros2/install/nav2_bt_navigator/lib:/home/elephant/agv_pro_ros2/install/nav2_behaviors/lib:/home/elephant/agv_pro_ros2/install/nav2_collision_monitor/lib:/home/elephant/agv_pro_ros2/install/costmap_queue/lib:/home/elephant/agv_pro_ros2/install/nav2_costmap_2d/lib:/home/elephant/agv_pro_ros2/install/nav2_voxel_grid/lib:/home/elephant/agv_pro_ros2/install/nav2_velocity_smoother/lib:/home/elephant/agv_pro_ros2/install/nav2_rviz_plugins/lib:/home/elephant/agv_pro_ros2/install/nav2_map_server/lib:/home/elephant/agv_pro_ros2/install/nav2_lifecycle_manager/lib:/home/elephant/agv_pro_ros2/install/nav2_behavior_tree/lib:/home/elephant/agv_pro_ros2/install/nav2_amcl/lib:/home/elephant/agv_pro_ros2/install/nav2_util/lib:/home/elephant/agv_pro_ros2/install/nav2_msgs/lib:/home/elephant/agv_pro_ros2/install/lslidar_msgs/lib:/home/elephant/agv_pro_ros2/install/cartographer_rviz/lib:/home/elephant/agv_pro_ros2/install/cartographer_ros/lib:/home/elephant/agv_pro_ros2/install/cartographer_ros_msgs/lib:/home/elephant/agv_pro_ros2/install/agv_pro_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/elephant'), ('OLDPWD', '/home/elephant'), ('DESKTOP_SESSION', 'ubuntu'), ('JETSON_L4T', '36.4.3'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('JETSON_MODEL', 'NVIDIA Jetson Orin Nano Engineering Reference Developer Kit Super'), ('LC_MONETARY', 'zh_SG.UTF-8'), ('SYSTEMD_EXEC_PID', '2861'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1001/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/elephant/agvpro_stereo/install:/home/elephant/gscam_ws/install:/home/elephant/agv_pro_ros2/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'elephant'), ('JETSON_MODULE', 'NVIDIA Jetson Orin Nano (8GB ram)'), ('JETSON_SERIAL_NUMBER', '1421325012760'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/home/elephant/agv_pro_ros2/install/rtabmap/lib/aarch64-linux-gnu/pkgconfig:/home/elephant/agv_pro_ros2/install/rtabmap/lib/pkgconfig:/home/elephant/agv_pro_ros2/install/cartographer/lib/aarch64-linux-gnu/pkgconfig:/home/elephant/agv_pro_ros2/install/cartographer/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'elephant'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/usr/local/bin:/home/elephant/agv_pro_ros2/install/rtabmap/bin:/home/elephant/agv_pro_ros2/install/cartographer/bin:/opt/ros/humble/bin:/home/elephant/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/elephant:@/tmp/.ICE-unix/2771,unix/elephant:/tmp/.ICE-unix/2771'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'zh_SG.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/dce610fd_f007_45c1_b1e5_4b0030271a1b'), ('XDG_RUNTIME_DIR', '/run/user/1001'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'zh_SG.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_fastrtps_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1001/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('JETSON_SOC', 'tegra234'), ('GNOME_TERMINAL_SERVICE', ':1.108'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1001/keyring/ssh'), ('ROS_DOMAIN_ID', '1'), ('AMENT_PREFIX_PATH', '/home/elephant/gscam_ws/install/gscam2:/home/elephant/agvpro_stereo/install/stereo_camera_pkg_py:/home/elephant/agvpro_stereo/install/stereo_camera_pkg:/home/elephant/agv_pro_ros2/install/agv_pro_gazebo:/home/elephant/agv_pro_ros2/install/teleop_twist_keyboard:/home/elephant/agv_pro_ros2/install/slam_gmapping:/home/elephant/agv_pro_ros2/install/rtabmap_ros:/home/elephant/agv_pro_ros2/install/rtabmap_launch:/home/elephant/agv_pro_ros2/install/rtabmap_examples:/home/elephant/agv_pro_ros2/install/rtabmap_demos:/home/elephant/agv_pro_ros2/install/rtabmap_viz:/home/elephant/agv_pro_ros2/install/rtabmap_slam:/home/elephant/agv_pro_ros2/install/rtabmap_odom:/home/elephant/agv_pro_ros2/install/rtabmap_util:/home/elephant/agv_pro_ros2/install/rtabmap_sync:/home/elephant/agv_pro_ros2/install/rtabmap_rviz_plugins:/home/elephant/agv_pro_ros2/install/rtabmap_python:/home/elephant/agv_pro_ros2/install/rtabmap_conversions:/home/elephant/agv_pro_ros2/install/rtabmap_msgs:/home/elephant/agv_pro_ros2/install/orbbec_description:/home/elephant/agv_pro_ros2/install/orbbec_camera:/home/elephant/agv_pro_ros2/install/orbbec_camera_msgs:/home/elephant/agv_pro_ros2/install/openslam_gmapping:/home/elephant/agv_pro_ros2/install/agv_pro_navigation2:/home/elephant/agv_pro_ros2/install/nav2_bringup:/home/elephant/agv_pro_ros2/install/navigation2:/home/elephant/agv_pro_ros2/install/nav2_smoother:/home/elephant/agv_pro_ros2/install/nav2_rotation_shim_controller:/home/elephant/agv_pro_ros2/install/nav2_graceful_controller:/home/elephant/agv_pro_ros2/install/nav2_dwb_controller:/home/elephant/agv_pro_ros2/install/nav2_controller:/home/elephant/agv_pro_ros2/install/dwb_plugins:/home/elephant/agv_pro_ros2/install/dwb_critics:/home/elephant/agv_pro_ros2/install/dwb_core:/home/elephant/agv_pro_ros2/install/nav_2d_utils:/home/elephant/agv_pro_ros2/install/dwb_msgs:/home/elephant/agv_pro_ros2/install/nav_2d_msgs:/home/elephant/agv_pro_ros2/install/nav2_waypoint_follower:/home/elephant/agv_pro_ros2/install/nav2_theta_star_planner:/home/elephant/agv_pro_ros2/install/nav2_smac_planner:/home/elephant/agv_pro_ros2/install/nav2_regulated_pure_pursuit_controller:/home/elephant/agv_pro_ros2/install/nav2_planner:/home/elephant/agv_pro_ros2/install/nav2_navfn_planner:/home/elephant/agv_pro_ros2/install/nav2_mppi_controller:/home/elephant/agv_pro_ros2/install/nav2_constrained_smoother:/home/elephant/agv_pro_ros2/install/nav2_bt_navigator:/home/elephant/agv_pro_ros2/install/nav2_behaviors:/home/elephant/agv_pro_ros2/install/nav2_core:/home/elephant/agv_pro_ros2/install/nav2_collision_monitor:/home/elephant/agv_pro_ros2/install/costmap_queue:/home/elephant/agv_pro_ros2/install/nav2_costmap_2d:/home/elephant/agv_pro_ros2/install/nav2_voxel_grid:/home/elephant/agv_pro_ros2/install/nav2_velocity_smoother:/home/elephant/agv_pro_ros2/install/nav2_rviz_plugins:/home/elephant/agv_pro_ros2/install/nav2_map_server:/home/elephant/agv_pro_ros2/install/nav2_lifecycle_manager:/home/elephant/agv_pro_ros2/install/nav2_behavior_tree:/home/elephant/agv_pro_ros2/install/nav2_amcl:/home/elephant/agv_pro_ros2/install/nav2_util:/home/elephant/agv_pro_ros2/install/agv_pro_autocharge:/home/elephant/agv_pro_ros2/install/nav2_simple_commander:/home/elephant/agv_pro_ros2/install/nav2_msgs:/home/elephant/agv_pro_ros2/install/nav2_common:/home/elephant/agv_pro_ros2/install/lslidar_driver:/home/elephant/agv_pro_ros2/install/lslidar_msgs:/home/elephant/agv_pro_ros2/install/cartographer_rviz:/home/elephant/agv_pro_ros2/install/cartographer_ros:/home/elephant/agv_pro_ros2/install/cartographer_ros_msgs:/home/elephant/agv_pro_ros2/install/agv_pro_msgs:/home/elephant/agv_pro_ros2/install/agv_pro_bringup:/home/elephant/agv_pro_ros2/install/agv_pro_description:/home/elephant/agv_pro_ros2/install/agv_pro_base:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_SG.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_SG.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1001/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'zh_SG.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('JETSON_CUDA_ARCH_BIN', '8.7'), ('PWD', '/home/elephant/agvpro_stereo/build/stereo_camera_pkg'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('RCUTILS_COLORIZED_OUTPUT', '1'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/elephant/agvpro_stereo/install/stereo_camera_pkg_py/lib/python3.10/site-packages:/home/elephant/agv_pro_ros2/install/teleop_twist_keyboard/lib/python3.10/site-packages:/home/elephant/agv_pro_ros2/install/rtabmap_python/lib/python3.10/site-packages:/home/elephant/agv_pro_ros2/install/rtabmap_msgs/local/lib/python3.10/dist-packages:/home/elephant/agv_pro_ros2/install/orbbec_camera_msgs/local/lib/python3.10/dist-packages:/home/elephant/agv_pro_ros2/install/dwb_msgs/local/lib/python3.10/dist-packages:/home/elephant/agv_pro_ros2/install/nav_2d_msgs/local/lib/python3.10/dist-packages:/home/elephant/agv_pro_ros2/install/agv_pro_autocharge/lib/python3.10/site-packages:/home/elephant/agv_pro_ros2/install/nav2_simple_commander/lib/python3.10/site-packages:/home/elephant/agv_pro_ros2/install/nav2_msgs/local/lib/python3.10/dist-packages:/home/elephant/agv_pro_ros2/install/nav2_common/local/lib/python3.10/dist-packages:/home/elephant/agv_pro_ros2/install/lslidar_msgs/local/lib/python3.10/dist-packages:/home/elephant/agv_pro_ros2/install/cartographer_ros_msgs/local/lib/python3.10/dist-packages:/home/elephant/agv_pro_ros2/install/agv_pro_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'zh_SG.UTF-8'), ('LC_PAPER', 'zh_SG.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('JETSON_JETPACK', '6.2'), ('CMAKE_PREFIX_PATH', '/home/elephant/gscam_ws/install/gscam2:/home/elephant/agvpro_stereo/install/stereo_camera_pkg:/home/elephant/agv_pro_ros2/install/agv_pro_gazebo:/home/elephant/agv_pro_ros2/install/slam_gmapping:/home/elephant/agv_pro_ros2/install/rtabmap_ros:/home/elephant/agv_pro_ros2/install/rtabmap_launch:/home/elephant/agv_pro_ros2/install/rtabmap_examples:/home/elephant/agv_pro_ros2/install/rtabmap_demos:/home/elephant/agv_pro_ros2/install/rtabmap_viz:/home/elephant/agv_pro_ros2/install/rtabmap_slam:/home/elephant/agv_pro_ros2/install/rtabmap_odom:/home/elephant/agv_pro_ros2/install/rtabmap_util:/home/elephant/agv_pro_ros2/install/rtabmap_sync:/home/elephant/agv_pro_ros2/install/rtabmap_rviz_plugins:/home/elephant/agv_pro_ros2/install/rtabmap_conversions:/home/elephant/agv_pro_ros2/install/rtabmap_msgs:/home/elephant/agv_pro_ros2/install/rtabmap:/home/elephant/agv_pro_ros2/install/orbbec_description:/home/elephant/agv_pro_ros2/install/orbbec_camera:/home/elephant/agv_pro_ros2/install/orbbec_camera_msgs:/home/elephant/agv_pro_ros2/install/openslam_gmapping:/home/elephant/agv_pro_ros2/install/agv_pro_navigation2:/home/elephant/agv_pro_ros2/install/nav2_bringup:/home/elephant/agv_pro_ros2/install/navigation2:/home/elephant/agv_pro_ros2/install/nav2_smoother:/home/elephant/agv_pro_ros2/install/nav2_rotation_shim_controller:/home/elephant/agv_pro_ros2/install/nav2_graceful_controller:/home/elephant/agv_pro_ros2/install/nav2_dwb_controller:/home/elephant/agv_pro_ros2/install/nav2_controller:/home/elephant/agv_pro_ros2/install/dwb_plugins:/home/elephant/agv_pro_ros2/install/dwb_critics:/home/elephant/agv_pro_ros2/install/dwb_core:/home/elephant/agv_pro_ros2/install/nav_2d_utils:/home/elephant/agv_pro_ros2/install/dwb_msgs:/home/elephant/agv_pro_ros2/install/nav_2d_msgs:/home/elephant/agv_pro_ros2/install/nav2_waypoint_follower:/home/elephant/agv_pro_ros2/install/nav2_theta_star_planner:/home/elephant/agv_pro_ros2/install/nav2_smac_planner:/home/elephant/agv_pro_ros2/install/nav2_regulated_pure_pursuit_controller:/home/elephant/agv_pro_ros2/install/nav2_planner:/home/elephant/agv_pro_ros2/install/nav2_navfn_planner:/home/elephant/agv_pro_ros2/install/nav2_mppi_controller:/home/elephant/agv_pro_ros2/install/nav2_constrained_smoother:/home/elephant/agv_pro_ros2/install/nav2_bt_navigator:/home/elephant/agv_pro_ros2/install/nav2_behaviors:/home/elephant/agv_pro_ros2/install/nav2_core:/home/elephant/agv_pro_ros2/install/nav2_collision_monitor:/home/elephant/agv_pro_ros2/install/costmap_queue:/home/elephant/agv_pro_ros2/install/nav2_costmap_2d:/home/elephant/agv_pro_ros2/install/nav2_voxel_grid:/home/elephant/agv_pro_ros2/install/nav2_velocity_smoother:/home/elephant/agv_pro_ros2/install/nav2_rviz_plugins:/home/elephant/agv_pro_ros2/install/nav2_map_server:/home/elephant/agv_pro_ros2/install/nav2_lifecycle_manager:/home/elephant/agv_pro_ros2/install/nav2_behavior_tree:/home/elephant/agv_pro_ros2/install/nav2_amcl:/home/elephant/agv_pro_ros2/install/nav2_util:/home/elephant/agv_pro_ros2/install/nav2_msgs:/home/elephant/agv_pro_ros2/install/nav2_common:/home/elephant/agv_pro_ros2/install/lslidar_driver:/home/elephant/agv_pro_ros2/install/lslidar_msgs:/home/elephant/agv_pro_ros2/install/cartographer_rviz:/home/elephant/agv_pro_ros2/install/cartographer_ros:/home/elephant/agv_pro_ros2/install/cartographer_ros_msgs:/home/elephant/agv_pro_ros2/install/cartographer:/home/elephant/agv_pro_ros2/install/agv_pro_msgs:/home/elephant/agv_pro_ros2/install/agv_pro_bringup:/home/elephant/agv_pro_ros2/install/agv_pro_base:/home/elephant/agvpro_stereo/install/stereo_camera_pkg_py:/home/elephant/agv_pro_ros2/install/teleop_twist_keyboard:/home/elephant/agv_pro_ros2/install/rtabmap_python:/home/elephant/agv_pro_ros2/install/agv_pro_autocharge:/home/elephant/agv_pro_ros2/install/nav2_simple_commander:/home/elephant/agv_pro_ros2/install/agv_pro_description:/opt/ros/humble'), ('JETSON_P_NUMBER', 'p3767-0003')]), 'shell': False}
+[0.099604] (-) TimerEvent: {}
+[0.200157] (-) TimerEvent: {}
+[0.300762] (-) TimerEvent: {}
+[0.404011] (-) TimerEvent: {}
+[0.411453] (stereo_camera_pkg) StdoutLine: {'line': b'[ 14%] Built target left_camera_node\n'}
+[0.412166] (stereo_camera_pkg) StdoutLine: {'line': b'[ 21%] \x1b[32mBuilding CXX object CMakeFiles/stereo_split_node.dir/src/stereo_split_node.cpp.o\x1b[0m\n'}
+[0.421190] (stereo_camera_pkg) StdoutLine: {'line': b'[ 42%] Built target stereo_camera_node\n'}
+[0.424066] (stereo_camera_pkg) StdoutLine: {'line': b'[ 50%] Built target right_camera_node\n'}
+[0.429104] (stereo_camera_pkg) StdoutLine: {'line': b'[ 57%] \x1b[32mBuilding CXX object CMakeFiles/stereo_split_node_rgb.dir/src/stereo_split_node_rgb.cpp.o\x1b[0m\n'}
+[0.436545] (stereo_camera_pkg) StdoutLine: {'line': b'[ 71%] Built target camera_info\n'}
+[0.502531] (stereo_camera_pkg) StdoutLine: {'line': b'[ 85%] Built target new_odom\n'}
+[0.504086] (-) TimerEvent: {}
+[0.604519] (-) TimerEvent: {}
+[0.705029] (-) TimerEvent: {}
+[0.805557] (-) TimerEvent: {}
+[0.906183] (-) TimerEvent: {}
+[1.006879] (-) TimerEvent: {}
+[1.008910] (stereo_camera_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/elephant/agvpro_stereo/src/stereo_camera_pkg/src/stereo_split_node.cpp:4:10:\x1b[m\x1b[K \x1b[01;31m\x1b[Kfatal error: \x1b[m\x1b[Knav_msgs/msg/odometry.hpp: No such file or directory\n'}
+[1.009212] (stereo_camera_pkg) StderrLine: {'line': b'    4 | #include \x1b[01;31m\x1b[K<nav_msgs/msg/odometry.hpp>\x1b[m\x1b[K\n'}
+[1.009345] (stereo_camera_pkg) StderrLine: {'line': b'      |          \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.009459] (stereo_camera_pkg) StderrLine: {'line': b'compilation terminated.\n'}
+[1.012355] (stereo_camera_pkg) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/stereo_split_node.dir/build.make:76: CMakeFiles/stereo_split_node.dir/src/stereo_split_node.cpp.o] Error 1\n'}
+[1.012711] (stereo_camera_pkg) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:253: CMakeFiles/stereo_split_node.dir/all] Error 2\n'}
+[1.012857] (stereo_camera_pkg) StderrLine: {'line': b'gmake[1]: *** Waiting for unfinished jobs....\n'}
+[1.106907] (-) TimerEvent: {}
+[1.207411] (-) TimerEvent: {}
+[1.307931] (-) TimerEvent: {}
+[1.408381] (-) TimerEvent: {}
+[1.508848] (-) TimerEvent: {}
+[1.609306] (-) TimerEvent: {}
+[1.709812] (-) TimerEvent: {}
+[1.810333] (-) TimerEvent: {}
+[1.910879] (-) TimerEvent: {}
+[2.011358] (-) TimerEvent: {}
+[2.052742] (stereo_camera_pkg_py) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/stereo_camera_pkg_py', 'build', '--build-base', '/home/elephant/agvpro_stereo/build/stereo_camera_pkg_py/build', 'install', '--record', '/home/elephant/agvpro_stereo/build/stereo_camera_pkg_py/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/elephant/agvpro_stereo/src/stereo_camera_pkg_py', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'LANGUAGE': 'en_US', 'USER': 'elephant', 'LC_TIME': 'zh_SG.UTF-8', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/elephant/gscam_ws/install/gscam2/lib:/home/elephant/agv_pro_ros2/install/rtabmap_slam/lib:/home/elephant/agv_pro_ros2/install/rtabmap_odom/lib:/home/elephant/agv_pro_ros2/install/rtabmap_util/lib:/home/elephant/agv_pro_ros2/install/rtabmap_sync/lib:/home/elephant/agv_pro_ros2/install/rtabmap_rviz_plugins/lib:/home/elephant/agv_pro_ros2/install/rtabmap_conversions/lib:/home/elephant/agv_pro_ros2/install/rtabmap_msgs/lib:/home/elephant/agv_pro_ros2/install/rtabmap/lib:/home/elephant/agv_pro_ros2/install/orbbec_camera/lib:/home/elephant/agv_pro_ros2/install/orbbec_camera_msgs/lib:/home/elephant/agv_pro_ros2/install/openslam_gmapping/lib:/home/elephant/agv_pro_ros2/install/nav2_smoother/lib:/home/elephant/agv_pro_ros2/install/nav2_rotation_shim_controller/lib:/home/elephant/agv_pro_ros2/install/nav2_graceful_controller/lib:/home/elephant/agv_pro_ros2/install/nav2_controller/lib:/home/elephant/agv_pro_ros2/install/dwb_plugins/lib:/home/elephant/agv_pro_ros2/install/dwb_critics/lib:/home/elephant/agv_pro_ros2/install/dwb_core/lib:/home/elephant/agv_pro_ros2/install/nav_2d_utils/lib:/home/elephant/agv_pro_ros2/install/dwb_msgs/lib:/home/elephant/agv_pro_ros2/install/nav_2d_msgs/lib:/home/elephant/agv_pro_ros2/install/nav2_waypoint_follower/lib:/home/elephant/agv_pro_ros2/install/nav2_theta_star_planner/lib:/home/elephant/agv_pro_ros2/install/nav2_smac_planner/lib:/home/elephant/agv_pro_ros2/install/nav2_regulated_pure_pursuit_controller/lib:/home/elephant/agv_pro_ros2/install/nav2_planner/lib:/home/elephant/agv_pro_ros2/install/nav2_navfn_planner/lib:/home/elephant/agv_pro_ros2/install/nav2_mppi_controller/lib:/home/elephant/agv_pro_ros2/install/nav2_constrained_smoother/lib:/home/elephant/agv_pro_ros2/install/nav2_bt_navigator/lib:/home/elephant/agv_pro_ros2/install/nav2_behaviors/lib:/home/elephant/agv_pro_ros2/install/nav2_collision_monitor/lib:/home/elephant/agv_pro_ros2/install/costmap_queue/lib:/home/elephant/agv_pro_ros2/install/nav2_costmap_2d/lib:/home/elephant/agv_pro_ros2/install/nav2_voxel_grid/lib:/home/elephant/agv_pro_ros2/install/nav2_velocity_smoother/lib:/home/elephant/agv_pro_ros2/install/nav2_rviz_plugins/lib:/home/elephant/agv_pro_ros2/install/nav2_map_server/lib:/home/elephant/agv_pro_ros2/install/nav2_lifecycle_manager/lib:/home/elephant/agv_pro_ros2/install/nav2_behavior_tree/lib:/home/elephant/agv_pro_ros2/install/nav2_amcl/lib:/home/elephant/agv_pro_ros2/install/nav2_util/lib:/home/elephant/agv_pro_ros2/install/nav2_msgs/lib:/home/elephant/agv_pro_ros2/install/lslidar_msgs/lib:/home/elephant/agv_pro_ros2/install/cartographer_rviz/lib:/home/elephant/agv_pro_ros2/install/cartographer_ros/lib:/home/elephant/agv_pro_ros2/install/cartographer_ros_msgs/lib:/home/elephant/agv_pro_ros2/install/agv_pro_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/elephant', 'OLDPWD': '/home/elephant', 'DESKTOP_SESSION': 'ubuntu', 'JETSON_L4T': '36.4.3', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'JETSON_MODEL': 'NVIDIA Jetson Orin Nano Engineering Reference Developer Kit Super', 'LC_MONETARY': 'zh_SG.UTF-8', 'SYSTEMD_EXEC_PID': '2861', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1001/bus', 'COLORTERM': 'truecolor', 'IM_CONFIG_PHASE': '1', 'COLCON_PREFIX_PATH': '/home/elephant/agvpro_stereo/install:/home/elephant/gscam_ws/install:/home/elephant/agv_pro_ros2/install', 'ROS_DISTRO': 'humble', 'GTK_IM_MODULE': 'ibus', 'LOGNAME': 'elephant', 'JETSON_MODULE': 'NVIDIA Jetson Orin Nano (8GB ram)', 'JETSON_SERIAL_NUMBER': '1421325012760', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'PKG_CONFIG_PATH': '/home/elephant/agv_pro_ros2/install/rtabmap/lib/aarch64-linux-gnu/pkgconfig:/home/elephant/agv_pro_ros2/install/rtabmap/lib/pkgconfig:/home/elephant/agv_pro_ros2/install/cartographer/lib/aarch64-linux-gnu/pkgconfig:/home/elephant/agv_pro_ros2/install/cartographer/lib/pkgconfig', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'elephant', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'WINDOWPATH': '2', 'PATH': '/usr/local/bin:/home/elephant/agv_pro_ros2/install/rtabmap/bin:/home/elephant/agv_pro_ros2/install/cartographer/bin:/opt/ros/humble/bin:/home/elephant/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/elephant:@/tmp/.ICE-unix/2771,unix/elephant:/tmp/.ICE-unix/2771', 'PAPERSIZE': 'a4', 'XDG_MENU_PREFIX': 'gnome-', 'LC_ADDRESS': 'zh_SG.UTF-8', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/dce610fd_f007_45c1_b1e5_4b0030271a1b', 'XDG_RUNTIME_DIR': '/run/user/1001', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'LC_TELEPHONE': 'zh_SG.UTF-8', 'RMW_IMPLEMENTATION': 'rmw_fastrtps_cpp', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1001/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'JETSON_SOC': 'tegra234', 'GNOME_TERMINAL_SERVICE': ':1.108', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1001/keyring/ssh', 'ROS_DOMAIN_ID': '1', 'AMENT_PREFIX_PATH': '/home/elephant/gscam_ws/install/gscam2:/home/elephant/agvpro_stereo/install/stereo_camera_pkg_py:/home/elephant/agvpro_stereo/install/stereo_camera_pkg:/home/elephant/agv_pro_ros2/install/agv_pro_gazebo:/home/elephant/agv_pro_ros2/install/teleop_twist_keyboard:/home/elephant/agv_pro_ros2/install/slam_gmapping:/home/elephant/agv_pro_ros2/install/rtabmap_ros:/home/elephant/agv_pro_ros2/install/rtabmap_launch:/home/elephant/agv_pro_ros2/install/rtabmap_examples:/home/elephant/agv_pro_ros2/install/rtabmap_demos:/home/elephant/agv_pro_ros2/install/rtabmap_viz:/home/elephant/agv_pro_ros2/install/rtabmap_slam:/home/elephant/agv_pro_ros2/install/rtabmap_odom:/home/elephant/agv_pro_ros2/install/rtabmap_util:/home/elephant/agv_pro_ros2/install/rtabmap_sync:/home/elephant/agv_pro_ros2/install/rtabmap_rviz_plugins:/home/elephant/agv_pro_ros2/install/rtabmap_python:/home/elephant/agv_pro_ros2/install/rtabmap_conversions:/home/elephant/agv_pro_ros2/install/rtabmap_msgs:/home/elephant/agv_pro_ros2/install/orbbec_description:/home/elephant/agv_pro_ros2/install/orbbec_camera:/home/elephant/agv_pro_ros2/install/orbbec_camera_msgs:/home/elephant/agv_pro_ros2/install/openslam_gmapping:/home/elephant/agv_pro_ros2/install/agv_pro_navigation2:/home/elephant/agv_pro_ros2/install/nav2_bringup:/home/elephant/agv_pro_ros2/install/navigation2:/home/elephant/agv_pro_ros2/install/nav2_smoother:/home/elephant/agv_pro_ros2/install/nav2_rotation_shim_controller:/home/elephant/agv_pro_ros2/install/nav2_graceful_controller:/home/elephant/agv_pro_ros2/install/nav2_dwb_controller:/home/elephant/agv_pro_ros2/install/nav2_controller:/home/elephant/agv_pro_ros2/install/dwb_plugins:/home/elephant/agv_pro_ros2/install/dwb_critics:/home/elephant/agv_pro_ros2/install/dwb_core:/home/elephant/agv_pro_ros2/install/nav_2d_utils:/home/elephant/agv_pro_ros2/install/dwb_msgs:/home/elephant/agv_pro_ros2/install/nav_2d_msgs:/home/elephant/agv_pro_ros2/install/nav2_waypoint_follower:/home/elephant/agv_pro_ros2/install/nav2_theta_star_planner:/home/elephant/agv_pro_ros2/install/nav2_smac_planner:/home/elephant/agv_pro_ros2/install/nav2_regulated_pure_pursuit_controller:/home/elephant/agv_pro_ros2/install/nav2_planner:/home/elephant/agv_pro_ros2/install/nav2_navfn_planner:/home/elephant/agv_pro_ros2/install/nav2_mppi_controller:/home/elephant/agv_pro_ros2/install/nav2_constrained_smoother:/home/elephant/agv_pro_ros2/install/nav2_bt_navigator:/home/elephant/agv_pro_ros2/install/nav2_behaviors:/home/elephant/agv_pro_ros2/install/nav2_core:/home/elephant/agv_pro_ros2/install/nav2_collision_monitor:/home/elephant/agv_pro_ros2/install/costmap_queue:/home/elephant/agv_pro_ros2/install/nav2_costmap_2d:/home/elephant/agv_pro_ros2/install/nav2_voxel_grid:/home/elephant/agv_pro_ros2/install/nav2_velocity_smoother:/home/elephant/agv_pro_ros2/install/nav2_rviz_plugins:/home/elephant/agv_pro_ros2/install/nav2_map_server:/home/elephant/agv_pro_ros2/install/nav2_lifecycle_manager:/home/elephant/agv_pro_ros2/install/nav2_behavior_tree:/home/elephant/agv_pro_ros2/install/nav2_amcl:/home/elephant/agv_pro_ros2/install/nav2_util:/home/elephant/agv_pro_ros2/install/agv_pro_autocharge:/home/elephant/agv_pro_ros2/install/nav2_simple_commander:/home/elephant/agv_pro_ros2/install/nav2_msgs:/home/elephant/agv_pro_ros2/install/nav2_common:/home/elephant/agv_pro_ros2/install/lslidar_driver:/home/elephant/agv_pro_ros2/install/lslidar_msgs:/home/elephant/agv_pro_ros2/install/cartographer_rviz:/home/elephant/agv_pro_ros2/install/cartographer_ros:/home/elephant/agv_pro_ros2/install/cartographer_ros_msgs:/home/elephant/agv_pro_ros2/install/agv_pro_msgs:/home/elephant/agv_pro_ros2/install/agv_pro_bringup:/home/elephant/agv_pro_ros2/install/agv_pro_description:/home/elephant/agv_pro_ros2/install/agv_pro_base:/opt/ros/humble', 'SHELL': '/bin/bash', 'LC_NAME': 'zh_SG.UTF-8', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'zh_SG.UTF-8', 'GPG_AGENT_INFO': '/run/user/1001/gnupg/S.gpg-agent:0:1', 'LC_IDENTIFICATION': 'zh_SG.UTF-8', 'QT_IM_MODULE': 'ibus', 'JETSON_CUDA_ARCH_BIN': '8.7', 'PWD': '/home/elephant/agvpro_stereo/build/stereo_camera_pkg_py', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'RCUTILS_COLORIZED_OUTPUT': '1', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/elephant/agvpro_stereo/build/stereo_camera_pkg_py/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/elephant/agvpro_stereo/install/stereo_camera_pkg_py/lib/python3.10/site-packages:/home/elephant/agvpro_stereo/install/stereo_camera_pkg_py/lib/python3.10/site-packages:/home/elephant/agv_pro_ros2/install/teleop_twist_keyboard/lib/python3.10/site-packages:/home/elephant/agv_pro_ros2/install/rtabmap_python/lib/python3.10/site-packages:/home/elephant/agv_pro_ros2/install/rtabmap_msgs/local/lib/python3.10/dist-packages:/home/elephant/agv_pro_ros2/install/orbbec_camera_msgs/local/lib/python3.10/dist-packages:/home/elephant/agv_pro_ros2/install/dwb_msgs/local/lib/python3.10/dist-packages:/home/elephant/agv_pro_ros2/install/nav_2d_msgs/local/lib/python3.10/dist-packages:/home/elephant/agv_pro_ros2/install/agv_pro_autocharge/lib/python3.10/site-packages:/home/elephant/agv_pro_ros2/install/nav2_simple_commander/lib/python3.10/site-packages:/home/elephant/agv_pro_ros2/install/nav2_msgs/local/lib/python3.10/dist-packages:/home/elephant/agv_pro_ros2/install/nav2_common/local/lib/python3.10/dist-packages:/home/elephant/agv_pro_ros2/install/lslidar_msgs/local/lib/python3.10/dist-packages:/home/elephant/agv_pro_ros2/install/cartographer_ros_msgs/local/lib/python3.10/dist-packages:/home/elephant/agv_pro_ros2/install/agv_pro_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'LC_NUMERIC': 'zh_SG.UTF-8', 'LC_PAPER': 'zh_SG.UTF-8', 'COLCON': '1', 'VTE_VERSION': '6800', 'JETSON_JETPACK': '6.2', 'CMAKE_PREFIX_PATH': '/home/elephant/gscam_ws/install/gscam2:/home/elephant/agvpro_stereo/install/stereo_camera_pkg:/home/elephant/agv_pro_ros2/install/agv_pro_gazebo:/home/elephant/agv_pro_ros2/install/slam_gmapping:/home/elephant/agv_pro_ros2/install/rtabmap_ros:/home/elephant/agv_pro_ros2/install/rtabmap_launch:/home/elephant/agv_pro_ros2/install/rtabmap_examples:/home/elephant/agv_pro_ros2/install/rtabmap_demos:/home/elephant/agv_pro_ros2/install/rtabmap_viz:/home/elephant/agv_pro_ros2/install/rtabmap_slam:/home/elephant/agv_pro_ros2/install/rtabmap_odom:/home/elephant/agv_pro_ros2/install/rtabmap_util:/home/elephant/agv_pro_ros2/install/rtabmap_sync:/home/elephant/agv_pro_ros2/install/rtabmap_rviz_plugins:/home/elephant/agv_pro_ros2/install/rtabmap_conversions:/home/elephant/agv_pro_ros2/install/rtabmap_msgs:/home/elephant/agv_pro_ros2/install/rtabmap:/home/elephant/agv_pro_ros2/install/orbbec_description:/home/elephant/agv_pro_ros2/install/orbbec_camera:/home/elephant/agv_pro_ros2/install/orbbec_camera_msgs:/home/elephant/agv_pro_ros2/install/openslam_gmapping:/home/elephant/agv_pro_ros2/install/agv_pro_navigation2:/home/elephant/agv_pro_ros2/install/nav2_bringup:/home/elephant/agv_pro_ros2/install/navigation2:/home/elephant/agv_pro_ros2/install/nav2_smoother:/home/elephant/agv_pro_ros2/install/nav2_rotation_shim_controller:/home/elephant/agv_pro_ros2/install/nav2_graceful_controller:/home/elephant/agv_pro_ros2/install/nav2_dwb_controller:/home/elephant/agv_pro_ros2/install/nav2_controller:/home/elephant/agv_pro_ros2/install/dwb_plugins:/home/elephant/agv_pro_ros2/install/dwb_critics:/home/elephant/agv_pro_ros2/install/dwb_core:/home/elephant/agv_pro_ros2/install/nav_2d_utils:/home/elephant/agv_pro_ros2/install/dwb_msgs:/home/elephant/agv_pro_ros2/install/nav_2d_msgs:/home/elephant/agv_pro_ros2/install/nav2_waypoint_follower:/home/elephant/agv_pro_ros2/install/nav2_theta_star_planner:/home/elephant/agv_pro_ros2/install/nav2_smac_planner:/home/elephant/agv_pro_ros2/install/nav2_regulated_pure_pursuit_controller:/home/elephant/agv_pro_ros2/install/nav2_planner:/home/elephant/agv_pro_ros2/install/nav2_navfn_planner:/home/elephant/agv_pro_ros2/install/nav2_mppi_controller:/home/elephant/agv_pro_ros2/install/nav2_constrained_smoother:/home/elephant/agv_pro_ros2/install/nav2_bt_navigator:/home/elephant/agv_pro_ros2/install/nav2_behaviors:/home/elephant/agv_pro_ros2/install/nav2_core:/home/elephant/agv_pro_ros2/install/nav2_collision_monitor:/home/elephant/agv_pro_ros2/install/costmap_queue:/home/elephant/agv_pro_ros2/install/nav2_costmap_2d:/home/elephant/agv_pro_ros2/install/nav2_voxel_grid:/home/elephant/agv_pro_ros2/install/nav2_velocity_smoother:/home/elephant/agv_pro_ros2/install/nav2_rviz_plugins:/home/elephant/agv_pro_ros2/install/nav2_map_server:/home/elephant/agv_pro_ros2/install/nav2_lifecycle_manager:/home/elephant/agv_pro_ros2/install/nav2_behavior_tree:/home/elephant/agv_pro_ros2/install/nav2_amcl:/home/elephant/agv_pro_ros2/install/nav2_util:/home/elephant/agv_pro_ros2/install/nav2_msgs:/home/elephant/agv_pro_ros2/install/nav2_common:/home/elephant/agv_pro_ros2/install/lslidar_driver:/home/elephant/agv_pro_ros2/install/lslidar_msgs:/home/elephant/agv_pro_ros2/install/cartographer_rviz:/home/elephant/agv_pro_ros2/install/cartographer_ros:/home/elephant/agv_pro_ros2/install/cartographer_ros_msgs:/home/elephant/agv_pro_ros2/install/cartographer:/home/elephant/agv_pro_ros2/install/agv_pro_msgs:/home/elephant/agv_pro_ros2/install/agv_pro_bringup:/home/elephant/agv_pro_ros2/install/agv_pro_base', 'JETSON_P_NUMBER': 'p3767-0003'}, 'shell': False}
+[2.111487] (-) TimerEvent: {}
+[2.211976] (-) TimerEvent: {}
+[2.312597] (-) TimerEvent: {}
+[2.413087] (-) TimerEvent: {}
+[2.513565] (-) TimerEvent: {}
+[2.614075] (-) TimerEvent: {}
+[2.653031] (stereo_camera_pkg_py) StdoutLine: {'line': b'running egg_info\n'}
+[2.654727] (stereo_camera_pkg_py) StdoutLine: {'line': b'writing ../../build/stereo_camera_pkg_py/stereo_camera_pkg_py.egg-info/PKG-INFO\n'}
+[2.688472] (stereo_camera_pkg_py) StdoutLine: {'line': b'writing dependency_links to ../../build/stereo_camera_pkg_py/stereo_camera_pkg_py.egg-info/dependency_links.txt\n'}
+[2.689403] (stereo_camera_pkg_py) StdoutLine: {'line': b'writing entry points to ../../build/stereo_camera_pkg_py/stereo_camera_pkg_py.egg-info/entry_points.txt\n'}
+[2.689550] (stereo_camera_pkg_py) StdoutLine: {'line': b'writing requirements to ../../build/stereo_camera_pkg_py/stereo_camera_pkg_py.egg-info/requires.txt\n'}
+[2.689671] (stereo_camera_pkg_py) StdoutLine: {'line': b'writing top-level names to ../../build/stereo_camera_pkg_py/stereo_camera_pkg_py.egg-info/top_level.txt\n'}
+[2.693930] (stereo_camera_pkg_py) StdoutLine: {'line': b"reading manifest file '../../build/stereo_camera_pkg_py/stereo_camera_pkg_py.egg-info/SOURCES.txt'\n"}
+[2.695979] (stereo_camera_pkg_py) StdoutLine: {'line': b"writing manifest file '../../build/stereo_camera_pkg_py/stereo_camera_pkg_py.egg-info/SOURCES.txt'\n"}
+[2.696219] (stereo_camera_pkg_py) StdoutLine: {'line': b'running build\n'}
+[2.696352] (stereo_camera_pkg_py) StdoutLine: {'line': b'running build_py\n'}
+[2.697458] (stereo_camera_pkg_py) StdoutLine: {'line': b'running install\n'}
+[2.698024] (stereo_camera_pkg_py) StdoutLine: {'line': b'running install_lib\n'}
+[2.703300] (stereo_camera_pkg_py) StdoutLine: {'line': b'running install_data\n'}
+[2.704855] (stereo_camera_pkg_py) StdoutLine: {'line': b'running install_egg_info\n'}
+[2.708384] (stereo_camera_pkg_py) StdoutLine: {'line': b"removing '/home/elephant/agvpro_stereo/install/stereo_camera_pkg_py/lib/python3.10/site-packages/stereo_camera_pkg_py-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[2.708993] (stereo_camera_pkg_py) StdoutLine: {'line': b'Copying ../../build/stereo_camera_pkg_py/stereo_camera_pkg_py.egg-info to /home/elephant/agvpro_stereo/install/stereo_camera_pkg_py/lib/python3.10/site-packages/stereo_camera_pkg_py-0.0.0-py3.10.egg-info\n'}
+[2.714246] (-) TimerEvent: {}
+[2.716350] (stereo_camera_pkg_py) StdoutLine: {'line': b'running install_scripts\n'}
+[2.755792] (stereo_camera_pkg_py) StdoutLine: {'line': b'Installing v4l2 script to /home/elephant/agvpro_stereo/install/stereo_camera_pkg_py/lib/stereo_camera_pkg_py\n'}
+[2.758687] (stereo_camera_pkg_py) StdoutLine: {'line': b"writing list of installed files to '/home/elephant/agvpro_stereo/build/stereo_camera_pkg_py/install.log'\n"}
+[2.813835] (stereo_camera_pkg_py) CommandEnded: {'returncode': 0}
+[2.814776] (-) TimerEvent: {}
+[2.842622] (stereo_camera_pkg_py) JobEnded: {'identifier': 'stereo_camera_pkg_py', 'rc': 0}
+[2.914933] (-) TimerEvent: {}
+[3.015409] (-) TimerEvent: {}
+[3.115951] (-) TimerEvent: {}
+[3.216440] (-) TimerEvent: {}
+[3.316977] (-) TimerEvent: {}
+[3.417562] (-) TimerEvent: {}
+[3.518056] (-) TimerEvent: {}
+[3.618540] (-) TimerEvent: {}
+[3.719064] (-) TimerEvent: {}
+[3.819678] (-) TimerEvent: {}
+[3.920876] (-) TimerEvent: {}
+[4.021395] (-) TimerEvent: {}
+[4.121880] (-) TimerEvent: {}
+[4.222398] (-) TimerEvent: {}
+[4.322888] (-) TimerEvent: {}
+[4.423394] (-) TimerEvent: {}
+[4.523954] (-) TimerEvent: {}
+[4.624434] (-) TimerEvent: {}
+[4.724923] (-) TimerEvent: {}
+[4.825392] (-) TimerEvent: {}
+[4.925873] (-) TimerEvent: {}
+[5.026361] (-) TimerEvent: {}
+[5.126837] (-) TimerEvent: {}
+[5.227326] (-) TimerEvent: {}
+[5.327841] (-) TimerEvent: {}
+[5.428319] (-) TimerEvent: {}
+[5.528836] (-) TimerEvent: {}
+[5.629337] (-) TimerEvent: {}
+[5.729812] (-) TimerEvent: {}
+[5.830288] (-) TimerEvent: {}
+[5.930764] (-) TimerEvent: {}
+[6.031236] (-) TimerEvent: {}
+[6.131736] (-) TimerEvent: {}
+[6.232232] (-) TimerEvent: {}
+[6.332723] (-) TimerEvent: {}
+[6.433229] (-) TimerEvent: {}
+[6.533720] (-) TimerEvent: {}
+[6.634200] (-) TimerEvent: {}
+[6.734644] (-) TimerEvent: {}
+[6.835085] (-) TimerEvent: {}
+[6.935558] (-) TimerEvent: {}
+[7.036158] (-) TimerEvent: {}
+[7.136674] (-) TimerEvent: {}
+[7.237192] (-) TimerEvent: {}
+[7.337822] (-) TimerEvent: {}
+[7.438359] (-) TimerEvent: {}
+[7.538880] (-) TimerEvent: {}
+[7.639792] (-) TimerEvent: {}
+[7.740308] (-) TimerEvent: {}
+[7.868702] (-) TimerEvent: {}
+[7.969875] (-) TimerEvent: {}
+[8.070398] (-) TimerEvent: {}
+[8.170900] (-) TimerEvent: {}
+[8.271368] (-) TimerEvent: {}
+[8.371901] (-) TimerEvent: {}
+[8.472376] (-) TimerEvent: {}
+[8.573033] (-) TimerEvent: {}
+[8.673525] (-) TimerEvent: {}
+[8.774022] (-) TimerEvent: {}
+[8.874488] (-) TimerEvent: {}
+[8.974967] (-) TimerEvent: {}
+[9.075474] (-) TimerEvent: {}
+[9.176220] (-) TimerEvent: {}
+[9.276709] (-) TimerEvent: {}
+[9.377201] (-) TimerEvent: {}
+[9.477731] (-) TimerEvent: {}
+[9.578265] (-) TimerEvent: {}
+[9.678831] (-) TimerEvent: {}
+[9.779319] (-) TimerEvent: {}
+[9.879831] (-) TimerEvent: {}
+[9.980332] (-) TimerEvent: {}
+[10.080815] (-) TimerEvent: {}
+[10.181290] (-) TimerEvent: {}
+[10.281766] (-) TimerEvent: {}
+[10.382244] (-) TimerEvent: {}
+[10.482729] (-) TimerEvent: {}
+[10.583193] (-) TimerEvent: {}
+[10.683682] (-) TimerEvent: {}
+[10.784127] (-) TimerEvent: {}
+[10.884605] (-) TimerEvent: {}
+[10.985095] (-) TimerEvent: {}
+[11.085552] (-) TimerEvent: {}
+[11.186007] (-) TimerEvent: {}
+[11.286470] (-) TimerEvent: {}
+[11.386917] (-) TimerEvent: {}
+[11.487373] (-) TimerEvent: {}
+[11.587864] (-) TimerEvent: {}
+[11.688346] (-) TimerEvent: {}
+[11.788793] (-) TimerEvent: {}
+[11.889324] (-) TimerEvent: {}
+[11.989771] (-) TimerEvent: {}
+[12.090230] (-) TimerEvent: {}
+[12.190692] (-) TimerEvent: {}
+[12.291165] (-) TimerEvent: {}
+[12.391712] (-) TimerEvent: {}
+[12.492253] (-) TimerEvent: {}
+[12.592773] (-) TimerEvent: {}
+[12.693381] (-) TimerEvent: {}
+[12.795753] (-) TimerEvent: {}
+[12.896591] (-) TimerEvent: {}
+[12.997102] (-) TimerEvent: {}
+[13.097659] (-) TimerEvent: {}
+[13.198168] (-) TimerEvent: {}
+[13.298676] (-) TimerEvent: {}
+[13.399165] (-) TimerEvent: {}
+[13.499686] (-) TimerEvent: {}
+[13.600199] (-) TimerEvent: {}
+[13.700669] (-) TimerEvent: {}
+[13.801133] (-) TimerEvent: {}
+[13.901622] (-) TimerEvent: {}
+[14.002104] (-) TimerEvent: {}
+[14.102585] (-) TimerEvent: {}
+[14.203058] (-) TimerEvent: {}
+[14.303537] (-) TimerEvent: {}
+[14.404045] (-) TimerEvent: {}
+[14.504558] (-) TimerEvent: {}
+[14.605082] (-) TimerEvent: {}
+[14.705603] (-) TimerEvent: {}
+[14.806120] (-) TimerEvent: {}
+[14.906643] (-) TimerEvent: {}
+[15.007143] (-) TimerEvent: {}
+[15.107624] (-) TimerEvent: {}
+[15.208117] (-) TimerEvent: {}
+[15.308593] (-) TimerEvent: {}
+[15.409075] (-) TimerEvent: {}
+[15.509533] (-) TimerEvent: {}
+[15.609978] (-) TimerEvent: {}
+[15.710424] (-) TimerEvent: {}
+[15.810857] (-) TimerEvent: {}
+[15.911294] (-) TimerEvent: {}
+[16.011745] (-) TimerEvent: {}
+[16.112215] (-) TimerEvent: {}
+[16.212656] (-) TimerEvent: {}
+[16.313093] (-) TimerEvent: {}
+[16.413541] (-) TimerEvent: {}
+[16.513985] (-) TimerEvent: {}
+[16.614552] (-) TimerEvent: {}
+[16.715063] (-) TimerEvent: {}
+[16.815506] (-) TimerEvent: {}
+[16.915977] (-) TimerEvent: {}
+[17.016432] (-) TimerEvent: {}
+[17.116894] (-) TimerEvent: {}
+[17.217788] (-) TimerEvent: {}
+[17.318315] (-) TimerEvent: {}
+[17.418734] (-) TimerEvent: {}
+[17.519163] (-) TimerEvent: {}
+[17.619589] (-) TimerEvent: {}
+[17.720035] (-) TimerEvent: {}
+[17.820835] (-) TimerEvent: {}
+[17.924317] (-) TimerEvent: {}
+[18.024744] (-) TimerEvent: {}
+[18.125176] (-) TimerEvent: {}
+[18.225605] (-) TimerEvent: {}
+[18.326046] (-) TimerEvent: {}
+[18.426537] (-) TimerEvent: {}
+[18.527014] (-) TimerEvent: {}
+[18.627476] (-) TimerEvent: {}
+[18.727973] (-) TimerEvent: {}
+[18.828463] (-) TimerEvent: {}
+[18.928954] (-) TimerEvent: {}
+[19.029469] (-) TimerEvent: {}
+[19.129965] (-) TimerEvent: {}
+[19.230439] (-) TimerEvent: {}
+[19.330932] (-) TimerEvent: {}
+[19.431462] (-) TimerEvent: {}
+[19.531998] (-) TimerEvent: {}
+[19.632507] (-) TimerEvent: {}
+[19.732997] (-) TimerEvent: {}
+[19.833483] (-) TimerEvent: {}
+[19.933975] (-) TimerEvent: {}
+[20.034469] (-) TimerEvent: {}
+[20.134963] (-) TimerEvent: {}
+[20.235451] (-) TimerEvent: {}
+[20.335969] (-) TimerEvent: {}
+[20.436455] (-) TimerEvent: {}
+[20.536941] (-) TimerEvent: {}
+[20.637422] (-) TimerEvent: {}
+[20.737913] (-) TimerEvent: {}
+[20.838406] (-) TimerEvent: {}
+[20.938911] (-) TimerEvent: {}
+[21.039407] (-) TimerEvent: {}
+[21.139922] (-) TimerEvent: {}
+[21.240430] (-) TimerEvent: {}
+[21.340929] (-) TimerEvent: {}
+[21.441453] (-) TimerEvent: {}
+[21.541979] (-) TimerEvent: {}
+[21.642472] (-) TimerEvent: {}
+[21.742974] (-) TimerEvent: {}
+[21.843475] (-) TimerEvent: {}
+[21.944035] (-) TimerEvent: {}
+[22.044544] (-) TimerEvent: {}
+[22.145072] (-) TimerEvent: {}
+[22.245586] (-) TimerEvent: {}
+[22.281228] (stereo_camera_pkg) StdoutLine: {'line': b'[ 92%] \x1b[32m\x1b[1mLinking CXX executable stereo_split_node_rgb\x1b[0m\n'}
+[22.345682] (-) TimerEvent: {}
+[22.446124] (-) TimerEvent: {}
+[22.546644] (-) TimerEvent: {}
+[22.647151] (-) TimerEvent: {}
+[22.747676] (-) TimerEvent: {}
+[22.848184] (-) TimerEvent: {}
+[22.936788] (stereo_camera_pkg) StderrLine: {'line': b'/usr/bin/ld: warning: libopencv_imgcodecs.so.4.5d, needed by /opt/ros/humble/lib/libcv_bridge.so, may conflict with libopencv_imgcodecs.so.410\n'}
+[22.938627] (stereo_camera_pkg) StderrLine: {'line': b'/usr/bin/ld: warning: libopencv_imgproc.so.4.5d, needed by /opt/ros/humble/lib/libcv_bridge.so, may conflict with libopencv_imgproc.so.410\n'}
+[22.939947] (stereo_camera_pkg) StderrLine: {'line': b'/usr/bin/ld: warning: libopencv_core.so.4.5d, needed by /opt/ros/humble/lib/libcv_bridge.so, may conflict with libopencv_core.so.410\n'}
+[22.948234] (-) TimerEvent: {}
+[23.048600] (-) TimerEvent: {}
+[23.149100] (-) TimerEvent: {}
+[23.249601] (-) TimerEvent: {}
+[23.350119] (-) TimerEvent: {}
+[23.450621] (-) TimerEvent: {}
+[23.551133] (-) TimerEvent: {}
+[23.651633] (-) TimerEvent: {}
+[23.752150] (-) TimerEvent: {}
+[23.852654] (-) TimerEvent: {}
+[23.880197] (stereo_camera_pkg) StdoutLine: {'line': b'[ 92%] Built target stereo_split_node_rgb\n'}
+[23.882014] (stereo_camera_pkg) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[23.886028] (stereo_camera_pkg) CommandEnded: {'returncode': 2}
+[23.921833] (stereo_camera_pkg) JobEnded: {'identifier': 'stereo_camera_pkg', 'rc': 2}
+[23.932637] (-) EventReactorShutdown: {}

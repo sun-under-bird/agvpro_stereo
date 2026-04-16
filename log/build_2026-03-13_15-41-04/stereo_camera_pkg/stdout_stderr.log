@@ -1,0 +1,13 @@
+[ 16%] Built target stereo_split_node
+[ 50%] Built target right_camera_node
+[ 50%] Built target stereo_camera_node
+[ 66%] Built target camera_info
+[ 83%] Built target left_camera_node
+[ 91%] [32mBuilding CXX object CMakeFiles/stereo_split_node_rgb.dir/src/stereo_split_node_rgb.cpp.o[0m
+[01m[K/home/elephant/agvpro_stereo/src/stereo_camera_pkg/src/stereo_split_node_rgb.cpp:[m[K In constructor ‘[01m[KStereoSplitNode::StereoSplitNode()[m[K’:
+[01m[K/home/elephant/agvpro_stereo/src/stereo_camera_pkg/src/stereo_split_node_rgb.cpp:26:85:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[K)[m[K’ token
+   26 |             std::bind(&StereoSplitNode::imageCallback, this, std::placeholders::_1))[01;31m[K)[m[K;
+      |                                                                                     [01;31m[K^[m[K
+gmake[2]: *** [CMakeFiles/stereo_split_node_rgb.dir/build.make:76: CMakeFiles/stereo_split_node_rgb.dir/src/stereo_split_node_rgb.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:277: CMakeFiles/stereo_split_node_rgb.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

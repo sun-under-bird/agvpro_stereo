@@ -1,0 +1,6 @@
+/usr/bin/ld/usr/bin/ld: warning: : warning: libopencv_imgcodecs.so.4.5dlibopencv_imgcodecs.so.4.5d, needed by , needed by /opt/ros/humble/lib/libcv_bridge.so/opt/ros/humble/lib/libcv_bridge.so, may conflict with , may conflict with libopencv_imgcodecs.so.410libopencv_imgcodecs.so.410
+
+/usr/bin/ld: warning: libopencv_imgproc.so.4.5d/usr/bin/ld, needed by : warning: /opt/ros/humble/lib/libcv_bridge.solibopencv_imgproc.so.4.5d, may conflict with , needed by libopencv_imgproc.so.410/opt/ros/humble/lib/libcv_bridge.so
+, may conflict with libopencv_imgproc.so.410
+/usr/bin/ld: warning: libopencv_core.so.4.5d, needed by /opt/ros/humble/lib/libcv_bridge.so, may conflict with libopencv_core.so.410
+/usr/bin/ld: warning: libopencv_core.so.4.5d, needed by /opt/ros/humble/lib/libcv_bridge.so, may conflict with libopencv_core.so.410

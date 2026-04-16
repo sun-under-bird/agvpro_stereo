@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/yahboom/camera_ws/src/stereo_camera_pkg
+CMAKE_SOURCE_DIR = /home/elephant/agvpro_stereo/src/stereo_camera_pkg
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/yahboom/camera_ws/build/stereo_camera_pkg
+CMAKE_BINARY_DIR = /home/elephant/agvpro_stereo/build/stereo_camera_pkg
 
 # Include any dependencies generated for this target.
 include CMakeFiles/right_camera_node.dir/depend.make
@@ -70,18 +70,18 @@ include CMakeFiles/right_camera_node.dir/progress.make
 include CMakeFiles/right_camera_node.dir/flags.make
 
 CMakeFiles/right_camera_node.dir/src/right_camera_node.cpp.o: CMakeFiles/right_camera_node.dir/flags.make
-CMakeFiles/right_camera_node.dir/src/right_camera_node.cpp.o: /home/yahboom/camera_ws/src/stereo_camera_pkg/src/right_camera_node.cpp
+CMakeFiles/right_camera_node.dir/src/right_camera_node.cpp.o: /home/elephant/agvpro_stereo/src/stereo_camera_pkg/src/right_camera_node.cpp
 CMakeFiles/right_camera_node.dir/src/right_camera_node.cpp.o: CMakeFiles/right_camera_node.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yahboom/camera_ws/build/stereo_camera_pkg/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/right_camera_node.dir/src/right_camera_node.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/right_camera_node.dir/src/right_camera_node.cpp.o -MF CMakeFiles/right_camera_node.dir/src/right_camera_node.cpp.o.d -o CMakeFiles/right_camera_node.dir/src/right_camera_node.cpp.o -c /home/yahboom/camera_ws/src/stereo_camera_pkg/src/right_camera_node.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/elephant/agvpro_stereo/build/stereo_camera_pkg/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/right_camera_node.dir/src/right_camera_node.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/right_camera_node.dir/src/right_camera_node.cpp.o -MF CMakeFiles/right_camera_node.dir/src/right_camera_node.cpp.o.d -o CMakeFiles/right_camera_node.dir/src/right_camera_node.cpp.o -c /home/elephant/agvpro_stereo/src/stereo_camera_pkg/src/right_camera_node.cpp
 
 CMakeFiles/right_camera_node.dir/src/right_camera_node.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/right_camera_node.dir/src/right_camera_node.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yahboom/camera_ws/src/stereo_camera_pkg/src/right_camera_node.cpp > CMakeFiles/right_camera_node.dir/src/right_camera_node.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/elephant/agvpro_stereo/src/stereo_camera_pkg/src/right_camera_node.cpp > CMakeFiles/right_camera_node.dir/src/right_camera_node.cpp.i
 
 CMakeFiles/right_camera_node.dir/src/right_camera_node.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/right_camera_node.dir/src/right_camera_node.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yahboom/camera_ws/src/stereo_camera_pkg/src/right_camera_node.cpp -o CMakeFiles/right_camera_node.dir/src/right_camera_node.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/elephant/agvpro_stereo/src/stereo_camera_pkg/src/right_camera_node.cpp -o CMakeFiles/right_camera_node.dir/src/right_camera_node.cpp.s
 
 # Object files for target right_camera_node
 right_camera_node_OBJECTS = \
@@ -93,42 +93,44 @@ right_camera_node_EXTERNAL_OBJECTS =
 right_camera_node: CMakeFiles/right_camera_node.dir/src/right_camera_node.cpp.o
 right_camera_node: CMakeFiles/right_camera_node.dir/build.make
 right_camera_node: /opt/ros/humble/lib/libcv_bridge.so
-right_camera_node: /opt/ros/humble/lib/x86_64-linux-gnu/libimage_transport.so
-right_camera_node: /usr/lib/x86_64-linux-gnu/libopencv_stitching.so.4.5.4d
-right_camera_node: /usr/lib/x86_64-linux-gnu/libopencv_alphamat.so.4.5.4d
-right_camera_node: /usr/lib/x86_64-linux-gnu/libopencv_aruco.so.4.5.4d
-right_camera_node: /usr/lib/x86_64-linux-gnu/libopencv_barcode.so.4.5.4d
-right_camera_node: /usr/lib/x86_64-linux-gnu/libopencv_bgsegm.so.4.5.4d
-right_camera_node: /usr/lib/x86_64-linux-gnu/libopencv_bioinspired.so.4.5.4d
-right_camera_node: /usr/lib/x86_64-linux-gnu/libopencv_ccalib.so.4.5.4d
-right_camera_node: /usr/lib/x86_64-linux-gnu/libopencv_dnn_objdetect.so.4.5.4d
-right_camera_node: /usr/lib/x86_64-linux-gnu/libopencv_dnn_superres.so.4.5.4d
-right_camera_node: /usr/lib/x86_64-linux-gnu/libopencv_dpm.so.4.5.4d
-right_camera_node: /usr/lib/x86_64-linux-gnu/libopencv_face.so.4.5.4d
-right_camera_node: /usr/lib/x86_64-linux-gnu/libopencv_freetype.so.4.5.4d
-right_camera_node: /usr/lib/x86_64-linux-gnu/libopencv_fuzzy.so.4.5.4d
-right_camera_node: /usr/lib/x86_64-linux-gnu/libopencv_hdf.so.4.5.4d
-right_camera_node: /usr/lib/x86_64-linux-gnu/libopencv_hfs.so.4.5.4d
-right_camera_node: /usr/lib/x86_64-linux-gnu/libopencv_img_hash.so.4.5.4d
-right_camera_node: /usr/lib/x86_64-linux-gnu/libopencv_intensity_transform.so.4.5.4d
-right_camera_node: /usr/lib/x86_64-linux-gnu/libopencv_line_descriptor.so.4.5.4d
-right_camera_node: /usr/lib/x86_64-linux-gnu/libopencv_mcc.so.4.5.4d
-right_camera_node: /usr/lib/x86_64-linux-gnu/libopencv_quality.so.4.5.4d
-right_camera_node: /usr/lib/x86_64-linux-gnu/libopencv_rapid.so.4.5.4d
-right_camera_node: /usr/lib/x86_64-linux-gnu/libopencv_reg.so.4.5.4d
-right_camera_node: /usr/lib/x86_64-linux-gnu/libopencv_rgbd.so.4.5.4d
-right_camera_node: /usr/lib/x86_64-linux-gnu/libopencv_saliency.so.4.5.4d
-right_camera_node: /usr/lib/x86_64-linux-gnu/libopencv_shape.so.4.5.4d
-right_camera_node: /usr/lib/x86_64-linux-gnu/libopencv_stereo.so.4.5.4d
-right_camera_node: /usr/lib/x86_64-linux-gnu/libopencv_structured_light.so.4.5.4d
-right_camera_node: /usr/lib/x86_64-linux-gnu/libopencv_superres.so.4.5.4d
-right_camera_node: /usr/lib/x86_64-linux-gnu/libopencv_surface_matching.so.4.5.4d
-right_camera_node: /usr/lib/x86_64-linux-gnu/libopencv_tracking.so.4.5.4d
-right_camera_node: /usr/lib/x86_64-linux-gnu/libopencv_videostab.so.4.5.4d
-right_camera_node: /usr/lib/x86_64-linux-gnu/libopencv_viz.so.4.5.4d
-right_camera_node: /usr/lib/x86_64-linux-gnu/libopencv_wechat_qrcode.so.4.5.4d
-right_camera_node: /usr/lib/x86_64-linux-gnu/libopencv_xobjdetect.so.4.5.4d
-right_camera_node: /usr/lib/x86_64-linux-gnu/libopencv_xphoto.so.4.5.4d
+right_camera_node: /opt/ros/humble/lib/aarch64-linux-gnu/libimage_transport.so
+right_camera_node: /usr/local/lib/libopencv_gapi.so.4.10.0
+right_camera_node: /usr/local/lib/libopencv_stitching.so.4.10.0
+right_camera_node: /usr/local/lib/libopencv_aruco.so.4.10.0
+right_camera_node: /usr/local/lib/libopencv_bgsegm.so.4.10.0
+right_camera_node: /usr/local/lib/libopencv_bioinspired.so.4.10.0
+right_camera_node: /usr/local/lib/libopencv_ccalib.so.4.10.0
+right_camera_node: /usr/local/lib/libopencv_cudabgsegm.so.4.10.0
+right_camera_node: /usr/local/lib/libopencv_cudafeatures2d.so.4.10.0
+right_camera_node: /usr/local/lib/libopencv_cudaobjdetect.so.4.10.0
+right_camera_node: /usr/local/lib/libopencv_cudastereo.so.4.10.0
+right_camera_node: /usr/local/lib/libopencv_dnn_objdetect.so.4.10.0
+right_camera_node: /usr/local/lib/libopencv_dnn_superres.so.4.10.0
+right_camera_node: /usr/local/lib/libopencv_dpm.so.4.10.0
+right_camera_node: /usr/local/lib/libopencv_face.so.4.10.0
+right_camera_node: /usr/local/lib/libopencv_freetype.so.4.10.0
+right_camera_node: /usr/local/lib/libopencv_fuzzy.so.4.10.0
+right_camera_node: /usr/local/lib/libopencv_hfs.so.4.10.0
+right_camera_node: /usr/local/lib/libopencv_img_hash.so.4.10.0
+right_camera_node: /usr/local/lib/libopencv_intensity_transform.so.4.10.0
+right_camera_node: /usr/local/lib/libopencv_line_descriptor.so.4.10.0
+right_camera_node: /usr/local/lib/libopencv_mcc.so.4.10.0
+right_camera_node: /usr/local/lib/libopencv_quality.so.4.10.0
+right_camera_node: /usr/local/lib/libopencv_rapid.so.4.10.0
+right_camera_node: /usr/local/lib/libopencv_reg.so.4.10.0
+right_camera_node: /usr/local/lib/libopencv_rgbd.so.4.10.0
+right_camera_node: /usr/local/lib/libopencv_saliency.so.4.10.0
+right_camera_node: /usr/local/lib/libopencv_signal.so.4.10.0
+right_camera_node: /usr/local/lib/libopencv_stereo.so.4.10.0
+right_camera_node: /usr/local/lib/libopencv_structured_light.so.4.10.0
+right_camera_node: /usr/local/lib/libopencv_superres.so.4.10.0
+right_camera_node: /usr/local/lib/libopencv_surface_matching.so.4.10.0
+right_camera_node: /usr/local/lib/libopencv_tracking.so.4.10.0
+right_camera_node: /usr/local/lib/libopencv_videostab.so.4.10.0
+right_camera_node: /usr/local/lib/libopencv_wechat_qrcode.so.4.10.0
+right_camera_node: /usr/local/lib/libopencv_xfeatures2d.so.4.10.0
+right_camera_node: /usr/local/lib/libopencv_xobjdetect.so.4.10.0
+right_camera_node: /usr/local/lib/libopencv_xphoto.so.4.10.0
 right_camera_node: /opt/ros/humble/lib/libsensor_msgs__rosidl_typesupport_fastrtps_c.so
 right_camera_node: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_fastrtps_c.so
 right_camera_node: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_fastrtps_c.so
@@ -185,7 +187,7 @@ right_camera_node: /opt/ros/humble/lib/librosidl_typesupport_fastrtps_c.so
 right_camera_node: /opt/ros/humble/lib/libstatistics_msgs__rosidl_typesupport_fastrtps_cpp.so
 right_camera_node: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_fastrtps_cpp.so
 right_camera_node: /opt/ros/humble/lib/librosidl_typesupport_fastrtps_cpp.so
-right_camera_node: /opt/ros/humble/lib/libfastcdr.so.1.0.24
+right_camera_node: /opt/ros/humble/lib/libfastcdr.so.1.0.29
 right_camera_node: /opt/ros/humble/lib/librmw.so
 right_camera_node: /opt/ros/humble/lib/libstatistics_msgs__rosidl_typesupport_introspection_c.so
 right_camera_node: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_introspection_c.so
@@ -205,30 +207,39 @@ right_camera_node: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_generator_c
 right_camera_node: /opt/ros/humble/lib/librosidl_typesupport_c.so
 right_camera_node: /opt/ros/humble/lib/librcpputils.so
 right_camera_node: /opt/ros/humble/lib/librosidl_runtime_c.so
-right_camera_node: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+right_camera_node: /usr/lib/aarch64-linux-gnu/libpython3.10.so
 right_camera_node: /opt/ros/humble/lib/libtracetools.so
 right_camera_node: /opt/ros/humble/lib/librcutils.so
-right_camera_node: /usr/lib/x86_64-linux-gnu/libopencv_highgui.so.4.5.4d
-right_camera_node: /usr/lib/x86_64-linux-gnu/libopencv_datasets.so.4.5.4d
-right_camera_node: /usr/lib/x86_64-linux-gnu/libopencv_plot.so.4.5.4d
-right_camera_node: /usr/lib/x86_64-linux-gnu/libopencv_text.so.4.5.4d
-right_camera_node: /usr/lib/x86_64-linux-gnu/libopencv_ml.so.4.5.4d
-right_camera_node: /usr/lib/x86_64-linux-gnu/libopencv_phase_unwrapping.so.4.5.4d
-right_camera_node: /usr/lib/x86_64-linux-gnu/libopencv_optflow.so.4.5.4d
-right_camera_node: /usr/lib/x86_64-linux-gnu/libopencv_ximgproc.so.4.5.4d
-right_camera_node: /usr/lib/x86_64-linux-gnu/libopencv_video.so.4.5.4d
-right_camera_node: /usr/lib/x86_64-linux-gnu/libopencv_videoio.so.4.5.4d
-right_camera_node: /usr/lib/x86_64-linux-gnu/libopencv_imgcodecs.so.4.5.4d
-right_camera_node: /usr/lib/x86_64-linux-gnu/libopencv_objdetect.so.4.5.4d
-right_camera_node: /usr/lib/x86_64-linux-gnu/libopencv_calib3d.so.4.5.4d
-right_camera_node: /usr/lib/x86_64-linux-gnu/libopencv_dnn.so.4.5.4d
-right_camera_node: /usr/lib/x86_64-linux-gnu/libopencv_features2d.so.4.5.4d
-right_camera_node: /usr/lib/x86_64-linux-gnu/libopencv_flann.so.4.5.4d
-right_camera_node: /usr/lib/x86_64-linux-gnu/libopencv_photo.so.4.5.4d
-right_camera_node: /usr/lib/x86_64-linux-gnu/libopencv_imgproc.so.4.5.4d
-right_camera_node: /usr/lib/x86_64-linux-gnu/libopencv_core.so.4.5.4d
+right_camera_node: /usr/local/lib/libopencv_shape.so.4.10.0
+right_camera_node: /usr/local/lib/libopencv_highgui.so.4.10.0
+right_camera_node: /usr/local/lib/libopencv_datasets.so.4.10.0
+right_camera_node: /usr/local/lib/libopencv_plot.so.4.10.0
+right_camera_node: /usr/local/lib/libopencv_text.so.4.10.0
+right_camera_node: /usr/local/lib/libopencv_ml.so.4.10.0
+right_camera_node: /usr/local/lib/libopencv_phase_unwrapping.so.4.10.0
+right_camera_node: /usr/local/lib/libopencv_cudacodec.so.4.10.0
+right_camera_node: /usr/local/lib/libopencv_videoio.so.4.10.0
+right_camera_node: /usr/local/lib/libopencv_cudaoptflow.so.4.10.0
+right_camera_node: /usr/local/lib/libopencv_cudalegacy.so.4.10.0
+right_camera_node: /usr/local/lib/libopencv_cudawarping.so.4.10.0
+right_camera_node: /usr/local/lib/libopencv_optflow.so.4.10.0
+right_camera_node: /usr/local/lib/libopencv_ximgproc.so.4.10.0
+right_camera_node: /usr/local/lib/libopencv_video.so.4.10.0
+right_camera_node: /usr/local/lib/libopencv_imgcodecs.so.4.10.0
+right_camera_node: /usr/local/lib/libopencv_objdetect.so.4.10.0
+right_camera_node: /usr/local/lib/libopencv_calib3d.so.4.10.0
+right_camera_node: /usr/local/lib/libopencv_dnn.so.4.10.0
+right_camera_node: /usr/local/lib/libopencv_features2d.so.4.10.0
+right_camera_node: /usr/local/lib/libopencv_flann.so.4.10.0
+right_camera_node: /usr/local/lib/libopencv_photo.so.4.10.0
+right_camera_node: /usr/local/lib/libopencv_cudaimgproc.so.4.10.0
+right_camera_node: /usr/local/lib/libopencv_cudafilters.so.4.10.0
+right_camera_node: /usr/local/lib/libopencv_imgproc.so.4.10.0
+right_camera_node: /usr/local/lib/libopencv_cudaarithm.so.4.10.0
+right_camera_node: /usr/local/lib/libopencv_core.so.4.10.0
+right_camera_node: /usr/local/lib/libopencv_cudev.so.4.10.0
 right_camera_node: CMakeFiles/right_camera_node.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/yahboom/camera_ws/build/stereo_camera_pkg/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable right_camera_node"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/elephant/agvpro_stereo/build/stereo_camera_pkg/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable right_camera_node"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/right_camera_node.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -240,6 +251,6 @@ CMakeFiles/right_camera_node.dir/clean:
 .PHONY : CMakeFiles/right_camera_node.dir/clean
 
 CMakeFiles/right_camera_node.dir/depend:
-	cd /home/yahboom/camera_ws/build/stereo_camera_pkg && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/yahboom/camera_ws/src/stereo_camera_pkg /home/yahboom/camera_ws/src/stereo_camera_pkg /home/yahboom/camera_ws/build/stereo_camera_pkg /home/yahboom/camera_ws/build/stereo_camera_pkg /home/yahboom/camera_ws/build/stereo_camera_pkg/CMakeFiles/right_camera_node.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/elephant/agvpro_stereo/build/stereo_camera_pkg && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/elephant/agvpro_stereo/src/stereo_camera_pkg /home/elephant/agvpro_stereo/src/stereo_camera_pkg /home/elephant/agvpro_stereo/build/stereo_camera_pkg /home/elephant/agvpro_stereo/build/stereo_camera_pkg /home/elephant/agvpro_stereo/build/stereo_camera_pkg/CMakeFiles/right_camera_node.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/right_camera_node.dir/depend
 

@@ -1,0 +1,6 @@
+[ 16%] Built target stereo_split_node
+[ 50%] Built target right_camera_node
+[ 50%] Built target stereo_camera_node
+[ 66%] Built target camera_info
+[ 83%] Built target left_camera_node
+[ 91%] [32mBuilding CXX object CMakeFiles/stereo_split_node_rgb.dir/src/stereo_split_node_rgb.cpp.o[0m

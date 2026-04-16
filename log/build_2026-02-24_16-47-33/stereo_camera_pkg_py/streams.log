@@ -1,0 +1,58 @@
+[1.690s] Invoking command in '/home/elephant/agvpro_stereo/build/stereo_camera_pkg_py': PYTHONPATH=/home/elephant/agvpro_stereo/build/stereo_camera_pkg_py/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/elephant/agvpro_stereo/install/stereo_camera_pkg_py/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --uninstall --editable --build-directory /home/elephant/agvpro_stereo/build/stereo_camera_pkg_py/build
+[2.281s] running develop
+[2.736s] Removing /home/elephant/agvpro_stereo/install/stereo_camera_pkg_py/lib/python3.10/site-packages/stereo-camera-pkg-py.egg-link (link to .)
+[2.804s] Invoked command in '/home/elephant/agvpro_stereo/build/stereo_camera_pkg_py' returned '0': PYTHONPATH=/home/elephant/agvpro_stereo/build/stereo_camera_pkg_py/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/elephant/agvpro_stereo/install/stereo_camera_pkg_py/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --uninstall --editable --build-directory /home/elephant/agvpro_stereo/build/stereo_camera_pkg_py/build
+[2.807s] Invoking command in '/home/elephant/agvpro_stereo/src/stereo_camera_pkg_py': PYTHONPATH=/home/elephant/agvpro_stereo/build/stereo_camera_pkg_py/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/elephant/agvpro_stereo/install/stereo_camera_pkg_py/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/stereo_camera_pkg_py build --build-base /home/elephant/agvpro_stereo/build/stereo_camera_pkg_py/build install --record /home/elephant/agvpro_stereo/build/stereo_camera_pkg_py/install.log --single-version-externally-managed install_data --force
+[3.358s] running egg_info
+[3.360s] writing ../../build/stereo_camera_pkg_py/stereo_camera_pkg_py.egg-info/PKG-INFO
+[3.360s] writing dependency_links to ../../build/stereo_camera_pkg_py/stereo_camera_pkg_py.egg-info/dependency_links.txt
+[3.361s] writing entry points to ../../build/stereo_camera_pkg_py/stereo_camera_pkg_py.egg-info/entry_points.txt
+[3.361s] writing requirements to ../../build/stereo_camera_pkg_py/stereo_camera_pkg_py.egg-info/requires.txt
+[3.361s] writing top-level names to ../../build/stereo_camera_pkg_py/stereo_camera_pkg_py.egg-info/top_level.txt
+[3.365s] reading manifest file '../../build/stereo_camera_pkg_py/stereo_camera_pkg_py.egg-info/SOURCES.txt'
+[3.366s] writing manifest file '../../build/stereo_camera_pkg_py/stereo_camera_pkg_py.egg-info/SOURCES.txt'
+[3.367s] running build
+[3.367s] running build_py
+[3.367s] creating /home/elephant/agvpro_stereo/build/stereo_camera_pkg_py/build
+[3.367s] creating /home/elephant/agvpro_stereo/build/stereo_camera_pkg_py/build/lib
+[3.367s] creating /home/elephant/agvpro_stereo/build/stereo_camera_pkg_py/build/lib/stereo_camera_pkg_py
+[3.368s] copying stereo_camera_pkg_py/stereo_calib.py -> /home/elephant/agvpro_stereo/build/stereo_camera_pkg_py/build/lib/stereo_camera_pkg_py
+[3.368s] copying stereo_camera_pkg_py/v4l2.py -> /home/elephant/agvpro_stereo/build/stereo_camera_pkg_py/build/lib/stereo_camera_pkg_py
+[3.368s] copying stereo_camera_pkg_py/stereo_info.py -> /home/elephant/agvpro_stereo/build/stereo_camera_pkg_py/build/lib/stereo_camera_pkg_py
+[3.368s] copying stereo_camera_pkg_py/__init__.py -> /home/elephant/agvpro_stereo/build/stereo_camera_pkg_py/build/lib/stereo_camera_pkg_py
+[3.368s] copying stereo_camera_pkg_py/stereo_compresseed.py -> /home/elephant/agvpro_stereo/build/stereo_camera_pkg_py/build/lib/stereo_camera_pkg_py
+[3.369s] running install
+[3.369s] running install_lib
+[3.370s] creating /home/elephant/agvpro_stereo/install/stereo_camera_pkg_py/lib/python3.10/site-packages/stereo_camera_pkg_py
+[3.371s] copying /home/elephant/agvpro_stereo/build/stereo_camera_pkg_py/build/lib/stereo_camera_pkg_py/stereo_calib.py -> /home/elephant/agvpro_stereo/install/stereo_camera_pkg_py/lib/python3.10/site-packages/stereo_camera_pkg_py
+[3.371s] copying /home/elephant/agvpro_stereo/build/stereo_camera_pkg_py/build/lib/stereo_camera_pkg_py/v4l2.py -> /home/elephant/agvpro_stereo/install/stereo_camera_pkg_py/lib/python3.10/site-packages/stereo_camera_pkg_py
+[3.371s] copying /home/elephant/agvpro_stereo/build/stereo_camera_pkg_py/build/lib/stereo_camera_pkg_py/stereo_info.py -> /home/elephant/agvpro_stereo/install/stereo_camera_pkg_py/lib/python3.10/site-packages/stereo_camera_pkg_py
+[3.371s] copying /home/elephant/agvpro_stereo/build/stereo_camera_pkg_py/build/lib/stereo_camera_pkg_py/__init__.py -> /home/elephant/agvpro_stereo/install/stereo_camera_pkg_py/lib/python3.10/site-packages/stereo_camera_pkg_py
+[3.371s] copying /home/elephant/agvpro_stereo/build/stereo_camera_pkg_py/build/lib/stereo_camera_pkg_py/stereo_compresseed.py -> /home/elephant/agvpro_stereo/install/stereo_camera_pkg_py/lib/python3.10/site-packages/stereo_camera_pkg_py
+[3.373s] byte-compiling /home/elephant/agvpro_stereo/install/stereo_camera_pkg_py/lib/python3.10/site-packages/stereo_camera_pkg_py/stereo_calib.py to stereo_calib.cpython-310.pyc
+[3.376s] byte-compiling /home/elephant/agvpro_stereo/install/stereo_camera_pkg_py/lib/python3.10/site-packages/stereo_camera_pkg_py/v4l2.py to v4l2.cpython-310.pyc
+[3.379s] byte-compiling /home/elephant/agvpro_stereo/install/stereo_camera_pkg_py/lib/python3.10/site-packages/stereo_camera_pkg_py/stereo_info.py to stereo_info.cpython-310.pyc
+[3.380s] byte-compiling /home/elephant/agvpro_stereo/install/stereo_camera_pkg_py/lib/python3.10/site-packages/stereo_camera_pkg_py/__init__.py to __init__.cpython-310.pyc
+[3.381s] byte-compiling /home/elephant/agvpro_stereo/install/stereo_camera_pkg_py/lib/python3.10/site-packages/stereo_camera_pkg_py/stereo_compresseed.py to stereo_compresseed.cpython-310.pyc
+[3.383s] running install_data
+[3.383s] copying resource/stereo_camera_pkg_py -> /home/elephant/agvpro_stereo/install/stereo_camera_pkg_py/share/ament_index/resource_index/packages
+[3.383s] copying package.xml -> /home/elephant/agvpro_stereo/install/stereo_camera_pkg_py/share/stereo_camera_pkg_py
+[3.383s] copying launch/bag_rtabmap.launch.py -> /home/elephant/agvpro_stereo/install/stereo_camera_pkg_py/share/stereo_camera_pkg_py/launch
+[3.384s] copying launch/slam.launch.py -> /home/elephant/agvpro_stereo/install/stereo_camera_pkg_py/share/stereo_camera_pkg_py/launch
+[3.384s] copying launch/stereo.launch.py -> /home/elephant/agvpro_stereo/install/stereo_camera_pkg_py/share/stereo_camera_pkg_py/launch
+[3.384s] copying launch/rgbd_rtabmap.launch.py -> /home/elephant/agvpro_stereo/install/stereo_camera_pkg_py/share/stereo_camera_pkg_py/launch
+[3.384s] copying launch/v4l2.launch.py -> /home/elephant/agvpro_stereo/install/stereo_camera_pkg_py/share/stereo_camera_pkg_py/launch
+[3.384s] copying launch/rtabmap.launch.py -> /home/elephant/agvpro_stereo/install/stereo_camera_pkg_py/share/stereo_camera_pkg_py/launch
+[3.385s] copying launch/stereo_calibration.launch.py -> /home/elephant/agvpro_stereo/install/stereo_camera_pkg_py/share/stereo_camera_pkg_py/launch
+[3.385s] copying config/right2.yaml -> /home/elephant/agvpro_stereo/install/stereo_camera_pkg_py/share/stereo_camera_pkg_py/config
+[3.385s] copying config/right1.yaml -> /home/elephant/agvpro_stereo/install/stereo_camera_pkg_py/share/stereo_camera_pkg_py/config
+[3.385s] copying config/left.yaml -> /home/elephant/agvpro_stereo/install/stereo_camera_pkg_py/share/stereo_camera_pkg_py/config
+[3.385s] copying config/left2.yaml -> /home/elephant/agvpro_stereo/install/stereo_camera_pkg_py/share/stereo_camera_pkg_py/config
+[3.386s] copying config/left1.yaml -> /home/elephant/agvpro_stereo/install/stereo_camera_pkg_py/share/stereo_camera_pkg_py/config
+[3.386s] copying config/right.yaml -> /home/elephant/agvpro_stereo/install/stereo_camera_pkg_py/share/stereo_camera_pkg_py/config
+[3.386s] running install_egg_info
+[3.390s] Copying ../../build/stereo_camera_pkg_py/stereo_camera_pkg_py.egg-info to /home/elephant/agvpro_stereo/install/stereo_camera_pkg_py/lib/python3.10/site-packages/stereo_camera_pkg_py-0.0.0-py3.10.egg-info
+[3.391s] running install_scripts
+[3.430s] Installing v4l2 script to /home/elephant/agvpro_stereo/install/stereo_camera_pkg_py/lib/stereo_camera_pkg_py
+[3.431s] writing list of installed files to '/home/elephant/agvpro_stereo/build/stereo_camera_pkg_py/install.log'
+[3.489s] Invoked command in '/home/elephant/agvpro_stereo/src/stereo_camera_pkg_py' returned '0': PYTHONPATH=/home/elephant/agvpro_stereo/build/stereo_camera_pkg_py/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/elephant/agvpro_stereo/install/stereo_camera_pkg_py/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/stereo_camera_pkg_py build --build-base /home/elephant/agvpro_stereo/build/stereo_camera_pkg_py/build install --record /home/elephant/agvpro_stereo/build/stereo_camera_pkg_py/install.log --single-version-externally-managed install_data --force

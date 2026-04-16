@@ -1,0 +1,21 @@
+[1.679s] Invoking command in '/home/elephant/agvpro_stereo/src/stereo_camera_pkg_py': PYTHONPATH=/home/elephant/agvpro_stereo/build/stereo_camera_pkg_py/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/elephant/agvpro_stereo/install/stereo_camera_pkg_py/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/stereo_camera_pkg_py build --build-base /home/elephant/agvpro_stereo/build/stereo_camera_pkg_py/build install --record /home/elephant/agvpro_stereo/build/stereo_camera_pkg_py/install.log --single-version-externally-managed install_data
+[2.237s] running egg_info
+[2.238s] writing ../../build/stereo_camera_pkg_py/stereo_camera_pkg_py.egg-info/PKG-INFO
+[2.239s] writing dependency_links to ../../build/stereo_camera_pkg_py/stereo_camera_pkg_py.egg-info/dependency_links.txt
+[2.239s] writing entry points to ../../build/stereo_camera_pkg_py/stereo_camera_pkg_py.egg-info/entry_points.txt
+[2.239s] writing requirements to ../../build/stereo_camera_pkg_py/stereo_camera_pkg_py.egg-info/requires.txt
+[2.239s] writing top-level names to ../../build/stereo_camera_pkg_py/stereo_camera_pkg_py.egg-info/top_level.txt
+[2.244s] reading manifest file '../../build/stereo_camera_pkg_py/stereo_camera_pkg_py.egg-info/SOURCES.txt'
+[2.245s] writing manifest file '../../build/stereo_camera_pkg_py/stereo_camera_pkg_py.egg-info/SOURCES.txt'
+[2.246s] running build
+[2.246s] running build_py
+[2.246s] running install
+[2.247s] running install_lib
+[2.252s] running install_data
+[2.253s] running install_egg_info
+[2.256s] removing '/home/elephant/agvpro_stereo/install/stereo_camera_pkg_py/lib/python3.10/site-packages/stereo_camera_pkg_py-0.0.0-py3.10.egg-info' (and everything under it)
+[2.257s] Copying ../../build/stereo_camera_pkg_py/stereo_camera_pkg_py.egg-info to /home/elephant/agvpro_stereo/install/stereo_camera_pkg_py/lib/python3.10/site-packages/stereo_camera_pkg_py-0.0.0-py3.10.egg-info
+[2.258s] running install_scripts
+[2.296s] Installing v4l2 script to /home/elephant/agvpro_stereo/install/stereo_camera_pkg_py/lib/stereo_camera_pkg_py
+[2.297s] writing list of installed files to '/home/elephant/agvpro_stereo/build/stereo_camera_pkg_py/install.log'
+[2.354s] Invoked command in '/home/elephant/agvpro_stereo/src/stereo_camera_pkg_py' returned '0': PYTHONPATH=/home/elephant/agvpro_stereo/build/stereo_camera_pkg_py/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/elephant/agvpro_stereo/install/stereo_camera_pkg_py/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/stereo_camera_pkg_py build --build-base /home/elephant/agvpro_stereo/build/stereo_camera_pkg_py/build install --record /home/elephant/agvpro_stereo/build/stereo_camera_pkg_py/install.log --single-version-externally-managed install_data

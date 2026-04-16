@@ -54,10 +54,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/yahboom/camera_ws/src/stereo_camera_pkg
+CMAKE_SOURCE_DIR = /home/elephant/agvpro_stereo/src/stereo_camera_pkg
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/yahboom/camera_ws/build/stereo_camera_pkg
+CMAKE_BINARY_DIR = /home/elephant/agvpro_stereo/build/stereo_camera_pkg
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -67,6 +67,9 @@ all: CMakeFiles/stereo_camera_node.dir/all
 all: CMakeFiles/left_camera_node.dir/all
 all: CMakeFiles/right_camera_node.dir/all
 all: CMakeFiles/camera_info.dir/all
+all: CMakeFiles/stereo_split_node.dir/all
+all: CMakeFiles/stereo_split_node_rgb.dir/all
+all: CMakeFiles/new_odom.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -80,6 +83,9 @@ clean: CMakeFiles/stereo_camera_node.dir/clean
 clean: CMakeFiles/left_camera_node.dir/clean
 clean: CMakeFiles/right_camera_node.dir/clean
 clean: CMakeFiles/camera_info.dir/clean
+clean: CMakeFiles/stereo_split_node.dir/clean
+clean: CMakeFiles/stereo_split_node_rgb.dir/clean
+clean: CMakeFiles/new_odom.dir/clean
 .PHONY : clean
 
 #=============================================================================
@@ -89,14 +95,14 @@ clean: CMakeFiles/camera_info.dir/clean
 CMakeFiles/uninstall.dir/all: CMakeFiles/stereo_camera_pkg_uninstall.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/uninstall.dir/build.make CMakeFiles/uninstall.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/uninstall.dir/build.make CMakeFiles/uninstall.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/yahboom/camera_ws/build/stereo_camera_pkg/CMakeFiles --progress-num= "Built target uninstall"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/elephant/agvpro_stereo/build/stereo_camera_pkg/CMakeFiles --progress-num= "Built target uninstall"
 .PHONY : CMakeFiles/uninstall.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/uninstall.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/yahboom/camera_ws/build/stereo_camera_pkg/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/elephant/agvpro_stereo/build/stereo_camera_pkg/CMakeFiles 0
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/uninstall.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/yahboom/camera_ws/build/stereo_camera_pkg/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/elephant/agvpro_stereo/build/stereo_camera_pkg/CMakeFiles 0
 .PHONY : CMakeFiles/uninstall.dir/rule
 
 # Convenience name for target.
@@ -115,14 +121,14 @@ CMakeFiles/uninstall.dir/clean:
 CMakeFiles/stereo_camera_pkg_uninstall.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/stereo_camera_pkg_uninstall.dir/build.make CMakeFiles/stereo_camera_pkg_uninstall.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/stereo_camera_pkg_uninstall.dir/build.make CMakeFiles/stereo_camera_pkg_uninstall.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/yahboom/camera_ws/build/stereo_camera_pkg/CMakeFiles --progress-num= "Built target stereo_camera_pkg_uninstall"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/elephant/agvpro_stereo/build/stereo_camera_pkg/CMakeFiles --progress-num= "Built target stereo_camera_pkg_uninstall"
 .PHONY : CMakeFiles/stereo_camera_pkg_uninstall.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/stereo_camera_pkg_uninstall.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/yahboom/camera_ws/build/stereo_camera_pkg/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/elephant/agvpro_stereo/build/stereo_camera_pkg/CMakeFiles 0
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/stereo_camera_pkg_uninstall.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/yahboom/camera_ws/build/stereo_camera_pkg/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/elephant/agvpro_stereo/build/stereo_camera_pkg/CMakeFiles 0
 .PHONY : CMakeFiles/stereo_camera_pkg_uninstall.dir/rule
 
 # Convenience name for target.
@@ -141,14 +147,14 @@ CMakeFiles/stereo_camera_pkg_uninstall.dir/clean:
 CMakeFiles/stereo_camera_node.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/stereo_camera_node.dir/build.make CMakeFiles/stereo_camera_node.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/stereo_camera_node.dir/build.make CMakeFiles/stereo_camera_node.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/yahboom/camera_ws/build/stereo_camera_pkg/CMakeFiles --progress-num=7,8 "Built target stereo_camera_node"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/elephant/agvpro_stereo/build/stereo_camera_pkg/CMakeFiles --progress-num=9,10 "Built target stereo_camera_node"
 .PHONY : CMakeFiles/stereo_camera_node.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/stereo_camera_node.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/yahboom/camera_ws/build/stereo_camera_pkg/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/elephant/agvpro_stereo/build/stereo_camera_pkg/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/stereo_camera_node.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/yahboom/camera_ws/build/stereo_camera_pkg/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/elephant/agvpro_stereo/build/stereo_camera_pkg/CMakeFiles 0
 .PHONY : CMakeFiles/stereo_camera_node.dir/rule
 
 # Convenience name for target.
@@ -167,14 +173,14 @@ CMakeFiles/stereo_camera_node.dir/clean:
 CMakeFiles/left_camera_node.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/left_camera_node.dir/build.make CMakeFiles/left_camera_node.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/left_camera_node.dir/build.make CMakeFiles/left_camera_node.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/yahboom/camera_ws/build/stereo_camera_pkg/CMakeFiles --progress-num=3,4 "Built target left_camera_node"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/elephant/agvpro_stereo/build/stereo_camera_pkg/CMakeFiles --progress-num=3,4 "Built target left_camera_node"
 .PHONY : CMakeFiles/left_camera_node.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/left_camera_node.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/yahboom/camera_ws/build/stereo_camera_pkg/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/elephant/agvpro_stereo/build/stereo_camera_pkg/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/left_camera_node.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/yahboom/camera_ws/build/stereo_camera_pkg/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/elephant/agvpro_stereo/build/stereo_camera_pkg/CMakeFiles 0
 .PHONY : CMakeFiles/left_camera_node.dir/rule
 
 # Convenience name for target.
@@ -193,14 +199,14 @@ CMakeFiles/left_camera_node.dir/clean:
 CMakeFiles/right_camera_node.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/right_camera_node.dir/build.make CMakeFiles/right_camera_node.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/right_camera_node.dir/build.make CMakeFiles/right_camera_node.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/yahboom/camera_ws/build/stereo_camera_pkg/CMakeFiles --progress-num=5,6 "Built target right_camera_node"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/elephant/agvpro_stereo/build/stereo_camera_pkg/CMakeFiles --progress-num=7,8 "Built target right_camera_node"
 .PHONY : CMakeFiles/right_camera_node.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/right_camera_node.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/yahboom/camera_ws/build/stereo_camera_pkg/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/elephant/agvpro_stereo/build/stereo_camera_pkg/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/right_camera_node.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/yahboom/camera_ws/build/stereo_camera_pkg/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/elephant/agvpro_stereo/build/stereo_camera_pkg/CMakeFiles 0
 .PHONY : CMakeFiles/right_camera_node.dir/rule
 
 # Convenience name for target.
@@ -219,14 +225,14 @@ CMakeFiles/right_camera_node.dir/clean:
 CMakeFiles/camera_info.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/camera_info.dir/build.make CMakeFiles/camera_info.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/camera_info.dir/build.make CMakeFiles/camera_info.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/yahboom/camera_ws/build/stereo_camera_pkg/CMakeFiles --progress-num=1,2 "Built target camera_info"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/elephant/agvpro_stereo/build/stereo_camera_pkg/CMakeFiles --progress-num=1,2 "Built target camera_info"
 .PHONY : CMakeFiles/camera_info.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/camera_info.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/yahboom/camera_ws/build/stereo_camera_pkg/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/elephant/agvpro_stereo/build/stereo_camera_pkg/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/camera_info.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/yahboom/camera_ws/build/stereo_camera_pkg/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/elephant/agvpro_stereo/build/stereo_camera_pkg/CMakeFiles 0
 .PHONY : CMakeFiles/camera_info.dir/rule
 
 # Convenience name for target.
@@ -237,6 +243,84 @@ camera_info: CMakeFiles/camera_info.dir/rule
 CMakeFiles/camera_info.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/camera_info.dir/build.make CMakeFiles/camera_info.dir/clean
 .PHONY : CMakeFiles/camera_info.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/stereo_split_node.dir
+
+# All Build rule for target.
+CMakeFiles/stereo_split_node.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/stereo_split_node.dir/build.make CMakeFiles/stereo_split_node.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/stereo_split_node.dir/build.make CMakeFiles/stereo_split_node.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/elephant/agvpro_stereo/build/stereo_camera_pkg/CMakeFiles --progress-num=11,12 "Built target stereo_split_node"
+.PHONY : CMakeFiles/stereo_split_node.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/stereo_split_node.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/elephant/agvpro_stereo/build/stereo_camera_pkg/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/stereo_split_node.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/elephant/agvpro_stereo/build/stereo_camera_pkg/CMakeFiles 0
+.PHONY : CMakeFiles/stereo_split_node.dir/rule
+
+# Convenience name for target.
+stereo_split_node: CMakeFiles/stereo_split_node.dir/rule
+.PHONY : stereo_split_node
+
+# clean rule for target.
+CMakeFiles/stereo_split_node.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/stereo_split_node.dir/build.make CMakeFiles/stereo_split_node.dir/clean
+.PHONY : CMakeFiles/stereo_split_node.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/stereo_split_node_rgb.dir
+
+# All Build rule for target.
+CMakeFiles/stereo_split_node_rgb.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/stereo_split_node_rgb.dir/build.make CMakeFiles/stereo_split_node_rgb.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/stereo_split_node_rgb.dir/build.make CMakeFiles/stereo_split_node_rgb.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/elephant/agvpro_stereo/build/stereo_camera_pkg/CMakeFiles --progress-num=13,14 "Built target stereo_split_node_rgb"
+.PHONY : CMakeFiles/stereo_split_node_rgb.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/stereo_split_node_rgb.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/elephant/agvpro_stereo/build/stereo_camera_pkg/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/stereo_split_node_rgb.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/elephant/agvpro_stereo/build/stereo_camera_pkg/CMakeFiles 0
+.PHONY : CMakeFiles/stereo_split_node_rgb.dir/rule
+
+# Convenience name for target.
+stereo_split_node_rgb: CMakeFiles/stereo_split_node_rgb.dir/rule
+.PHONY : stereo_split_node_rgb
+
+# clean rule for target.
+CMakeFiles/stereo_split_node_rgb.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/stereo_split_node_rgb.dir/build.make CMakeFiles/stereo_split_node_rgb.dir/clean
+.PHONY : CMakeFiles/stereo_split_node_rgb.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/new_odom.dir
+
+# All Build rule for target.
+CMakeFiles/new_odom.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/new_odom.dir/build.make CMakeFiles/new_odom.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/new_odom.dir/build.make CMakeFiles/new_odom.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/elephant/agvpro_stereo/build/stereo_camera_pkg/CMakeFiles --progress-num=5,6 "Built target new_odom"
+.PHONY : CMakeFiles/new_odom.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/new_odom.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/elephant/agvpro_stereo/build/stereo_camera_pkg/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/new_odom.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/elephant/agvpro_stereo/build/stereo_camera_pkg/CMakeFiles 0
+.PHONY : CMakeFiles/new_odom.dir/rule
+
+# Convenience name for target.
+new_odom: CMakeFiles/new_odom.dir/rule
+.PHONY : new_odom
+
+# clean rule for target.
+CMakeFiles/new_odom.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/new_odom.dir/build.make CMakeFiles/new_odom.dir/clean
+.PHONY : CMakeFiles/new_odom.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

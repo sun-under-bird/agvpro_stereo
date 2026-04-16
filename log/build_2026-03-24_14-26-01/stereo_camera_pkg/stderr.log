@@ -1,0 +1,8 @@
+[01m[K/home/elephant/agvpro_stereo/src/stereo_camera_pkg/src/stereo_split_node_rgb.cpp:[m[K In member function ‘[01m[Kvoid StereoSplitNode::imageCallback(sensor_msgs::msg::Image_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/elephant/agvpro_stereo/src/stereo_camera_pkg/src/stereo_split_node_rgb.cpp:129:30:[m[K [01;31m[Kerror: [m[Kinvalid use of member function ‘[01m[Krclcpp::Clock::ConstSharedPtr rclcpp::Node::get_clock() const[m[K’ (did you forget the ‘[01m[K()[m[K’ ?)
+  129 |     rclcpp::Time now = [01;31m[Kthis->get_clock[m[K->now();
+      |                        [01;31m[K~~~~~~^~~~~~~~~[m[K
+      |                                       [32m[K()[m[K
+gmake[2]: *** [CMakeFiles/stereo_split_node_rgb.dir/build.make:76: CMakeFiles/stereo_split_node_rgb.dir/src/stereo_split_node_rgb.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:277: CMakeFiles/stereo_split_node_rgb.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

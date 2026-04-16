@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/yahboom/camera_ws/src/stereo_camera_pkg
+CMAKE_SOURCE_DIR = /home/elephant/agvpro_stereo/src/stereo_camera_pkg
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/yahboom/camera_ws/build/stereo_camera_pkg
+CMAKE_BINARY_DIR = /home/elephant/agvpro_stereo/build/stereo_camera_pkg
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -142,9 +142,9 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/yahboom/camera_ws/build/stereo_camera_pkg/CMakeFiles /home/yahboom/camera_ws/build/stereo_camera_pkg//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/elephant/agvpro_stereo/build/stereo_camera_pkg/CMakeFiles /home/elephant/agvpro_stereo/build/stereo_camera_pkg//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/yahboom/camera_ws/build/stereo_camera_pkg/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/elephant/agvpro_stereo/build/stereo_camera_pkg/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -249,6 +249,45 @@ camera_info/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/camera_info.dir/build.make CMakeFiles/camera_info.dir/build
 .PHONY : camera_info/fast
 
+#=============================================================================
+# Target rules for targets named stereo_split_node
+
+# Build rule for target.
+stereo_split_node: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 stereo_split_node
+.PHONY : stereo_split_node
+
+# fast build rule for target.
+stereo_split_node/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/stereo_split_node.dir/build.make CMakeFiles/stereo_split_node.dir/build
+.PHONY : stereo_split_node/fast
+
+#=============================================================================
+# Target rules for targets named stereo_split_node_rgb
+
+# Build rule for target.
+stereo_split_node_rgb: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 stereo_split_node_rgb
+.PHONY : stereo_split_node_rgb
+
+# fast build rule for target.
+stereo_split_node_rgb/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/stereo_split_node_rgb.dir/build.make CMakeFiles/stereo_split_node_rgb.dir/build
+.PHONY : stereo_split_node_rgb/fast
+
+#=============================================================================
+# Target rules for targets named new_odom
+
+# Build rule for target.
+new_odom: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 new_odom
+.PHONY : new_odom
+
+# fast build rule for target.
+new_odom/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/new_odom.dir/build.make CMakeFiles/new_odom.dir/build
+.PHONY : new_odom/fast
+
 src/camera_info.o: src/camera_info.cpp.o
 .PHONY : src/camera_info.o
 
@@ -296,6 +335,30 @@ src/left_camera_node.s: src/left_camera_node.cpp.s
 src/left_camera_node.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/left_camera_node.dir/build.make CMakeFiles/left_camera_node.dir/src/left_camera_node.cpp.s
 .PHONY : src/left_camera_node.cpp.s
+
+src/new_odom.o: src/new_odom.cpp.o
+.PHONY : src/new_odom.o
+
+# target to build an object file
+src/new_odom.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/new_odom.dir/build.make CMakeFiles/new_odom.dir/src/new_odom.cpp.o
+.PHONY : src/new_odom.cpp.o
+
+src/new_odom.i: src/new_odom.cpp.i
+.PHONY : src/new_odom.i
+
+# target to preprocess a source file
+src/new_odom.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/new_odom.dir/build.make CMakeFiles/new_odom.dir/src/new_odom.cpp.i
+.PHONY : src/new_odom.cpp.i
+
+src/new_odom.s: src/new_odom.cpp.s
+.PHONY : src/new_odom.s
+
+# target to generate assembly for a file
+src/new_odom.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/new_odom.dir/build.make CMakeFiles/new_odom.dir/src/new_odom.cpp.s
+.PHONY : src/new_odom.cpp.s
 
 src/right_camera_node.o: src/right_camera_node.cpp.o
 .PHONY : src/right_camera_node.o
@@ -345,6 +408,54 @@ src/stereo_camera_node.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/stereo_camera_node.dir/build.make CMakeFiles/stereo_camera_node.dir/src/stereo_camera_node.cpp.s
 .PHONY : src/stereo_camera_node.cpp.s
 
+src/stereo_split_node.o: src/stereo_split_node.cpp.o
+.PHONY : src/stereo_split_node.o
+
+# target to build an object file
+src/stereo_split_node.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/stereo_split_node.dir/build.make CMakeFiles/stereo_split_node.dir/src/stereo_split_node.cpp.o
+.PHONY : src/stereo_split_node.cpp.o
+
+src/stereo_split_node.i: src/stereo_split_node.cpp.i
+.PHONY : src/stereo_split_node.i
+
+# target to preprocess a source file
+src/stereo_split_node.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/stereo_split_node.dir/build.make CMakeFiles/stereo_split_node.dir/src/stereo_split_node.cpp.i
+.PHONY : src/stereo_split_node.cpp.i
+
+src/stereo_split_node.s: src/stereo_split_node.cpp.s
+.PHONY : src/stereo_split_node.s
+
+# target to generate assembly for a file
+src/stereo_split_node.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/stereo_split_node.dir/build.make CMakeFiles/stereo_split_node.dir/src/stereo_split_node.cpp.s
+.PHONY : src/stereo_split_node.cpp.s
+
+src/stereo_split_node_rgb.o: src/stereo_split_node_rgb.cpp.o
+.PHONY : src/stereo_split_node_rgb.o
+
+# target to build an object file
+src/stereo_split_node_rgb.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/stereo_split_node_rgb.dir/build.make CMakeFiles/stereo_split_node_rgb.dir/src/stereo_split_node_rgb.cpp.o
+.PHONY : src/stereo_split_node_rgb.cpp.o
+
+src/stereo_split_node_rgb.i: src/stereo_split_node_rgb.cpp.i
+.PHONY : src/stereo_split_node_rgb.i
+
+# target to preprocess a source file
+src/stereo_split_node_rgb.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/stereo_split_node_rgb.dir/build.make CMakeFiles/stereo_split_node_rgb.dir/src/stereo_split_node_rgb.cpp.i
+.PHONY : src/stereo_split_node_rgb.cpp.i
+
+src/stereo_split_node_rgb.s: src/stereo_split_node_rgb.cpp.s
+.PHONY : src/stereo_split_node_rgb.s
+
+# target to generate assembly for a file
+src/stereo_split_node_rgb.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/stereo_split_node_rgb.dir/build.make CMakeFiles/stereo_split_node_rgb.dir/src/stereo_split_node_rgb.cpp.s
+.PHONY : src/stereo_split_node_rgb.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -362,20 +473,32 @@ help:
 	@echo "... uninstall"
 	@echo "... camera_info"
 	@echo "... left_camera_node"
+	@echo "... new_odom"
 	@echo "... right_camera_node"
 	@echo "... stereo_camera_node"
+	@echo "... stereo_split_node"
+	@echo "... stereo_split_node_rgb"
 	@echo "... src/camera_info.o"
 	@echo "... src/camera_info.i"
 	@echo "... src/camera_info.s"
 	@echo "... src/left_camera_node.o"
 	@echo "... src/left_camera_node.i"
 	@echo "... src/left_camera_node.s"
+	@echo "... src/new_odom.o"
+	@echo "... src/new_odom.i"
+	@echo "... src/new_odom.s"
 	@echo "... src/right_camera_node.o"
 	@echo "... src/right_camera_node.i"
 	@echo "... src/right_camera_node.s"
 	@echo "... src/stereo_camera_node.o"
 	@echo "... src/stereo_camera_node.i"
 	@echo "... src/stereo_camera_node.s"
+	@echo "... src/stereo_split_node.o"
+	@echo "... src/stereo_split_node.i"
+	@echo "... src/stereo_split_node.s"
+	@echo "... src/stereo_split_node_rgb.o"
+	@echo "... src/stereo_split_node_rgb.i"
+	@echo "... src/stereo_split_node_rgb.s"
 .PHONY : help
 
 

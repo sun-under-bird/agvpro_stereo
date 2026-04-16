@@ -1,0 +1,22 @@
+[0.055s] Invoking command in '/home/elephant/agvpro_stereo/build/stereo_camera_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/elephant/agvpro_stereo/install/stereo_camera_pkg_py:/home/elephant/agv_pro_ros2/install/teleop_twist_keyboard:/home/elephant/agv_pro_ros2/install/rtabmap_python:/home/elephant/agv_pro_ros2/install/agv_pro_autocharge:/home/elephant/agv_pro_ros2/install/nav2_simple_commander:/home/elephant/agv_pro_ros2/install/agv_pro_description:/opt/ros/humble /usr/bin/cmake --build /home/elephant/agvpro_stereo/build/stereo_camera_pkg -- -j6 -l6
+[0.410s] [ 14%] Built target left_camera_node
+[0.411s] [ 21%] [32mBuilding CXX object CMakeFiles/stereo_split_node.dir/src/stereo_split_node.cpp.o[0m
+[0.420s] [ 42%] Built target stereo_camera_node
+[0.423s] [ 50%] Built target right_camera_node
+[0.428s] [ 57%] [32mBuilding CXX object CMakeFiles/stereo_split_node_rgb.dir/src/stereo_split_node_rgb.cpp.o[0m
+[0.436s] [ 71%] Built target camera_info
+[0.501s] [ 85%] Built target new_odom
+[1.008s] [01m[K/home/elephant/agvpro_stereo/src/stereo_camera_pkg/src/stereo_split_node.cpp:4:10:[m[K [01;31m[Kfatal error: [m[Knav_msgs/msg/odometry.hpp: No such file or directory
+[1.008s]     4 | #include [01;31m[K<nav_msgs/msg/odometry.hpp>[m[K
+[1.008s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[1.008s] compilation terminated.
+[1.011s] gmake[2]: *** [CMakeFiles/stereo_split_node.dir/build.make:76: CMakeFiles/stereo_split_node.dir/src/stereo_split_node.cpp.o] Error 1
+[1.011s] gmake[1]: *** [CMakeFiles/Makefile2:253: CMakeFiles/stereo_split_node.dir/all] Error 2
+[1.012s] gmake[1]: *** Waiting for unfinished jobs....
+[22.280s] [ 92%] [32m[1mLinking CXX executable stereo_split_node_rgb[0m
+[22.936s] /usr/bin/ld: warning: libopencv_imgcodecs.so.4.5d, needed by /opt/ros/humble/lib/libcv_bridge.so, may conflict with libopencv_imgcodecs.so.410
+[22.937s] /usr/bin/ld: warning: libopencv_imgproc.so.4.5d, needed by /opt/ros/humble/lib/libcv_bridge.so, may conflict with libopencv_imgproc.so.410
+[22.939s] /usr/bin/ld: warning: libopencv_core.so.4.5d, needed by /opt/ros/humble/lib/libcv_bridge.so, may conflict with libopencv_core.so.410
+[23.879s] [ 92%] Built target stereo_split_node_rgb
+[23.881s] gmake: *** [Makefile:146: all] Error 2
+[23.885s] Invoked command in '/home/elephant/agvpro_stereo/build/stereo_camera_pkg' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/elephant/agvpro_stereo/install/stereo_camera_pkg_py:/home/elephant/agv_pro_ros2/install/teleop_twist_keyboard:/home/elephant/agv_pro_ros2/install/rtabmap_python:/home/elephant/agv_pro_ros2/install/agv_pro_autocharge:/home/elephant/agv_pro_ros2/install/nav2_simple_commander:/home/elephant/agv_pro_ros2/install/agv_pro_description:/opt/ros/humble /usr/bin/cmake --build /home/elephant/agvpro_stereo/build/stereo_camera_pkg -- -j6 -l6

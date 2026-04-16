@@ -1,1 +1,1 @@
-/home/yahboom/camera_ws/build/stereo_camera_pkg/ament_cmake_core/stereo_camera_pkgConfig-version.cmake
+/home/elephant/agvpro_stereo/build/stereo_camera_pkg/ament_cmake_core/stereo_camera_pkgConfig-version.cmake

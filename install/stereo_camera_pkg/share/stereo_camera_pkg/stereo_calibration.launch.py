@@ -1,1 +1,1 @@
-/home/yahboom/camera_ws/src/stereo_camera_pkg/launch/stereo_calibration.launch.py
+/home/elephant/agvpro_stereo/src/stereo_camera_pkg/launch/stereo_calibration.launch.py

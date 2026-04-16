@@ -15,14 +15,14 @@ class StereoCameraNode : public rclcpp::Node {
 public:
     StereoCameraNode() : Node("stereo_camera_node") {
         // parameters
-        this->declare_parameter<int>("left_cam_idx", 0);
-        this->declare_parameter<int>("right_cam_idx", 2);
+        this->declare_parameter<int>("left_cam_idx", 6);
+        this->declare_parameter<int>("right_cam_idx", 8);
         this->declare_parameter<int>("width", 320);
         this->declare_parameter<int>("height", 240);
         this->declare_parameter<std::string>("left_calib_path",
-            "/home/yahboom/camera_ws/src/stereo_camera_pkg/config/left2.yaml");
+            "/home/elephant/agvpro_stereo/src/stereo_camera_pkg/config/left2.yaml");
         this->declare_parameter<std::string>("right_calib_path",
-            "/home/yahboom/camera_ws/src/stereo_camera_pkg/config/right2.yaml");
+            "/home/elephant/agvpro_stereo/src/stereo_camera_pkg/config/right2.yaml");
 
         // get parameter
         int left_idx = this->get_parameter("left_cam_idx").as_int();

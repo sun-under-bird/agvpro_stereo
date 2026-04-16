@@ -1,0 +1,37 @@
+running develop
+running egg_info
+creating stereo_camera_pkg_py.egg-info
+writing stereo_camera_pkg_py.egg-info/PKG-INFO
+writing dependency_links to stereo_camera_pkg_py.egg-info/dependency_links.txt
+writing entry points to stereo_camera_pkg_py.egg-info/entry_points.txt
+writing requirements to stereo_camera_pkg_py.egg-info/requires.txt
+writing top-level names to stereo_camera_pkg_py.egg-info/top_level.txt
+writing manifest file 'stereo_camera_pkg_py.egg-info/SOURCES.txt'
+reading manifest file 'stereo_camera_pkg_py.egg-info/SOURCES.txt'
+writing manifest file 'stereo_camera_pkg_py.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/elephant/agvpro_stereo/install/stereo_camera_pkg_py/lib/python3.10/site-packages/stereo-camera-pkg-py.egg-link (link to .)
+Installing v4l2 script to /home/elephant/agvpro_stereo/install/stereo_camera_pkg_py/lib/stereo_camera_pkg_py
+
+Installed /home/elephant/agvpro_stereo/build/stereo_camera_pkg_py
+running symlink_data
+creating /home/elephant/agvpro_stereo/install/stereo_camera_pkg_py/share/ament_index
+creating /home/elephant/agvpro_stereo/install/stereo_camera_pkg_py/share/ament_index/resource_index
+creating /home/elephant/agvpro_stereo/install/stereo_camera_pkg_py/share/ament_index/resource_index/packages
+symbolically linking /home/elephant/agvpro_stereo/build/stereo_camera_pkg_py/resource/stereo_camera_pkg_py -> /home/elephant/agvpro_stereo/install/stereo_camera_pkg_py/share/ament_index/resource_index/packages
+symbolically linking /home/elephant/agvpro_stereo/build/stereo_camera_pkg_py/package.xml -> /home/elephant/agvpro_stereo/install/stereo_camera_pkg_py/share/stereo_camera_pkg_py
+creating /home/elephant/agvpro_stereo/install/stereo_camera_pkg_py/share/stereo_camera_pkg_py/launch
+symbolically linking /home/elephant/agvpro_stereo/build/stereo_camera_pkg_py/launch/bag_rtabmap.launch.py -> /home/elephant/agvpro_stereo/install/stereo_camera_pkg_py/share/stereo_camera_pkg_py/launch
+symbolically linking /home/elephant/agvpro_stereo/build/stereo_camera_pkg_py/launch/slam.launch.py -> /home/elephant/agvpro_stereo/install/stereo_camera_pkg_py/share/stereo_camera_pkg_py/launch
+symbolically linking /home/elephant/agvpro_stereo/build/stereo_camera_pkg_py/launch/stereo.launch.py -> /home/elephant/agvpro_stereo/install/stereo_camera_pkg_py/share/stereo_camera_pkg_py/launch
+symbolically linking /home/elephant/agvpro_stereo/build/stereo_camera_pkg_py/launch/rgbd_rtabmap.launch.py -> /home/elephant/agvpro_stereo/install/stereo_camera_pkg_py/share/stereo_camera_pkg_py/launch
+symbolically linking /home/elephant/agvpro_stereo/build/stereo_camera_pkg_py/launch/v4l2.launch.py -> /home/elephant/agvpro_stereo/install/stereo_camera_pkg_py/share/stereo_camera_pkg_py/launch
+symbolically linking /home/elephant/agvpro_stereo/build/stereo_camera_pkg_py/launch/rtabmap.launch.py -> /home/elephant/agvpro_stereo/install/stereo_camera_pkg_py/share/stereo_camera_pkg_py/launch
+symbolically linking /home/elephant/agvpro_stereo/build/stereo_camera_pkg_py/launch/stereo_calibration.launch.py -> /home/elephant/agvpro_stereo/install/stereo_camera_pkg_py/share/stereo_camera_pkg_py/launch
+creating /home/elephant/agvpro_stereo/install/stereo_camera_pkg_py/share/stereo_camera_pkg_py/config
+symbolically linking /home/elephant/agvpro_stereo/build/stereo_camera_pkg_py/config/right2.yaml -> /home/elephant/agvpro_stereo/install/stereo_camera_pkg_py/share/stereo_camera_pkg_py/config
+symbolically linking /home/elephant/agvpro_stereo/build/stereo_camera_pkg_py/config/right1.yaml -> /home/elephant/agvpro_stereo/install/stereo_camera_pkg_py/share/stereo_camera_pkg_py/config
+symbolically linking /home/elephant/agvpro_stereo/build/stereo_camera_pkg_py/config/left.yaml -> /home/elephant/agvpro_stereo/install/stereo_camera_pkg_py/share/stereo_camera_pkg_py/config
+symbolically linking /home/elephant/agvpro_stereo/build/stereo_camera_pkg_py/config/left2.yaml -> /home/elephant/agvpro_stereo/install/stereo_camera_pkg_py/share/stereo_camera_pkg_py/config
+symbolically linking /home/elephant/agvpro_stereo/build/stereo_camera_pkg_py/config/left1.yaml -> /home/elephant/agvpro_stereo/install/stereo_camera_pkg_py/share/stereo_camera_pkg_py/config
+symbolically linking /home/elephant/agvpro_stereo/build/stereo_camera_pkg_py/config/right.yaml -> /home/elephant/agvpro_stereo/install/stereo_camera_pkg_py/share/stereo_camera_pkg_py/config

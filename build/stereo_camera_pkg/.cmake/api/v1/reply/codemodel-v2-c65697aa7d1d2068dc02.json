@@ -1,0 +1,133 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-0029fe587b1c312a125b.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "stereo_camera_pkg",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "camera_info::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-camera_info-b4b1064319228eff74b6.json",
+					"name" : "camera_info",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "left_camera_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-left_camera_node-1103e45ed1c61d7143e9.json",
+					"name" : "left_camera_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "new_odom::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-new_odom-d09393b4ec1e83741da4.json",
+					"name" : "new_odom",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "right_camera_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-right_camera_node-652417b17c100f639e31.json",
+					"name" : "right_camera_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "stereo_camera_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-stereo_camera_node-9049454874c9e69d6b53.json",
+					"name" : "stereo_camera_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "stereo_camera_pkg_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-stereo_camera_pkg_uninstall-e826be62622ee2d9b814.json",
+					"name" : "stereo_camera_pkg_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "stereo_split_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-stereo_split_node-8db863d57ea2cb70db49.json",
+					"name" : "stereo_split_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "stereo_split_node_rgb::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-stereo_split_node_rgb-2f936b94c808c5337a64.json",
+					"name" : "stereo_split_node_rgb",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-9dfb24b285b1fdedfbe7.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/elephant/agvpro_stereo/build/stereo_camera_pkg",
+		"source" : "/home/elephant/agvpro_stereo/src/stereo_camera_pkg"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

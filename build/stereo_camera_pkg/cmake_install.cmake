@@ -1,8 +1,8 @@
-# Install script for directory: /home/yahboom/camera_ws/src/stereo_camera_pkg
+# Install script for directory: /home/elephant/agvpro_stereo/src/stereo_camera_pkg
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/yahboom/camera_ws/install/stereo_camera_pkg")
+  set(CMAKE_INSTALL_PREFIX "/home/elephant/agvpro_stereo/install/stereo_camera_pkg")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -43,7 +43,7 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  include("/home/yahboom/camera_ws/build/stereo_camera_pkg/ament_cmake_symlink_install/ament_cmake_symlink_install.cmake")
+  include("/home/elephant/agvpro_stereo/build/stereo_camera_pkg/ament_cmake_symlink_install/ament_cmake_symlink_install.cmake")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -54,5 +54,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/yahboom/camera_ws/build/stereo_camera_pkg/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/elephant/agvpro_stereo/build/stereo_camera_pkg/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

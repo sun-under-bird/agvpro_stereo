@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/yahboom/camera_ws/src/stereo_camera_pkg
+CMAKE_SOURCE_DIR = /home/elephant/agvpro_stereo/src/stereo_camera_pkg
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/yahboom/camera_ws/build/stereo_camera_pkg
+CMAKE_BINARY_DIR = /home/elephant/agvpro_stereo/build/stereo_camera_pkg
 
 # Utility rule file for uninstall.
 
@@ -78,6 +78,6 @@ CMakeFiles/uninstall.dir/clean:
 .PHONY : CMakeFiles/uninstall.dir/clean
 
 CMakeFiles/uninstall.dir/depend:
-	cd /home/yahboom/camera_ws/build/stereo_camera_pkg && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/yahboom/camera_ws/src/stereo_camera_pkg /home/yahboom/camera_ws/src/stereo_camera_pkg /home/yahboom/camera_ws/build/stereo_camera_pkg /home/yahboom/camera_ws/build/stereo_camera_pkg /home/yahboom/camera_ws/build/stereo_camera_pkg/CMakeFiles/uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/elephant/agvpro_stereo/build/stereo_camera_pkg && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/elephant/agvpro_stereo/src/stereo_camera_pkg /home/elephant/agvpro_stereo/src/stereo_camera_pkg /home/elephant/agvpro_stereo/build/stereo_camera_pkg /home/elephant/agvpro_stereo/build/stereo_camera_pkg /home/elephant/agvpro_stereo/build/stereo_camera_pkg/CMakeFiles/uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/uninstall.dir/depend
 

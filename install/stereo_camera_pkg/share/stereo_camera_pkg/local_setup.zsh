@@ -1,1 +1,1 @@
-/home/yahboom/camera_ws/build/stereo_camera_pkg/ament_cmake_environment_hooks/local_setup.zsh
+/home/elephant/agvpro_stereo/build/stereo_camera_pkg/ament_cmake_environment_hooks/local_setup.zsh

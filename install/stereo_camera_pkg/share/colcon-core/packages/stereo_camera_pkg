@@ -1,1 +1,1 @@
-cv_bridge:image_transport:launch:launch_ros:rclcpp:sensor_msgs
+ament_index_cpp:cv_bridge:image_transport:launch:launch_ros:nav_msgs:rclcpp:sensor_msgs

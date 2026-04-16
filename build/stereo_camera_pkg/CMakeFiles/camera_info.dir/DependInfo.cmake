@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/yahboom/camera_ws/src/stereo_camera_pkg/src/camera_info.cpp" "CMakeFiles/camera_info.dir/src/camera_info.cpp.o" "gcc" "CMakeFiles/camera_info.dir/src/camera_info.cpp.o.d"
+  "/home/elephant/agvpro_stereo/src/stereo_camera_pkg/src/camera_info.cpp" "CMakeFiles/camera_info.dir/src/camera_info.cpp.o" "gcc" "CMakeFiles/camera_info.dir/src/camera_info.cpp.o.d"
   )
 
 # Targets to which this target links.

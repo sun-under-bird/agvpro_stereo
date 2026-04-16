@@ -19,123 +19,97 @@ def generate_launch_description():
     baseline = LaunchConfiguration('baseline')
 
     rtabmap_slam_params = {
-	    'frame_id': base_frame,
+            'frame_id': base_frame,
 	    'subscribe_rgbd': False,
 	    'subscribe_stereo': True,
 	    'subscribe_odom_info': True,
 	    'use_sim_time': False,
 	    'approx_sync': approx_sync,
 	    'approx_sync_max_interval': 0.05,
-	    'sync_queue_size': 15,
-	    'topic_queue_size': 15,
+	    'queue_size': 10,
 	    'wait_for_transform': 0.2,
-	    'tf_delay': 0.05,
+	    'tf_delay': 0.2,
 	    'Rtabmap/ImagesAlreadyRectified': 'true',
-	    'Rtabmap/DetectionRate': '3',
-	    'Reg/Force3DoF': 'false',
-	    'Kp/MaxFeatures': '600',
-	    'Kp/NndrRatio': '0.75',
-	    'GFTT/MinDistance': '2',
-	    'GFTT/QualityLevel': '0.001',
-	    'GFTT/MaxCorners': '500',
+	    'Rtabmap/DetectionRate': '1',
+	    'Reg/Force3DoF': 'true',
+	    'Kp/MaxFeatures': '1000',
+	    'GFTT/MinDistance': '5',
+	    'GFTT/QualityLevel': '0.00001',
 	    'Stereo/MaxDisparity':'128',
-	    'Vis/MaxDepth':'3',
-	    'Kp/MaxDepth':'3',
 	    'Grid/RangeMax':'3',
+            'Grid/GroundIsObstacle':'false',
 	    'Grid/CellSize':'0.05',
-	    'Grid/3D':'true',
-	    'Grid/GroundIsObstacle':'false',
-	    'cloud_decimation':'4',
-	    'cloud_max_depth':'3',
-	    'cloud_min_depth':'0.3',
-	    'cloud_voxel_size':'0.05',
+	    'Grid/RayTracing': 'true',
+	    'sync_queue_size': 50,
 	}
 
     rtabmap_odom_params = {
-	    'frame_id': base_frame,
-
+            'frame_id': base_frame,
 	    # stereo mode
 	    'subscribe_rgbd': False,
 	    'subscribe_stereo': True,
 	    'subscribe_odom_info': True,
+	    'subscrib_odom':True,
 	    'use_sim_time': False,
 	    'approx_sync': approx_sync,
-	    'approx_sync_max_interval': 0.05,
-	    'sync_queue_size': 15,
-	    'topic_queue_size': 15,
+	    'approx_sync_max_interval': 0.005,
+	    'sync_queue_size': 5,
 	    'wait_for_transform': 0.2,
-	    'tf_delay': 0.05,
+	    'tf_delay': 0.2,
 	    'Rtabmap/ImagesAlreadyRectified': 'true',
 	    'Odom/Strategy': '0', 
+            'Odom/GuessMotion':'true',
 	    'Vis/EstimationType': '1', 
-	    'Vis/MinInliers': '8',
-	    'Vis/MaxFeatures': '1000',
+	    'Vis/MinInliers': '12',
+	    'Vis/MaxFeatures': '1200',
 	    'OdomF2M/MaxSize': '1000',
-	    'Odom/KeyFrameThr': '0.5',
-	    'Odom/ScanKeyFrameThr': '0.5',
-	    'GFTT/MinDistance': '2',
-	    'GFTT/QualityLevel': '0.001',
-	    'GFTT/MaxCorners': '500',
+	    'GFTT/MinDistance': '5',
+	    'GFTT/QualityLevel': '0.00001',
 	    'Stereo/MaxDisparity':'128',
-	    'Vis/MaxDepth':'3',
+	    'odom/ResetCountdown': '1',
 	}
 
     
     remaps = [
-        ('left/image_rect',   '/stereo/left/camera/image_rect_color'),
-        ('right/image_rect',  '/stereo/right/camera/image_rect_color'),
+        ('left/image_rect',   '/stereo/left/camera/image_rect'),
+        ('right/image_rect',  '/stereo/right/camera/image_rect'),
         ('left/camera_info',  '/stereo/left/camera/camera_info'),
         ('right/camera_info', '/stereo/right/camera/camera_info'),
         ('odom',              '/vo'),
     ]
 
+
     return LaunchDescription([
-        DeclareLaunchArgument('base_frame', default_value='camera_link'),
+        DeclareLaunchArgument('base_frame', default_value='base_footprint'),
         DeclareLaunchArgument('use_viz', default_value='true'),
         DeclareLaunchArgument('approx_sync', default_value='true'),
-        DeclareLaunchArgument('baseline', default_value='-0.0635'), 
+        DeclareLaunchArgument('baseline', default_value='-0.05'), 
 
-        # TF
+        
+                                
         Node(
-            package='tf2_ros',
-            executable='static_transform_publisher',
-            name='tf_cam_link_left',
-            arguments=['0', '0', '0', '0', '0', '0', '1', 'camera_link', 'left_camera']
-        ),
+	   package='image_proc',
+	   executable='rectify_node',
+	   name='rectify_left',
+	   namespace='/stereo/left/camera',
+	   remappings=[
+	      ('image', '/stereo/left/camera/image_mono'),
+	      ('camera_info', '/stereo/left/camera/camera_info'),
+	      ('image_rect','/stereo/left/camera/image_rect')]
+        ),  
 
-        Node(
-            package='tf2_ros',
-            executable='static_transform_publisher',
-            name='tf_cam_link_right',
-            arguments=['0', baseline, '0', '0', '0', '0', '1', 'camera_link', 'right_camera']
-        ),
-
-        Node(
-            package='tf2_ros',
-            executable='static_transform_publisher',
-            name='tf_left_optical',
-            arguments=['0', '0', '0', '-1.570796', '0', '-1.570796',
-                       'left_camera', 'camera_left_frame']
-        ),
 
         Node(
-            package='tf2_ros',
-            executable='static_transform_publisher',
-            name='tf_right_optical',
-            arguments=['0', '0', '0', '-1.570796', '0', '-1.570796',
-                       'right_camera', 'camera_right_frame']
+           package='image_proc',
+           executable='rectify_node',
+           name='rectify_right',
+           namespace='/stereo/right/camera',
+           remappings=[
+            ('image', '/stereo/right/camera/image_mono'),
+            ('camera_info', '/stereo/right/camera/camera_info'),
+            ('image_rect','/stereo/right/camera/image_rect'),]
         ),
         
-                        
-        IncludeLaunchDescription(
-            PythonLaunchDescriptionSource(stereo_image_proc_launch),
-            launch_arguments=[
-                ('left_namespace',  '/stereo/left/camera'),
-                ('right_namespace', '/stereo/right/camera'),
-                ('disparity_range', '128'),
-            ]
-        ),
-
         # stereo_odometry
         Node(
             package='rtabmap_odom',

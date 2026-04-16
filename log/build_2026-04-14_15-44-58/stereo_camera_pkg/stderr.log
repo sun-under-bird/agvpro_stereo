@@ -1,0 +1,3 @@
+gmake[2]: *** [CMakeFiles/new_odom.dir/build.make:76: CMakeFiles/new_odom.dir/src/new_odom.cpp.o] Interrupt
+gmake[1]: *** [CMakeFiles/Makefile2:305: CMakeFiles/new_odom.dir/all] Interrupt
+gmake: *** [Makefile:146: all] Interrupt
